@@ -1,0 +1,1 @@
+{"TR":"http://www.w3.org/TR/DDR-Simple-API/","feature":"Device information","stability":{"level":"high","label":"finished"},"editors":{"url":"", "label":"N/A"},"impl":{"id":"ddr", "level":"low", "label": "Limited"},"tests":{"runurl":"http://www.w3.org/2005/MWI/DDWG/drafts/api/test-report.html", "repo": "","level":"high", "label": "Good Coverage"}}

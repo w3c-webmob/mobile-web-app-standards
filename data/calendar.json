@@ -1,0 +1,1 @@
+{"TR":"http://www.w3.org/TR/calendar-api/","feature":"Calendar data","stability":{"level":"low","label":"Will likely change significantly"},"editors":{"url":"http://dev.w3.org/2009/dap/calendar/", "label":"Last updated Oct 2012"},"impl":{"id":"calendar", "level":"low", "label": "None"},"tests":{"runurl":"", "repo": "","level":"low", "label": "None"}}

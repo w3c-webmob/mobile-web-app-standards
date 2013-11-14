@@ -1,0 +1,1 @@
+{"TR":"http://www.w3.org/TR/discovery-api/","feature":"Multimedia Gallery access","stability":{"level":"low","label":"Early draft"},"editors":{"url":"http://w3c-test.org/dap/discovery-api/", "label":"Last updated Sep 2013"},"impl":{"id":"discovery", "level":"low", "label": "None"},"tests":{"runurl":"", "repo": "","level":"low", "label": "None"}}

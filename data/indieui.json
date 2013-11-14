@@ -1,0 +1,1 @@
+{"TR":"http://www.w3.org/TR/indie-ui-events/","feature":"Intent-based events","stability":{"level":"low","label":"Early draft"},"editors":{"url":"https://dvcs.w3.org/hg/IndieUI/raw-file/tip/src/indie-ui-events.html", "label":"Last updated Aug 2013"},"impl":{"id":"indieui", "level":"low", "label": "None"},"tests":{"runurl":"", "repo": "","level":"low", "label": "None"}}

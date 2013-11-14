@@ -1,0 +1,1 @@
+{"TR":"http://www.w3.org/TR/web-animations/","feature":"Animations","stability":{"level":"low","label":"Early draft"},"editors":{"url":"http://dev.w3.org/fxtf/web-animations/", "label":"Regularly updated"},"impl":{"id":"webanimations", "level":"low", "label": "None"},"tests":{"runurl":"", "repo": "","level":"low", "label": "None"}}
