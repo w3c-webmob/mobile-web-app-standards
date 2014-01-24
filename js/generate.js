@@ -87,6 +87,14 @@ function fillTables() {
 		xhr.onload = function(x, s, el1, el2, el3, el4, el5, el6, el7, el8) {
 		    return function() {
 			var data = JSON.parse(x.responseText);
+			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
+			for (var l = 0 ; l < links.length; l++) {
+			    var url = data.editors.url;
+			    if (!url) {
+				url = data.TR;
+			    }
+			    links[l].setAttribute("href",url);
+			}
 			fill(el1, {label: specData[s].title, url: data.TR});
 			if (data.coremob=="fulfills") {
 			    el1.appendChild(document.createElement("br"));
