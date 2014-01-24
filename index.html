@@ -1,0 +1,270 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Standards for Web Applications on Mobile: current state and roadmap</title>
+    <link rel="stylesheet" href="http://www.w3.org/2007/08/video/style.css" type="text/css"/>
+    <link rel="stylesheet" href="http://www.w3.org/2007/08/video/print.css" type="text/css" media="print"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@w3c"/>
+    <meta name="twitter:creator" content="@dontcallmedom"/>
+    <meta name="twitter:title" content="Standards for Web Applications on Mobile — September 2013"/>
+    <meta name="twitter:description" content="This document summarizes the various technologies developed in W3C that increase the capabilities of Web applications, and how they apply more specifically to the mobile context as of September 2013"/>
+    <meta name="twitter:image" content="http://www.w3.org/Mobile/mobile-web-app-state/webapp.png"/>
+  </head>
+  <body>
+    <div id="page">
+      <h1>Standards for Web Applications on Mobile: current state and roadmap</h1>
+      <h2 id="month"></h2>
+    </div>
+    <div id="main">
+      <p class="logo">
+        <a href="/">
+          <img alt="W3C" src="/Icons/w3c_home"/>
+        </a>
+      </p>
+      <dl class="versions">
+        <dt>Latest version</dt>
+        <dd>
+          <a href="http://www.w3.org/Mobile/mobile-web-app-state/">http://www.w3.org/Mobile/mobile-web-app-state/</a>
+        </dd>
+        <dt>This version</dt>
+        <dd id="this"> (<a href="Overview.pdf">PDF version</a>)</dd>
+        <dt>Previous version</dt>
+        <dd id="prev"></dd>
+      </dl>
+      <p>Web technologies have become powerful enough that they are used to build full-featured applications; this has been true for many years in the desktop and laptop computer realm, but is increasingly so on mobile devices as well.</p>
+      <p>This document summarizes the various technologies developed in W3C that increase the capabilities of Web applications, and how they apply more specifically to the mobile context.  A good subset of these technologies are described and explained in the <a href="http://www.w3devcampus.com/writing-great-web-applications-for-mobile/">W3C on-line training on programming Web applications</a>.</p>
+      <ol>
+<li><a href="#Graphics">Graphics</a></li>
+<li><a href="#Multimedia">Multimedia</a></li>
+<li><a href="#Device_Adaptation">Device Adaptation</a></li>
+<li><a href="#Forms">Forms</a></li>
+<li><a href="#User_interactions">User interactions</a></li>
+<li><a href="#Data_storage">Data storage</a></li>
+<li><a href="#Personal_Information_Management">Personal Information Management</a></li>
+<li><a href="#Sensors_and_hardware_integration">Sensors and hardware integration</a></li>
+<li><a href="#Network">Network</a></li>
+<li><a href="#Communication_and_Discovery">Communication_and_Discovery</a></li>
+<li><a href="#Packaging">Packaging</a></li>
+<li><a href="#Performance_.26_Optimization">Performance &amp; Optimization</a></li>
+</ol>
+<section>
+      <h2>Document structure</h2>
+      <p>The features that these technologies add to the Web platform are organized under the following categories: <a href="#Graphics">graphics</a>, <a href="#Multimedia">multimedia</a>, <a href="#Device_Adaptation">device adaptation</a>, <a href="#Forms">forms</a>, <a href="#User_interactions">user interactions</a>, <a href="#Data_storage">data storage</a>, <a href="#Personal_Information_Management">personal information management</a>, <a href="#Sensors_and_hardware_integration">sensors and hardware integration</a>, <a href="#Network">network</a>, <a href="#Communication_and_Discovery">communication and discovery</a>, <a href="#Packaging">packaging</a>, <a href="#Performance_.26_Optimization">performance &amp; optimization</a>.</p>
+      <p class="figure"><object type="image/svg+xml" data="webapp.svg" style="width:600px;height:308px"><a href="webapp.svg" title="SVG version of the diagram"><img src="webapp.png" alt="Diagram showing the various components of the Web platform" width="600" height="308"/></a></object><br/>The Web as an application development platform</p>
+      <p>In each category, a table summarizes for each feature:</p>
+      <ul>
+<li>which W3C specification defines the feature; specifications that have been identified as of particular importance in the <a href="http://coremob.github.io/coremob-2012/FR-coremob-20130131.html">Core Mobile Web Platform 2012 report</a> are marked with a medal,</li>
+<li>which W3C group is responsible of the said specification,</li>
+<li>the stage of the specification in the W3C Recommendation track (see below),</li>
+<li>the estimated stability of the document, i.e. how widely the document is expected to change, as estimated by the author of this report, with three levels: low (the document is mostly stable), medium (some parts are stable, others are expected to change significantly), high (the document is expected to evolve significantly),</li>
+<li>a link to the latest editors draft of the document, and a representation of the recent editing activity;</li>
+<li>some qualitative indication on availability of implementations on mobile devices, based on data collected primarily from <a href="http://caniuse.com/">Can I Use…</a> and  <a href="http://mobilehtml5.org/">mobile HTML5</a>, completed with data from <a href="https://developer.mozilla.org/" title="https://developer.mozilla.org/">Mozilla developer network</a>, <a href="http://quirksmode.org/">QuirksMode</a>, as well as the author’s understanding of the mobile devices market (see also the <a href="https://github.com/dontcallmedom/canmymobilebrowser" title="https://github.com/dontcallmedom/canmymobilebrowser">code used to generate the support icons</a>)</li>
+<li>When available, a link to a relevant tutorial on <a href="http://docs.webplatform.org/wiki/Main_Page">WebPlatform Docs</a>, and to relevant <a href="http://www.w3devcampus.com/">on-line training courses on W3DevCampus</a></li>
+<li>a link to the test suite for the said feature, and when relevant, a github ribbon to access the underlying git repository.</li>
+</ul>
+      <p>As a reminder, W3C creates Web standards by progressing documents through its <a href="http://www.w3.org/2005/10/Process-20051014/tr.html#Reports">Recommendation track</a>, with the following stages:</p>
+      <ul id="rectrack">
+<li id="ed" class="recstage"><img src="http://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="" width="50"/> “Editors drafts” represent the current view of the editors of the specification but have no standing in terms of standardization.</li>
+<li id="wd" class="recstage"><img src="http://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="" width="50"/> “Working Drafts” (WD) are early milestones of the Working Group progress.</li>
+<li id="lcwd" class="recstage"><img src="http://www.w3.org/2013/09/wpd-rectrack-icons/lcwd.svg" alt="" width="50"/> “Last Call Working Drafts” signal that the Working Group has determined that the specification fulfills its requirements and all the known issues have been resolved, and thus requests feedback from the larger community.</li>
+<li id="cr" class="recstage"><img src="http://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="" width="50"/> “Candidate Recommendations” (CR) trigger a call for implementations where implementers are invited to implement the specification and send feedback; Working Groups are expected to show the specification gets implemented by running test suites they have developed.</li>
+<li id="pr" class="recstage"><img src="http://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="" width="50"/> “Proposed Recommendations” (PR) manifests that the group has gathered sufficient implementation experience, and triggers the final review by W3C Members</li>
+<li id="rec" class="recstage"><img src="http://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="" width="50"/> “W3C Recommendations” (Rec) are stable and completed Web standards; these documents only get updated rarely, through the “Edited Recommendation” process, as a results from errata collected by Working Groups.</li>
+</ul>
+      <p>Prior to starting standardization, a Working Group needs to be chartered, based on input from W3C Members, often through the organization of a <a href="http://www.w3.org/2003/08/Workshops/">workshop</a>, or after the reception of a <a href="http://www.w3.org/Submission/">W3C Member Submission</a>.</p>
+      <p>W3C has set up <a href="http://www.w3.org/community/">Community Groups</a>, a mechanism that allows anyone to do experimental work within the W3C infrastructure, under IPR rules that are compatible to transition the work to the W3C standardization process.</p>
+</section>
+<section class="featureset">
+      <h2 id="Graphics">1.
+        Graphics </h2>
+      <div  data-feature="2D Vector Graphics">
+      <p><a  data-featureid="svg12">SVG</strong>, Scalable Vector Graphics, provides an XML-based markup language to describe two-dimensions vector graphics. Since these graphics are described as a set of geometric shapes, they can be zoomed at the user request, which makes them well-suited to create graphics on mobile devices where screen space is limited. They can also be easily animated, enabling the creation of very advanced and slick user interfaces.</p>
+      <p>The integration of SVG in HTML5 opens up new possibilities, for instance applying advanced graphic filters (through SVG filters) to multimedia content, including videos. <a data-featureid="svg2">SVG 2.0</a> is set to facilitate that integration and complete the set of features in SVG.</p></div>
+      <p data-feature="2D Programmatic API">In complement to the declarative approach provided by SVG, the <strong><code>&lt;canvas&gt;</code></strong> element added in HTML5 enables a <a data-featureid="canvas">2D programmatic API</a> that is well-suited for processing graphics in a less memory intensive way. That API not only allows rendering graphics, but can also be used to do image processing and analysis — <a href="http://www.w3.org/TR/html51/">HTML 5.1</a> adds the ability to do that <a data-featureid="canvasproxy">processing in a separate Web Worker</a>.</p>
+      <p>Both SVG and HTML can be styled using <strong><a href="http://www.w3.org/standards/techs/css">CSS</a></strong> (Cascading Style Sheets); in particular, CSS3 (the third level of the specification) is built as a collection of specifications set to offer a large number of new features that make it simple to create graphical effects, such as <a data-featureid="css-border" data-feature="Rounded Corners">rounded corners</a>, <a data-featureid="css-border" data-feature="Complex background images">complex background images</a>, <a data-feature="Box shadow effects" data-featureid="css-border">shadow effects</a> (<cite><a href="http://www.w3.org/TR/css3-background/">CSS Backgrounds and Borders</a></cite>), <a data-feature="2D Effects"  data-featureid="css-2d">rotated content</a> (<cite><a href="http://www.w3.org/TR/css3-transforms/">CSS Transforms</a></cite>, including with <a data-feature="3D Effects" data-featureid="css-3d">3D effects</a>).</p>
+      <div  data-feature="Animations">
+      <p>Animations can be described declaratively vi(<cite><a data-featureid="css-animation">CSS Animations</a></cite>, and <cite><a data-featureid="css-transitions">CSS Transitions</a></cite>).</p>
+      <p>Animations can also be managed via scripting through the API exposed in <a data-featureid="webanimations">Web Animations</a>; as they can be resource intensive, the possibility offered by the <cite><a data-featureid="animation-timing">Timing control for script-based animations API</a></cite> to manage the rate of updates to animations can help keep them under control.</p>
+      </div>
+      <p data-feature="Complex layouts"><a data-featureid="flexbox">CSS Flexbox</a> allows to build complex layouts aas required for interactive applications on small screens.</p>
+      <p data-feature="Downloadable fonts">Fonts play also an important role in building appealing graphical interfaces, but mobile devices are in general distributed with only a limited set of fonts. <strong><a data-featureid="woff">WOFF</a></strong> (<cite>Web Open Font Format</cite>) addresses that limitation by making it easy to use fonts that are automatically downloaded through style sheets, while keeping the size of the downloaded fonts limited to what is actually needed to render the interface.</p>
+      <p data-feature="Fullscreen display">Another important aspect in graphics-intensive applications (e.g. games) is the possibility to use the entire screen to display the said graphics; the <strong><cite><a data-featureid="fullscreen">Fullscreen API</a></cite></strong> lets a Web application requests and detects full screen display.</p>
+      <p data-feature="Orientation Lock">Likewise, in these scenarios, it is often useful to be able to <strong>lock the orientation of the screen</strong>; the <cite><a data-featureid="screenlock">Screen Orientation API</a></cite> allows not only to detect orientation change, but also to lock the orientation in a specific state.</p>
+      <p>NB: a <a href="http://www.khronos.org/webgl/">3D graphic API for HTML5 <code>canvas</code>, called WebGL</a>, has been developed  outside of W3C, as part of the <a href="http://www.khronos.org/">Khronos Group</a>; this API has been built to be compatible with <a href="http://www.khronos.org/opengles/">OpenGL ES</a>, i.e. for embedded systems, and is intended to work on mobile devices.</p>
+
+<script id="template" type="application/template">
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Specification</th>
+        <th>Working Group</th>
+        <th>Maturity</th>
+        <th>Stability</th>
+        <th>Latest editors draft</th>
+        <th>Current implementations</th>
+        <th>Developers doc</th>
+        <th>Test suite</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</script>
+
+</section>
+<section class="featureset">
+
+      <h2 id="Multimedia">2.
+        Multimedia </h2>
+      <p>HTML5 adds two tags that dramatically improve the integration of multimedia content on the Web: the <code><strong><a href="http://www.w3.org/html/wg/drafts/html/CR/embedded-content-0.html#the-video-element">&lt;video&gt;</a></strong></code> and <code><strong><a href="http://www.w3.org/html/wg/drafts/html/CR/embedded-content-0.html#the-audio-element">&lt;audio&gt;</a></strong></code> tags. Respectively, these tags allow embedding video and audio content, and make it possible for Web developers to interact much more freely with that content than they would through plug-ins. They make multimedia content first-class citizens of the Web, the same way images have been for the past 20 years.</p>
+      <p>The playback content can be augmented and completed via <a href="http://www.w3.org/TR/media-source/">Media Source Extensions</a> that lets developers generate media content in JavaScript.</p>
+      <p>To cater for the needs of some content providers, a proposal to enable <strong>playback of protected content</strong>, <cite><a href="https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html" title="https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html">Encrypted Media Extensions</a></cite> is an API that is under consideration in the <a href="http://www.w3.org/html/wg/">HTML Working Group</a>.</p>
+      <p>The <cite><a href="http://w3c-test.org/dap/gallery/">Pick Media Intent</a></cite> offers a Web-intent based approach to search and retrieve <strong>locally or remotely stored media content</strong>, while the <a href="http://w3c-test.org/dap/discovery-api/"><cite>Network Service Discovery</cite> API</a> opens the door for integrating DLNA-hosted content into Web applications.</p>
+      <p>While the new HTML5 tags allow to play multimedia content, the <cite><a href="http://dev.w3.org/2009/dap/camera/">HTML Media Capture</a></cite> defines a <strong>markup-based mechanism to access captured multimedia content</strong> using attached camera and microphones, a very common feature on mobile devices. The <a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> and the <a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a> are building together an <a href="http://dev.w3.org/2011/webrtc/editor/getusermedia.html">API (<code>getUserMedia</code>)</a> to directly manipulate <strong>streams from camera and microphones</strong>, as well as an <a href="https://dvcs.w3.org/hg/dap/raw-file/default/media-stream-capture/MediaRecorder.html" title="https://dvcs.w3.org/hg/dap/raw-file/default/media-stream-capture/MediaRecorder.html">API to record these streams</a> into files, and another API to use access to cameras to <a href="http://www.w3.org/TR/image-capture/">take photos programatically</a>.</p>
+      <p>Beyond capturing and recording, two additional APIs add multimedia manipulation capabilities to the Web platform. We have already mentioned the <cite><a href="http://www.w3.org/html/wg/drafts/2dcontext/html5_canvas/">Canvas 2D Context</a></cite> API: it enables modifying images, which in turn opens up the possibility of <strong>video editing</strong>.</p>
+      <p>In a similar vein, the <a href="http://www.w3.org/2011/audio/">Audio Working Group</a> is working on an API that  that makes it possible to modify audio content, as well as <strong>analyze, modify and synthesize sounds</strong>, the <a href="http://www.w3.org/TR/webaudio/">Web Audio API</a>.</p>
+      <p>The combination of all these features marks the starting point of the Web as a comprehensive platform for multimedia, both for consuming and producing. The rising interest around bridging the Web and TV worlds (manifested through the <a href="http://www.w3.org/2011/webtv/">W3C Web and TV Interest Group</a>) should strengthen that trend in the coming months. Mobile devices are expected to take a growing role in many users TV experience, providing a “second screen” experience, where users can find more information on or interact with a TV program they're watching via their mobile devices.</p>
+
+
+</section>
+<section class="featureset">
+      <h2 id="Device_Adaptation">3.
+        Device Adaptation </h2>
+      <p>Mobile devices not only differ widely from traditional computers, but they also have a lot of variations among themselves, in term of screen size, resolution, type of keyboard, media recording capabilities, etc.</p>
+      <p>The <a href="http://www.w3.org/TR/DDR-Simple-API/">Device Description Repository API</a> is a unified server-side API that allows Web developers to retrieve data on the devices that are accessing their pages on a variety of device information database.</p>
+      <p>The <a href="http://www.w3.org/TR/mediacapture-streams/">Media Capture Streams</a> API exposes some specific information on capabilities of camera and microphones to make it possible to take advantage of the large variety of media capturing devices provided on mobile phones.</p>
+      <p><a href="http://www.w3.org/TR/css3-mediaqueries/">CSS Media Queries</a> offer a mechanism that allows adapting the layout and behavior of a Web page based on some of the characteristics of the device, including the screen resolution — to which <a href="http://dev.w3.org/csswg/mediaqueries4/">Media Queries Level 4</a> proposes to add the availability and type of a pointing device, the ability to hover over elements, and the ambient luminosity. <a href="http://dev.w3.org/csswg/css-device-adapt/">CSS Device Adaptation</a> defines a set of CSS directives to define the size on which this layout should be based, relatively to the size of the underlying device — specifying what has been implemented using the <code>&lt;meta name="viewport"&gt;</code> element so far.</p>
+      <p>The proposal for a new <a href="http://www.w3.org/TR/html-picture-element/"><code>picture</code> element</a>, initially developed by the <a href="http://www.w3.org/community/respimg/">Responsive Images Community Group</a>, has been taken up by the HTML Working Group as one of the  proposed extensions to HTML. It lets authors define what image to show depending on the rendering context as determined through media queries.</p>
+      <p>As a complementary approach, the <a href="http://www.w3.org/html/wg/drafts/srcset/w3c-srcset/"><code>srcset</code> attribute</a>, developed in the <a href="http://www.w3.org/community/whatwg/">WHATWG</a> and also published an extension to HTML, let Web developers define the various existing resolutions of an image, letting the browser pick the best choice for the resolution of the screen. At this time, this approach is the one that seems to be <a href="http://www.w3.org/community/respimg/2013/09/18/paris-responsive-images-meetup/">gaining the most momentum among some of the browser vendors</a>.</p>
+      <p>A brand new proposal made to the <a href="http://www.w3.org/community/respimg/">Responsive Images Community Group</a>, the <a href="http://lists.w3.org/Archives/Public/public-respimg/2013Sep/0064.html">srcN attribute</a>, offers to combine the two proposals behind another syntactical approach.</p>
+
+</section>
+<section class="featureset">
+      <h2 id="Forms">4.
+        Forms </h2>
+      <p>The ability to build rich forms with HTML is the basis for user input in most Web-based applications. Due to their limited keyboards, text input on mobile devices remains a difficult task for most users; <cite><a href="http://www.w3.org/html/wg/drafts/html/CR/">HTML5</a></cite> address parts of this problem by offering new type of form controls that optimize the way users will enter data:</p>
+      <ul>
+<li><strong><a href="http://www.w3.org/html/wg/drafts/html/CR/forms.html#date-and-time-state-(type=datetime)">date and time entries</a></strong> can take advantage of a number of dedicated form controls (e.g. <code>&lt;input type="date"&gt;</code>) where the user can use a native calendar control;</li>
+<li>the <code><a href="http://www.w3.org/html/wg/drafts/html/CR/forms.html#e-mail-state-(type=email)">&lt;input type="<strong>email</strong>"&gt;</a></code>, <code><a href="http://www.w3.org/html/wg/drafts/html/CR/forms.html#telephone-state-(type=tel)">&lt;input type="<strong>tel</strong>"&gt;</a></code> and <code><a href="http://www.w3.org/html/wg/drafts/html/CR/forms.html#url-state-(type=url)">&lt;input type="<strong>url</strong>"&gt;</a></code> can be used to optimize the ways user enter these often-difficult to type data, e.g. through dedicated virtual keyboards, or by accessing on-device records for these data (from the address book, bookmarks, etc.);</li>
+<li>the <code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#input-modalities:-the-inputmode-attribute"><strong>inputmode</strong></a></code> attribute (proposed in HTML 5.1) defines the type of textual input expected in a text entry;</li>
+<li>the <code><a href="http://www.w3.org/html/wg/drafts/html/CR/forms.html#the-pattern-attribute"><strong>pattern</strong></a></code> attribute allows both to guide user input as well as to avoid server-side validation (which requires a network round-trip) or JavaScript-based validation (which takes up more resources);</li>
+<li>the <code><strong><a href="http://www.w3.org/html/wg/drafts/html/CR/forms.html#the-placeholder-attribute">placeholder</a></strong></code> attribute allows to guide user input by inserting hints as to what type of content is expected in a text-entry control;</li>
+<li>the <code><a href="http://www.w3.org/html/wg/drafts/html/CR/forms.html#the-datalist-element">&lt;datalist&gt;</a></code> element allows creating free-text input controls coming with <strong>pre-defined values</strong> the user can select from;</li>
+<li><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#autofilling-form-controls:-the-autocomplete-attribute">HTML 5.1</a> defines a mechanism for the <code>autocomplete</code> attribute to automatically fill input fields based on <strong>well-known data</strong> for the user.</li>
+</ul>
+
+</section>
+<section class="featureset">
+      <h2 id="User_interactions">5.
+        User interactions </h2>
+      <p>An increasing share of mobile devices relies on touch-based interactions. While the traditional interactions recognized in the Web platform (keyboard, mouse input) can still be applied in this context, a more specific handling of touch-based input is a critical aspect of creating well-adapted user experiences, which <strong><a href="https://dvcs.w3.org/hg/webevents/raw-file/tip/touchevents.html" title="https://dvcs.w3.org/hg/webevents/raw-file/tip/touchevents.html">Touch Events in the DOM</a></strong> (Document Object Model) enable. The work on that specification is now nearly finished.</p>
+      <p>Meanwhile, the <a href="http://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> has made good progress on an alternative approach to handle user input, <a href="http://www.w3.org/TR/pointerevents/">Pointer Events</a>, that allows to handle mouse, touch and pen events under a single model. This new approach is expected to replace the currently more widely deployed Touch Events.</p>
+      <p>As more and more content gets rendered as long scrollable lists, more and more logic is attached to scrolling events, and the quality of the user experience of these actions is highly dependent on their performances. The <a href="http://dev.w3.org/csswg/cssom-view/#scrolling">CSSOM View Module</a> determines when scrolling events get fired, and let developers specify the type of scrolling behavior they want.</p>
+      <p>Many mobile devices use on-screen keyboards to let users type; the <a href="http://www.w3.org/TR/ime-api/">Input Method Editor (IME) API</a> makes it possible to coordinate the interactions between that on-screen keyboard and Web applications.</p>
+      <p>Conversely, many mobile devices use haptic feedback (such as vibration) to create new form of interactions (e.g. in games); work on a <strong><a href="http://dev.w3.org/2009/dap/vibration/">vibration API</a></strong> in the <a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a> is making good progress.</p>
+      <p>But as the Web reaches new devices, and as devices gain new user interactions mechanisms, it also becomes important to allow Web developers to react to a more abstract set of user interactions: instead of having to work in terms of “click”, “key press”, or “touch event”, being able to react to an “undo” command, or a “next page” command independently of how the user instructed it to the device will prove beneficial to the development of device-independent Web applications. The <a href="http://www.w3.org/TR/indie-ui-events/">IndieUI Events</a> specification, developed by a joint task force between the <a href="http://www.w3.org/2010/webevents/">Web Events Working Group</a> and the <a href="http://www.w3.org/WAI/IndieUI/">Indie UI Working Group</a>, aims at addressing this need.</p>
+      <p>Mobile devices follow their users everywhere, and many mobile users rely on them to remind them or notify them of events, such as messages: the <cite><strong><a href="https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html" title="https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html">Web Notifications</a></strong></cite> specification proposes to add that feature to the Web environment.</p>
+      <p>Mobile devices, and mobile phones in particular, are also in many cases well-suited to be used through voice-interactions; the <a href="http://www.w3.org/community/speech-api/"><strong>Speech API Community Group</strong></a> is exploring the opportunity of starting standardization work around a <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html" title="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">JavaScript API</a> that would make it possible for users to interact with a Web page through spoken commands, and a <a href="http://lists.w3.org/Archives/Public/public-new-work/2013Jan/0003.html">W3C Working Group charter</a> is currently under review by the Advisory Committee.</p>
+      <p>The hardware constraints of mobile devices, and their different usage context can make <a href="http://www.w3.org/WAI/mobile/experiences">mobile users experience similar barriers to people with disabilities</a>. These similarities in barriers mean that similar solutions can be used to cater for them, <a href="http://www.w3.org/WAI/mobile/overlap">making a Web site accessible both for people with disabilities and mobile devices</a> a natural goal.</p>
+      <p>How Web Content Accessibility Guidelines (WCAG) and User Agent Accessibility Guidelines (UAAG) provide guidance on mobile accessibility — that is, making websites and applications more accessible to people with disabilities when they are using mobile phones and a broad range of other devices — is discussed in <a href="http://www.w3.org/WAI/mobile/">Mobile Accessibility</a>.</p>
+      <p><a href="http://www.w3.org/TR/wai-aria/"><cite>WAI-ARIA</cite></a> provides semantic information on widgets, structures and behaviors hooks to make Web applications more accessible, including on mobile devices.</p>
+
+</section>
+<section class="featureset">
+      <h2 id="Data_storage">6.
+        Data storage </h2>
+      <p>A critical component of many applications is the ability to save state, export content, as well as integrate data from other files and services on the system.</p>
+      <p>For simple data storage, the <cite><strong><a href="http://dev.w3.org/html5/webstorage/">Web Storage</a></strong></cite> specification offers two basic mechanisms, <code>localStorage</code> and <code>sessionStorage</code>, that can preserve data respectively indefinitely, or on a browser-session basis.</p>
+      <p>For richer interactions, the Web platform has a growing number of APIs to interact with a device filesystem: the <cite><strong><a href="http://dev.w3.org/2006/webapi/FileAPI/">File Reader API</a></strong></cite> makes it possible to load the content of a file, the <cite><strong><a href="http://dev.w3.org/2009/dap/file-system/file-writer.html">File Writer API</a></strong></cite> allows saving or modifying a file, while the nascent <strong><a href="http://dev.w3.org/2009/dap/file-system/file-dir-sys.html">FileSystems API</a></strong> give access to more general file operations, including directory management. Discussions have started on whether these two latter APIs would better be implemented on top of IndexedDB, and a proposal for a <a href="http://lists.w3.org/Archives/Public/public-script-coord/2013JulSep/thread.html#msg379">new sandboxed filesystem API</a> has been brought forward.</p>
+      <p>On top of this file-based access, the <cite><strong><a href="https://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html" title="https://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html">Indexed Database API</a></strong></cite> (IndexedDB) defines a database of values and hierarchical objects that integrates naturally with JavaScript, and can be queried and updated very efficiently. Note that the work around a client-side SQL-based database, which had been started in 2009, has been abandoned in favor of this new system.</p>
+      <p>As more and more data need to be stored by the browser (e.g. for offline usage), it becomes critical for developers to get reliable storage space, which the proposed <strong><a href="https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html" title="https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html">Quota Management API</a></strong> will offer to Web applications.</p>
+      <p>Likewise, as some of this data need to be encrypted, the emerging <a href="http://www.w3.org/TR/WebCryptoAPI/">Web Cryptography API</a> from the <a href="http://www.w3.org/TR/WebCryptoAPI/">Web Cryptography Working Group</a> exposes strong cryptography primitives to Web applications, and can be bound to pre-provisioned keys via the <a href="http://www.w3.org/TR/webcrypto-key-discovery/">WebCrypto Key Discovery</a> API.</p>
+
+
+</section>
+<section class="featureset">
+      <h2 id="Personal_Information_Management">7.
+        Personal Information Management </h2>
+      <p>Applications can benefit from integrating with existing data records; on mobile devices, the address book and calendar are particularly useful source of information, which the <cite><strong><a href="http://w3c-test.org/dap/contacts/">Contacts API</a></strong></cite> and the <cite><strong><a href="http://dev.w3.org/2009/dap/calendar/">Calendar API</a></strong></cite> bring access to.</p>
+      <p>For integration in browser-based Web Apps, <a href="https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html" title="https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html">Web Intents</a> based approaches have been suggested, but are now stalled due to the lack of progress around that technology.</p>
+      <p>For Web apps outside of the browser, a purely programmatic approach is part of the <a href="http://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a>, with work on a <a href="http://www.w3.org/TR/contacts-manager-api/">Contacts Manager API</a> in progress.</p>
+
+</section>
+<section class="featureset">
+      <h2 id="Sensors_and_hardware_integration">8.
+        Sensors and hardware integration </h2>
+      <p>Mobile devices are packed with sensors, making them a great bridge between the real and virtual worlds: GPS, accelerometer, ambient light detector, microphone, camera, thermometer, etc.</p>
+      <p>To take full advantage of these sensors in mobile Web applications, Web developers need to be provided with hooks to interact with them.</p>
+      <p>The <cite><strong><a href="http://dev.w3.org/geo/api/spec-source.html">Geolocation API</a></strong></cite> provides a common interface for locating the device, independently of the underlying technology (GPS, WIFI networks identification, triangulation in cellular networks, etc.). Work towards a new version of the API that would include geofencing and indoor location is <a href="http://lists.w3.org/Archives/Public/public-geolocation/2013Aug/0001.html">under consideration</a>.</p>
+      <p>Web applications can also now access <strong>orientation and acceleration</strong> data via the <cite><a href="http://dev.w3.org/geo/api/spec-source-orientation.html">DeviceOrientation Event Specification</a></cite>.</p>
+      <p>The work on a generic <cite><a href="https://dvcs.w3.org/hg/dap/raw-file/tip/sensor-api/Overview.html" title="https://dvcs.w3.org/hg/dap/raw-file/tip/sensor-api/Overview.html">Sensor API</a></cite> has been put on hold in favor to designing APIs for specific sensors, such as the <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/proximity/Overview.html" title="https://dvcs.w3.org/hg/dap/raw-file/tip/proximity/Overview.html"><cite>Proximity Events</cite> API</a>, the <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/light/Overview.html" title="https://dvcs.w3.org/hg/dap/raw-file/tip/light/Overview.html"><cite>Ambient Light Events</cite> API</a> or the proposed <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html" title="https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html"><cite>Ambient Humidity Events</cite> API</a>.</p>
+      <p>As already mentioned in the section on <a href="#Multimedia">multimedia</a>, there is ongoing work on APIs to open up access to camera and microphone streams.</p>
+      <p>The opportunity for Web applications to use <strong>Near-Field Communications (NFC)</strong> mechanisms have led to the chartering of <a href="http://www.w3.org/2012/nfc/">the NFC Working Group</a> to develop a <a href="http://w3c.github.io/nfc/proposals/common/nfc.html">Web NFC API</a>.</p>
+      <p>A more global access to sensors and hardware (including USB and bluetooth) is in scope for the <strong><a href="http://www.w3.org/2012/sysapps/">System Applications Working Group</a></strong>.</p>
+
+</section>
+<section class="featureset">
+      <h2 id="Network">9.
+        Network </h2>
+      <p>Network connectivity represents a major asset for mobile devices: the Web is an immense store of content, as well as an almost endless source of processing power, overcoming two of the limitations of mobile devices.</p>
+      <p>The Web platform is growing a number of APIs that facilitate establishing network connectivity in different contexts.</p>
+      <p><cite><strong><a href="https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html" title="https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html">XMLHttpRequest</a></strong></cite> (the basis for Ajax development) is a widely deployed API to load content from Web servers using the HTTP and HTTPs protocol: the W3C specification (formerly known as <cite>XMLHttpRequest Level 2</cite>) completes the existing deployed API with the ability to make requests on servers in a different domain, programmatic feedback on the progress of the network operations, and more efficient handling of binary content. The work on documenting the currently deployed API (XMLHttpRequest Level 1) has been abandoned in favor of getting the new API developed more quickly.</p>
+      <p>By default, browsers do not allow to make request across different domains (or more specifically, across different <dfn class="def">origins</dfn>, a combination of the protocol, domain and port) from a single Web page; this rule protects the user from having a Web site abusing their credentials and stealing their data on another Web site. Sites can opt-out of that rule by making use of the <cite><strong><a href="https://dvcs.w3.org/hg/cors/raw-file/tip/Overview.html" title="https://dvcs.w3.org/hg/cors/raw-file/tip/Overview.html">Cross-Origin Resource Sharing</a></strong></cite> mechanism, opening up much wider cooperation across Web applications and services.</p>
+      <p>XMLHttpRequest is useful for client-initiated network requests, but mobile devices with their limited network capabilities and the cost that network requests induce on their battery (and sometimes on their users bill) can often make better use of server-initiated requests. The <cite><strong><a href="http://dev.w3.org/html5/eventsource/">Server-Sent Events</a></strong></cite> API allows triggering DOM events based on push notifications (via HTTP and other protocols.)</p>
+      <p>Early work on a <strong><a href="https://dvcs.w3.org/hg/push/raw-file/default/index.html" title="https://dvcs.w3.org/hg/push/raw-file/default/index.html">Push API</a></strong> would allow Web applications to receive server-sent messages whether or not the said Web app is active in a browser window. As patents have been disclosed on that API, a <a href="http://www.w3.org/2013/03/push-pag-charter">Patent Advisory Group</a> is being formed to assess how to make further progress possible on this work item.</p>
+      <p>The <cite><strong><a href="http://dev.w3.org/html5/websockets/">WebSocket API</a></strong></cite>, built on top of the IETF <cite><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-05">WebSocket protocol</a></cite>, offers a bidirectional, more flexible, and less resource intensive network connectivity than XMLHttpRequest.</p>
+      <p>The work on <a href="http://www.w3.org/TR/webrtc/">Web Real-Time Communications</a> will also provide direct <strong>peer-to-peer data connections</strong> between browsers with real-time characteristics, opening the way to collaborative multi-devices Web applications.</p>
+      <p>Of course, an important part of using network connectivity relies on being able to determine if such connectivity exists, and the type of network available. The <a href="http://www.w3.org/html/wg/drafts/html/CR/browsers.html#browser-state">HTML5 <strong>onLine DOM flag</strong></a> (and its associated change event, <code>ononline</code>) signals when network connectivity is available to the Web environment.</p>
+      <p>The <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html" title="https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html"><strong>network-information API</strong></a> addresses discovery of the network characteristics, allowing to determine for instance the rough bandwidth of the current connection. The <strong><a href="http://www.w3.org/TR/resource-timing/">Resource Timing</a> API</strong> offers to measure precisely the impact of the network on the time needed to load various resources, offering another approach to adapt a Web app to its network environment.</p>
+
+</section>
+<section class="featureset">
+      <h2 id="Communication_and_Discovery">10.
+        Communication and Discovery </h2>
+      <p>Beyond connection to on-line services, allowing communications between users, but also between devices and between applications is an important aspect of a good mobile development platform. To communicate with unknown devices or pre-existing services, a discovery component is critical.</p>
+      <p>For Web apps not in a browser, the <a href="http://www.w3.org/2012/sysapps/">System Applications Working Group</a> is working on a complete <a href="http://www.w3.org/TR/messaging/">Messaging API</a>.</p>
+      <p>The <code><strong>postMessage</strong></code> API of <cite><a href="http://dev.w3.org/html5/postmsg/">HTML5 Web Messaging</a></cite> allows for Web Applications to communicate between each other.</p>
+      <p>A joint task force of the Device APIs and Web Apps Working Groups had been looking at a mechanism called <a href="https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html" title="https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html">Web Intents</a>: it aimed at closer integration of Web applications, as well as of Web applications with native applications. Some of the initial use cases for Web Intents have proved hard to expose through the regular Web browser UI, and discussions on how to properly scope that technology are on-going. In the mean time, progress on Web Intents and derived APIs has <strong>stalled</strong>.</p>
+      <p>The <a href="http://w3c-test.org/dap/discovery-api/">Network Service Discovery</a> API offers to discover services on the local network (such as the ones offered via DLNA), enabling mobile Web applications to integrate seamlessly with these services. An <a href="http://www.w3.org/TR/webintents-local-services/">alternative approach based on Web Intents</a> has also been under exploration, but is unlikely to progress due to Web Intents being stalled.</p>
+      <p>The <strong><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a></strong> is the host of specifications for a wider set of communication opportunities:</p>
+      <ul>
+<li><strong>Peer-to-peer connection</strong> across devices,</li>
+<li><strong>P2P Audio and video streams</strong> allowing for real-time communications between users.</li>
+</ul>
+
+</section>
+<section class="featureset">
+      <h2 id="Packaging">11.
+        Packaging </h2>
+      <p>An important aspect of the user experience of applications is linked to how the user perceives the said application is available permanently (even when off-line, which is particularly important on mobile devices), as well as how it can be shared and distributed, typically through purchases via applications stores — this is adequately addressed by packaging the application.</p>
+      <p>The Web platform offers two complementary approaches to packaging Web applications:</p>
+      <ul>
+<li>HTML5’s <code><strong><a href="http://www.w3.org/html/wg/drafts/html/CR/browsers.html#appcache">ApplicationCache</a></strong></code> enables access to Web applications off-line through the definition of a manifest of files that the browser is expected to keep in its cache; while relatively well deployed, the current approach has shown some strong limitations and the HTML and Web Applications Working Groups are considering a potentially major overhaul of the technology, likely based on <a href="https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md" title="https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md">ServiceWorker</a></li>
+<li>a <a href="http://www.w3.org/2008/webapps/manifest/">JSON-based manifest format</a> in development by the the <a href="http://www.w3.org/2008/webapps/">Web Apps Working Group</a> (as replacement for the <a href="http://www.w3.org/standards/techs/widgets">W3C Widgets</a> family of specifications). The System Applications Working Group is building a <a href="http://www.w3.org/TR/runtime/">runtime and security model</a> on top of that packaging, but that specification is likely to replaced by a different approach at this time.</li> 
+</ul>
+
+</section>
+<section class="featureset">
+      <h2 id="Performance_.26_Optimization">12.
+        Performance &amp; Optimization </h2>
+      <p>Due to their limited CPU, and more importantly to their limited battery, mobile devices require a lot of attention in terms of performance.</p>
+      <p>The work started by the <a href="http://www.w3.org/2010/webperf/">Web Performance Working Group</a> on <cite><strong><a href="http://w3c-test.org/webperf/specs/NavigationTiming/">Navigation Timing</a></strong></cite>, <cite><strong><a href="http://w3c-test.org/webperf/specs/ResourceTiming/">Resource Timing</a></strong></cite>, <cite><strong><a href="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/PerformanceTimeline/Overview.html" title="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/PerformanceTimeline/Overview.html">Performance Timeline</a></strong></cite> and <cite><strong><a href="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/UserTiming/Overview.html" title="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/UserTiming/Overview.html">User Timing</a></strong></cite>, gives tools to Web developers for optimizing their Web applications. </p>
+      <p>Early work on a <cite><a href="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/ResourcePriorities/Overview.html" title="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/ResourcePriorities/Overview.html">Resource Priorities</a></cite> specification, part of the <a href="http://www.w3.org/2013/01/webperf.html">Web Performance Working Group new charter</a>, would let developers indicate which network requests should be prioritzed.</p>
+      <p>The proposed work on <a href="http://w3c-test.org/webperf/specs/setImmediate/">Efficient Script Yielding</a> offers the opportunity to Web developers to use more efficiently asynchronous programming, but has some far gained very limited traction.</p>
+      <p>The <a href="http://www.w3.org/TR/page-visibility/">API to determine whether a Web page is being displayed</a> (<cite><strong>Page Visibility API</strong></cite>) can also be used to adapt the usage of resources to the need of the Web application, for instance by reducing network activity when the page is minimized. Likewise, the <a href="http://www.w3.org/TR/animation-timing/">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
+      <p>The <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/battery/Overview.html" title="https://dvcs.w3.org/hg/dap/raw-file/tip/battery/Overview.html">battery API</a> allows adjusting the use of resources to the current level of power available in the battery of a mobile device.</p>
+      <p>Beyond optimization of resources, the perceived reactivity of an application is also a critical aspect of the mobile user experience. The <strong>thread-like mechanism</strong> made possible via <cite><a href="http://dev.w3.org/html5/workers/">Web Workers</a></cite> allows keeping the user interface responsive by offloading the most resource-intensive operations into a background process.</p>
+      <p>The <cite><a href="http://www.w3.org/TR/mwabp/">Mobile Web Application Best Practices</a></cite> provide general advice on how to build Web applications that work well on mobile devices, taking into account in particular the needs for optimization.</p>
+</section>
+      <div id="footer">
+        <address><a href="http://www.w3.org/People/Dom/">Dominique
+Hazaël-Massieux</a> &lt;<a href="mailto:dom@w3.org">dom@w3.org</a>&gt; / <a href="https://twitter.com/dontcallmedom">@dontcallmedom</a><br/>
+Last Modified: $Date: 2013-10-01 08:26:07 $</address>
+      </div>
+    </div>
+    <script src="js/generate.js"></script>
+  </body>
+</html>
