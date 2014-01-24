@@ -1,1 +1,1 @@
-{"TR":"","feature":"NFC","stability":{"level":"low","label":"Very early draft"},"editors":{"url":"http://w3c.github.io/nfc/proposals/common/nfc.html", "label":"Last update Aug 2013"},"impl":{"id":"nfc", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{"TR":"","stability":{"level":"low","label":"Very early draft"},"editors":{"url":"http://w3c.github.io/nfc/proposals/common/nfc.html", "label":"Last update Aug 2013"},"impl":{"id":"nfc", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
