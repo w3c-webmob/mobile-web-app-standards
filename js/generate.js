@@ -96,7 +96,7 @@ function fillTables() {
 			    }
 			    fill(el2, wg);
 			}
-			fill(el3, {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]},{src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase() + '.svg', alt:specData[s].maturity});
+			fill(el3, {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]},{src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace('/lastcall/','lcwd') + '.svg', alt:specData[s].maturity});
 			fill(el4, data.stability);
 			fill(el5, data.editors);
 			fill(el6, data.impl);
