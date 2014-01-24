@@ -100,6 +100,10 @@ function fillTables() {
 			fill(el4, data.stability);
 			fill(el5, data.editors);
 			fill(el6, data.impl);
+			el6.appendChild(document.createElement("br"));
+			var obj = document.createElement("object");
+			obj.setAttribute("data", "images/" + s + ".svg");
+			el6.appendChild(obj);
 			if (data.wpd) {
 			    fill(el7, data.wpd, {src:"http://www.webplatform.org/logo/wplogo_transparent.png", alt: "WebPlatform.org"});
 			}
