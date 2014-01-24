@@ -90,7 +90,7 @@ function fillTables() {
 			fill(el1, {label: specData[s].title, url: data.TR});
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
 			    wg = specData[s].wgs[w];
-			    wg.label[0] = wg.label[0].replace(/ Working Group/,'');
+			    wg.label[0] = wg.label[0].replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS');
 			    if (w > 0) {
 				el2.appendChild(document.createElement("br"));
 			    }
