@@ -88,6 +88,14 @@ function fillTables() {
 		    return function() {
 			var data = JSON.parse(x.responseText);
 			fill(el1, {label: specData[s].title, url: data.TR});
+			if (data.coremob=="fulfills") {
+			    el1.appendChild(document.createElement("br"));
+			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#specifications-which-address-the-derived-requirements"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob.png",alt:"CoreMob 2012"});
+			} else if (data.coremob=="partial") {
+			    el1.appendChild(document.createElement("br"));
+			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#requirements-only-partially-addressed-by-existing-specifications"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob-wanted.png",alt:"Partially addresses requirements of CoreMob 2012"});
+
+			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
 			    wg = specData[s].wgs[w];
 			    wg.label[0] = wg.label[0].replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS');
