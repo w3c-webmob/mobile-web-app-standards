@@ -194,16 +194,24 @@ function updateEditorsActivity(editorDrafts) {
 	xhr.onload = function (draftname) {
 	    return function (e) {
 		var svg = e.target.response;
-		var height = svg.documentElement.getAttribute("height");
-		var desc = svg.getElementsByTagNameNS("http://www.w3.org/2000/svg", "desc")[0].textContent;
-		var draftimages = document.querySelectorAll('object[data="editors-activity/' + draftname + '.svg"');
-		for (var j = 0 ; j < draftimages.length ; j++) {
-		    draftimages[j].setAttribute("height",height);
-		    draftimages[j].parentNode.querySelector("a").textContent = desc;
+		if (svg) {
+		    var height = svg.documentElement.getAttribute("height");
+		    var desc = svg.getElementsByTagNameNS("http://www.w3.org/2000/svg", "desc")[0].textContent;
+		    var draftimages = document.querySelectorAll('object[data="editors-activity/' + draftname + '.svg"');
+		    for (var j = 0 ; j < draftimages.length ; j++) {
+			draftimages[j].setAttribute("height",height);
+			draftimages[j].parentNode.querySelector("a").textContent = desc;
+		    }
 		}
 	    };
 	}(d);
 	xhr.send();
     });
 
+}
+
+// clean up
+var scripts = document.querySelectorAll("script");
+for (var i = 0; i < scripts.length; i++) {
+    scripts[i].remove();
 }
