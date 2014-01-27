@@ -14,7 +14,7 @@ ns = {"c":"http://www.w3.org/2000/10/swap/pim/contact#", "o":"http://www.w3.org/
 
 data = {}
 
-maturities = ["LastCall", "WD", "CR", "PR", "Rec", "Note"]
+maturities = ["LastCall", "WD", "CR", "PR", "REC", "Retired", "NOTE"]
 
 for filename in sys.argv[1:]:
     id = filename.split("/")[-1].split(".")[0]
