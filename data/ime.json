@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/ime-api/","stability":{"level":"low","label":"Still changing"},"editors":{"url":"https://dvcs.w3.org/hg/ime-api/raw-file/default/Overview.html"},"impl":{"id":"ime", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "ime"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/ime-api/raw-file/default/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/ime-api/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Still changing"
+   }
+}

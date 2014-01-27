@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/html5/forms.html#the-datalist-element","coremob":"fulfills","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://www.w3.org/html/wg/drafts/html/CR/forms.html#the-datalist-element"},"impl":{"id":"datalist", "level":"low", "label": "Limited"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/html/semantics/forms/the-datalist-element/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "None"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/html/semantics/forms/the-datalist-element/",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited",
+      "id" : "datalist"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/html/wg/drafts/html/CR/forms.html#the-datalist-element"
+   },
+   "TR" : "http://www.w3.org/TR/html5/forms.html#the-datalist-element",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

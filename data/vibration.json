@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/vibration/","stability":{"level":"high","label":"Mostly stable"},"editors":{"url":"http://dev.w3.org/2009/dap/vibration/"},"impl":{"id":"vibration", "level":"low", "label": "Limited but growing"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/vibration/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "Started"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/vibration/",
+      "label" : "Started"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited but growing",
+      "id" : "vibration"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/2009/dap/vibration/"
+   },
+   "TR" : "http://www.w3.org/TR/vibration/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Mostly stable"
+   }
+}

@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/html-picture-element/","coremob":"partial","stability":{"level":"low","label":"First draft"},"editors":{"url":"http://picture.responsiveimages.org/"},"impl":{"id":"picture", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "coremob" : "partial",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "picture"
+   },
+   "editors" : {
+      "url" : "http://picture.responsiveimages.org/"
+   },
+   "TR" : "http://www.w3.org/TR/html-picture-element/",
+   "stability" : {
+      "level" : "low",
+      "label" : "First draft"
+   }
+}

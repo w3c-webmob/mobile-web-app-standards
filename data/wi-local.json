@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/webintents-local-services/","stability":{"level":"low","label":"Very early draft; based on Web Intents that is currently stalled"},"editors":{"url":"https://dvcs.w3.org/hg/dap/raw-file/default/wi-addendum-local-services/Overview.html"},"impl":{"id":"wi-local", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "wi-local"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/dap/raw-file/default/wi-addendum-local-services/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/webintents-local-services/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Very early draft; based on Web Intents that is currently stalled"
+   }
+}

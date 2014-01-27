@@ -1,1 +1,26 @@
-{"TR":"http://www.w3.org/TR/css-device-adapt/","coremob":"fulfills","stability":{"level":"low","label":"Early draft"},"editors":{"url":"http://dev.w3.org/csswg/css-device-adapt/"},"impl":{"id":"css-device-adapt", "level":"low", "label": "Very limited"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/mobile_viewport", "label":"Mobile Viewport"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/mobile_viewport",
+      "label" : "Mobile Viewport"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "css-device-adapt"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-device-adapt/"
+   },
+   "TR" : "http://www.w3.org/TR/css-device-adapt/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

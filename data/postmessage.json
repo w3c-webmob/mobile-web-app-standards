@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/webmessaging/","coremob":"fulfills","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://dev.w3.org/html5/postmsg/"},"impl":{"id":"postmessage", "level":"high", "label": "Well deployed"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/webmessaging/", "repo": "https://github.com/w3c/web-platform-tests/","level":"medium", "label": "Good coverage"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/webmessaging/",
+      "label" : "Good coverage"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "postmessage"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/html5/postmsg/"
+   },
+   "TR" : "http://www.w3.org/TR/webmessaging/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

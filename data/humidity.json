@@ -1,1 +1,29 @@
-{"title":"Ambient Humidity Events", "wgs":[{"label":"Device APIs Working Group","url":"http://www.w3.org/2009/dap/"}],"maturity":"N/A","TR":"","stability":{"level":"low","label":"Unofficial draft"},"editors":{"url":"https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html"},"impl":{"id":"humidity", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2009/dap/",
+         "label" : "Device APIs Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "humidity"
+   },
+   "title" : "Ambient Humidity Events",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Unofficial draft"
+   }
+}

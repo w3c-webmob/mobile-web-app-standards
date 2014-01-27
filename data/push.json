@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/push-api/","stability":{"level":"low","label":"Early draft; will likely evolve to integrate with Service Workers"},"editors":{"url":"https://dvcs.w3.org/hg/push/raw-file/default/index.html"},"impl":{"id":"push", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "push"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/push/raw-file/default/index.html"
+   },
+   "TR" : "http://www.w3.org/TR/push-api/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft; will likely evolve to integrate with Service Workers"
+   }
+}

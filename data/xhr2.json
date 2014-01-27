@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/XMLHttpRequest/","coremob":"fulfills","stability":{"level":"low","label":"Still changing, but starting to stabilize"},"editors":{"url":"https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html"},"impl":{"id":"xhr2", "level":"medium", "label": "Very broad for level 1 features, growing for level 2"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/tests/", "repo": "https://github.com/w3c/web-platform-tests/","level":"medium", "label": "Well started"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/tests/",
+      "label" : "Well started"
+   },
+   "impl" : {
+      "level" : "medium",
+      "label" : "Very broad for level 1 features, growing for level 2",
+      "id" : "xhr2"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/XMLHttpRequest/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Still changing, but starting to stabilize"
+   }
+}

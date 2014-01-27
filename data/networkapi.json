@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/netinfo-api/","stability":{"level":"low","label":"Early draft, under active revision"},"editors":{"url":"https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html"},"impl":{"id":"networkapi", "level":"low", "label": "Very limited"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "networkapi"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/netinfo-api/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft, under active revision"
+   }
+}

@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/DDR-Simple-API/","stability":{"level":"high","label":"finished"},"editors":{"url":"", "label":"N/A"},"impl":{"id":"ddr", "level":"low", "label": "Limited"},"tests":{"url":"http://www.w3.org/2005/MWI/DDWG/drafts/api/test-report.html", "repo": "","level":"high", "label": "Good Coverage"}}
+{
+   "tests" : {
+      "level" : "high",
+      "repo" : "",
+      "url" : "http://www.w3.org/2005/MWI/DDWG/drafts/api/test-report.html",
+      "label" : "Good Coverage"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited",
+      "id" : "ddr"
+   },
+   "editors" : {
+      "url" : "",
+      "label" : "N/A"
+   },
+   "TR" : "http://www.w3.org/TR/DDR-Simple-API/",
+   "stability" : {
+      "level" : "high",
+      "label" : "finished"
+   }
+}

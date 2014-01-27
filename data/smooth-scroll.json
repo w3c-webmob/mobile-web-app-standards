@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/cssom-view/","coremob":"partial","stability":{"level":"low","label":"Still changing"},"editors":{"url":"http://dev.w3.org/csswg/cssom-view/#scrolling"},"impl":{"id":"smooth-scroll", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "coremob" : "partial",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "smooth-scroll"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/cssom-view/#scrolling"
+   },
+   "TR" : "http://www.w3.org/TR/cssom-view/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Still changing"
+   }
+}

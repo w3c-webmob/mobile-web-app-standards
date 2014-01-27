@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/file-writer-api/","stability":{"level":"low","label":"Early draft, unsure future"},"editors":{"url":"http://dev.w3.org/2009/dap/file-system/file-writer.html"},"impl":{"id":"filewrite", "level":"low", "label": "Limited but growing"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited but growing",
+      "id" : "filewrite"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/2009/dap/file-system/file-writer.html"
+   },
+   "TR" : "http://www.w3.org/TR/file-writer-api/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft, unsure future"
+   }
+}

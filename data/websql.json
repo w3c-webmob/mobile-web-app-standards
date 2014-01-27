@@ -1,1 +1,30 @@
-{"TR":"http://www.w3.org/TR/webdatabase/","stability":{"level":"low","label":"Abandoned"},"editors":{"url":"", "label":"N/A"},"impl":{"id":"websql", "level":"medium", "label": "Somewhat deployed, but won’t be further deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/offline_storage", "label":"Offline storage tutorial"},"wdc":{"url":"http://www.w3devcampus.com/html5-w3c-training/", "label":"HTML5 on-line course"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/offline_storage",
+      "label" : "Offline storage tutorial"
+   },
+   "impl" : {
+      "level" : "medium",
+      "label" : "Somewhat deployed, but won’t be further deployed",
+      "id" : "websql"
+   },
+   "wdc" : {
+      "url" : "http://www.w3devcampus.com/html5-w3c-training/",
+      "label" : "HTML5 on-line course"
+   },
+   "editors" : {
+      "url" : "",
+      "label" : "N/A"
+   },
+   "TR" : "http://www.w3.org/TR/webdatabase/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Abandoned"
+   }
+}

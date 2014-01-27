@@ -1,1 +1,26 @@
-{"TR":"http://www.w3.org/TR/pointerevents/","coremob":"partial","stability":{"level":"high","label":"Stable"},"editors":{"url":"https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html"},"impl":{"id":"pointer-events", "level":"low", "label": "Limited deployment"},"wpd":{"url":"http://docs.webplatform.org/wiki/concepts/PointerEvents", "label":"Pointer Events primer"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/pointerevents/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "Just started"}}
+{
+   "coremob" : "partial",
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/pointerevents/",
+      "label" : "Just started"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/concepts/PointerEvents",
+      "label" : "Pointer Events primer"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited deployment",
+      "id" : "pointer-events"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html"
+   },
+   "TR" : "http://www.w3.org/TR/pointerevents/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

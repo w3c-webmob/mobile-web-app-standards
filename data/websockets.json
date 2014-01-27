@@ -1,1 +1,29 @@
-{"TR":"http://www.w3.org/TR/websockets/","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://dev.w3.org/html5/websockets/"},"impl":{"id":"websockets", "level":"high", "label": "Good deployment"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/websockets_basics", "label":"Using WebSockets"},"wdc":{"url":"http://www.w3devcampus.com/writing-great-web-applications-for-mobile/", "label":"Mobile Web 2: Programming Web Applications on-line course"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/websockets/", "repo": "https://github.com/w3c/web-platform-tests/","level":"medium", "label": "Well started"}}
+{
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/websockets/",
+      "label" : "Well started"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/websockets_basics",
+      "label" : "Using WebSockets"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Good deployment",
+      "id" : "websockets"
+   },
+   "wdc" : {
+      "url" : "http://www.w3devcampus.com/writing-great-web-applications-for-mobile/",
+      "label" : "Mobile Web 2: Programming Web Applications on-line course"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/html5/websockets/"
+   },
+   "TR" : "http://www.w3.org/TR/websockets/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/web-intents/","stability":{"level":"low","label":"Early draft; abandoned"},"editors":{"url":"https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html", "label":"Abandonned"},"impl":{"id":"intents", "level":"low", "label": "Experimental"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Experimental",
+      "id" : "intents"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html",
+      "label" : "Abandonned"
+   },
+   "TR" : "http://www.w3.org/TR/web-intents/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft; abandoned"
+   }
+}

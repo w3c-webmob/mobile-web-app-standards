@@ -1,1 +1,25 @@
-{"TR":"http://www.w3.org/TR/eventsource/","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://dev.w3.org/html5/eventsource/"},"impl":{"id":"eventsource", "level":"high", "label": "Getting well-deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/eventsource_basics", "label":"Streaming updates with server-sent events"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/eventsource/", "repo": "https://github.com/w3c/web-platform-tests/","level":"medium", "label": "Good coverage"}}
+{
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/eventsource/",
+      "label" : "Good coverage"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/eventsource_basics",
+      "label" : "Streaming updates with server-sent events"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Getting well-deployed",
+      "id" : "eventsource"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/html5/eventsource/"
+   },
+   "TR" : "http://www.w3.org/TR/eventsource/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

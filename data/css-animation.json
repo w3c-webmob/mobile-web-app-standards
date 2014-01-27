@@ -1,1 +1,26 @@
-{"TR":"http://www.w3.org/TR/css3-animations","coremob":"fulfills","stability":{"level":"low","label":"Early draft"},"editors":{"url":"http://dev.w3.org/csswg/css-animations/"},"impl":{"id":"css-animation", "level":"high", "label": "Well deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/css_animations", "label":"CSS Animations tutorial"},"tests":{"url":"https://github.com/w3c/csswg-test/tree/master/approved/css3-animations", "repo": "https://github.com/w3c/csswg-test/tree/master/approved/css3-animations","level":"low", "label": "None"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/csswg-test/tree/master/approved/css3-animations",
+      "url" : "https://github.com/w3c/csswg-test/tree/master/approved/css3-animations",
+      "label" : "None"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/css_animations",
+      "label" : "CSS Animations tutorial"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "css-animation"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-animations/"
+   },
+   "TR" : "http://www.w3.org/TR/css3-animations",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

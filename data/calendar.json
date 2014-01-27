@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/calendar-api/","stability":{"level":"low","label":"Abandonned"},"editors":{"url":"http://dev.w3.org/2009/dap/calendar/"},"impl":{"id":"calendar", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "calendar"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/2009/dap/calendar/"
+   },
+   "TR" : "http://www.w3.org/TR/calendar-api/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Abandonned"
+   }
+}

@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/webcrypto-key-discovery/","stability":{"level":"low","label":"Early work"},"editors":{"url":"https://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html"},"impl":{"id":"cryptokey", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "cryptokey"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/webcrypto-key-discovery/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early work"
+   }
+}

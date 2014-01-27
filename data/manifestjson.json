@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/appmanifest/","coremob":"partial","stability":{"level":"low","label":"Early draft"},"editors":{"url":"http://www.w3.org/2008/webapps/manifest/"},"impl":{"id":"manifestjson", "level":"low", "label": "N/A"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "coremob" : "partial",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "N/A",
+      "id" : "manifestjson"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/2008/webapps/manifest/"
+   },
+   "TR" : "http://www.w3.org/TR/appmanifest/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

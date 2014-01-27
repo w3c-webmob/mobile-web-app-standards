@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/encrypted-media/","stability":{"level":"low","label":"Early draft"},"editors":{"url":"https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html"},"impl":{"id":"drm", "level":"low", "label": "Very limited"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "drm"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html"
+   },
+   "TR" : "http://www.w3.org/TR/encrypted-media/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

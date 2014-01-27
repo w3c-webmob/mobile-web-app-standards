@@ -1,1 +1,30 @@
-{"TR":"http://www.w3.org/TR/html5/forms.html#date-and-time-state-(type=datetime)","coremob":"fulfills","stability":{"level":"low","label":"Mostly stable, but feature marked at risk"},"editors":{"url":"http://www.w3.org/html/wg/drafts/html/CR/forms.html#date-and-time-state-(type=datetime)"},"impl":{"id":"inputdate", "level":"low", "label": "Growing"},"wpd":{"url":"http://docs.webplatform.org/wiki/guides/html5_form_features", "label":"HTML5 Form features"},"wdc":{"url":"http://www.w3devcampus.com/html5-w3c-training/", "label":"HTML5 on-line course"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/html/semantics/forms/the-input-element", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "Just started"}}
+{
+   "coremob" : "fulfills",
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/guides/html5_form_features",
+      "label" : "HTML5 Form features"
+   },
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/html/semantics/forms/the-input-element",
+      "label" : "Just started"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Growing",
+      "id" : "inputdate"
+   },
+   "TR" : "http://www.w3.org/TR/html5/forms.html#date-and-time-state-(type=datetime)",
+   "editors" : {
+      "url" : "http://www.w3.org/html/wg/drafts/html/CR/forms.html#date-and-time-state-(type=datetime)"
+   },
+   "wdc" : {
+      "url" : "http://www.w3devcampus.com/html5-w3c-training/",
+      "label" : "HTML5 on-line course"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Mostly stable, but feature marked at risk"
+   }
+}

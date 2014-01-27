@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/page-visibility/","stability":{"level":"high","label":"Finished"},"editors":{"url":"", "label":"Finished"},"impl":{"id":"visibilitychange", "level":"high", "label": "Well deployed"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/page-visibility/", "repo": "https://github.com/w3c/web-platform-tests/","level":"medium", "label": "Good coverage"}}
+{
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/page-visibility/",
+      "label" : "Good coverage"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "visibilitychange"
+   },
+   "editors" : {
+      "url" : "",
+      "label" : "Finished"
+   },
+   "TR" : "http://www.w3.org/TR/page-visibility/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Finished"
+   }
+}

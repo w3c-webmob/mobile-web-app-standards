@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/quota-api/","coremob":"fulfills","stability":{"level":"low","label":"Early work"},"editors":{"url":"https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html"},"impl":{"id":"quota", "level":"low", "label": "Very limited"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "quota"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/quota-api/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early work"
+   }
+}

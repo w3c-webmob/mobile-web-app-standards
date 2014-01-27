@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/html51/embedded-content-0.html#proxying-canvases-to-workers","stability":{"level":"low","label":"Early draft"},"editors":{"url":"http://www.w3.org/html/wg/drafts/html/master/embedded-content-0.html#proxying-canvases-to-workers"},"impl":{"id":"canvasproxy", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "canvasproxy"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/html/wg/drafts/html/master/embedded-content-0.html#proxying-canvases-to-workers"
+   },
+   "TR" : "http://www.w3.org/TR/html51/embedded-content-0.html#proxying-canvases-to-workers",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

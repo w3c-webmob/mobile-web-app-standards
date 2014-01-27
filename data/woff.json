@@ -1,1 +1,27 @@
-{"TR":"http://www.w3.org/TR/WOFF/","coremob":"fulfills","stability":{"level":"high","label":"Finished"},"editors":{"url":"", "label":"Finished"},"impl":{"id":"woff", "level":"high", "label": "Good deployment"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/webfonts_font-face", "label":"Overview of Web fonts"},"tests":{"url":"http://dev.w3.org/webfonts/WOFF/tests/Format/Tests/xhtml1/testcaseindex.xht", "repo": "","level":"high", "label": "Good coverage"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "high",
+      "repo" : "",
+      "url" : "http://dev.w3.org/webfonts/WOFF/tests/Format/Tests/xhtml1/testcaseindex.xht",
+      "label" : "Good coverage"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/webfonts_font-face",
+      "label" : "Overview of Web fonts"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Good deployment",
+      "id" : "woff"
+   },
+   "editors" : {
+      "url" : "",
+      "label" : "Finished"
+   },
+   "TR" : "http://www.w3.org/TR/WOFF/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Finished"
+   }
+}

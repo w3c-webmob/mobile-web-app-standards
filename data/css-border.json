@@ -1,1 +1,26 @@
-{"TR":"http://www.w3.org/TR/css3-background/","coremob":"fulfills","stability":{"level":"high","label":"Mostly finished"},"editors":{"url":"http://dev.w3.org/csswg/css-backgrounds/"},"impl":{"id":"css-border", "level":"high", "label": "Well deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/CSS_background_images", "label":"CSS Background images tutorial"},"tests":{"url":"http://test.csswg.org/harness/suite/CSS3-BACKGROUND_DEV/", "repo": "","level":"high", "label": "Good coverage"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "high",
+      "repo" : "",
+      "url" : "http://test.csswg.org/harness/suite/CSS3-BACKGROUND_DEV/",
+      "label" : "Good coverage"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/CSS_background_images",
+      "label" : "CSS Background images tutorial"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "css-border"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-backgrounds/"
+   },
+   "TR" : "http://www.w3.org/TR/css3-background/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Mostly finished"
+   }
+}

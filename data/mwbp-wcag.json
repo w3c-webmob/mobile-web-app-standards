@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/mwbp-wcag/","stability":{"level":"high","label":"Finished"},"editors":{"url":"", "label":"N/A"},"impl":{"id":"mwbp-wcag", "level":"low", "label": "N/A"},"tests":{"url":"", "repo": "","level":"", "label": "N/A"}}
+{
+   "tests" : {
+      "level" : "",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "N/A",
+      "id" : "mwbp-wcag"
+   },
+   "editors" : {
+      "url" : "",
+      "label" : "N/A"
+   },
+   "TR" : "http://www.w3.org/TR/mwbp-wcag/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Finished"
+   }
+}

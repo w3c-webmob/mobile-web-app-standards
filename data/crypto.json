@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/WebCryptoAPI/","stability":{"level":"low","label":"Early work"},"editors":{"url":"http://www.w3.org/2012/webcrypto/WebCryptoAPI/"},"impl":{"id":"crypto", "level":"low", "label": "Limited"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/WebCryptoAPI/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/WebCryptoAPI/",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited",
+      "id" : "crypto"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/2012/webcrypto/WebCryptoAPI/"
+   },
+   "TR" : "http://www.w3.org/TR/WebCryptoAPI/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early work"
+   }
+}

@@ -1,1 +1,27 @@
-{"TR":"http://www.w3.org/TR/SVG11/","coremob":"fulfills","stability":{"level":"high","label":"Finished"},"editors":{"url":"", "label":"New version of SVG (SVG 2.0) in preparation"},"impl":{"id":"svg12", "level":"high", "label": "Widely deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/svg/tutorials", "label":"SVG Tutorials"},"tests":{"url":"http://www.w3.org/Graphics/SVG/Test/", "repo": "","level":"high", "label": "High coverage"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "high",
+      "repo" : "",
+      "url" : "http://www.w3.org/Graphics/SVG/Test/",
+      "label" : "High coverage"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/svg/tutorials",
+      "label" : "SVG Tutorials"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Widely deployed",
+      "id" : "svg12"
+   },
+   "editors" : {
+      "url" : "",
+      "label" : "New version of SVG (SVG 2.0) in preparation"
+   },
+   "TR" : "http://www.w3.org/TR/SVG11/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Finished"
+   }
+}

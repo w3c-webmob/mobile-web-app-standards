@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/contacts-api/","stability":{"level":"low","label":"Early Web-intents based approach; stalled due to lack of progress on Web Intents"},"editors":{"url":"http://dev.w3.org/2009/dap/contacts/"},"impl":{"id":"contacts", "level":"low", "label": "None"},"tests":{"url":"http://w3c-test.org/dap/contacts/tests/", "repo": "","level":"low", "label": "Early draft based on previous API"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "http://w3c-test.org/dap/contacts/tests/",
+      "label" : "Early draft based on previous API"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "contacts"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/2009/dap/contacts/"
+   },
+   "TR" : "http://www.w3.org/TR/contacts-api/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early Web-intents based approach; stalled due to lack of progress on Web Intents"
+   }
+}

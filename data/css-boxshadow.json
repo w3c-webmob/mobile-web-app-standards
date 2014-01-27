@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/css3-background/","coremob":"fulfills","stability":{"level":"high","label":"Mostly finished"},"editors":{"url":"http://dev.w3.org/csswg/css-backgrounds/"},"impl":{"id":"css-boxshadow", "level":"high", "label": "Widely deployed"},"tests":{"url":"http://test.csswg.org/harness/suite/CSS3-BACKGROUND_DEV/", "repo": "","level":"high", "label": "Good coverage"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "high",
+      "repo" : "",
+      "url" : "http://test.csswg.org/harness/suite/CSS3-BACKGROUND_DEV/",
+      "label" : "Good coverage"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Widely deployed",
+      "id" : "css-boxshadow"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-backgrounds/"
+   },
+   "TR" : "http://www.w3.org/TR/css3-background/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Mostly finished"
+   }
+}

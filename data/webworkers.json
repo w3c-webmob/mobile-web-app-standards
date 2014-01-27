@@ -1,1 +1,30 @@
-{"TR":"http://www.w3.org/TR/workers/","coremob":"fulfills","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://dev.w3.org/html5/workers/"},"impl":{"id":"webworkers", "level":"high", "label": "Well deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/workers_basics", "label":"Introduction to Web Workers"},"wdc":{"url":"http://www.w3devcampus.com/writing-great-web-applications-for-mobile/", "label":"Mobile Web 2: Programming Web Applications on-line course"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/workers/", "repo": "https://github.com/w3c/web-platform-tests/","level":"medium", "label": "Well started"}}
+{
+   "coremob" : "fulfills",
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/workers_basics",
+      "label" : "Introduction to Web Workers"
+   },
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/workers/",
+      "label" : "Well started"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "webworkers"
+   },
+   "TR" : "http://www.w3.org/TR/workers/",
+   "editors" : {
+      "url" : "http://dev.w3.org/html5/workers/"
+   },
+   "wdc" : {
+      "url" : "http://www.w3devcampus.com/writing-great-web-applications-for-mobile/",
+      "label" : "Mobile Web 2: Programming Web Applications on-line course"
+   },
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/indie-ui-events/","stability":{"level":"low","label":"Early draft"},"editors":{"url":"https://dvcs.w3.org/hg/IndieUI/raw-file/tip/src/indie-ui-events.html"},"impl":{"id":"indieui", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "indieui"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/IndieUI/raw-file/tip/src/indie-ui-events.html"
+   },
+   "TR" : "http://www.w3.org/TR/indie-ui-events/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/proximity/","stability":{"level":"medium","label":"Stable"},"editors":{"url":"https://dvcs.w3.org/hg/dap/raw-file/tip/proximity/Overview.html"},"impl":{"id":"proximity", "level":"low", "label": "Very limited"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/proximity/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "Started"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/proximity/",
+      "label" : "Started"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "proximity"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/dap/raw-file/tip/proximity/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/proximity/",
+   "stability" : {
+      "level" : "medium",
+      "label" : "Stable"
+   }
+}

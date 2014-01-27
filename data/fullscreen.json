@@ -1,1 +1,26 @@
-{"TR":"http://www.w3.org/TR/fullscreen/","coremob":"partial","stability":{"level":"low","label":"Early draft"},"editors":{"url":"https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html"},"impl":{"id":"fullscreen", "level":"low", "label": "Limited"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/using_the_full-screen_api", "label":"Using the full-screen API"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "coremob" : "partial",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/using_the_full-screen_api",
+      "label" : "Using the full-screen API"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited",
+      "id" : "fullscreen"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/fullscreen/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

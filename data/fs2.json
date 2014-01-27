@@ -1,1 +1,30 @@
-{"title":"N/A","wgs":[{"label":"Web Applications Working Group", "url":"http://www.w3.org/2008/webapps/"}],"maturity":"N/A","TR":"","stability":{"level":"low","label":"N/A"},"editors":{"url":"http://lists.w3.org/Archives/Public/public-script-coord/2013JulSep/0379.html", "label":"Early proposal"},"impl":{"id":"fs2", "level":"low", "label": "N/A"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2008/webapps/",
+         "label" : "Web Applications Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "N/A",
+      "id" : "fs2"
+   },
+   "title" : "N/A",
+   "TR" : "",
+   "editors" : {
+      "url" : "http://lists.w3.org/Archives/Public/public-script-coord/2013JulSep/0379.html",
+      "label" : "Early proposal"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "N/A"
+   }
+}

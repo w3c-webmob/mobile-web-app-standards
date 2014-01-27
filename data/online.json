@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/html5/browsers.html#browser-state","coremob":"fulfills","stability":{"level":"high","label":"Mostly stable"},"editors":{"url":"http://www.w3.org/html/wg/drafts/html/CR/browsers.html#browser-state"},"impl":{"id":"online", "level":"low", "label": "Limited"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/html/browsers/offline/browser-state", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "None"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/html/browsers/offline/browser-state",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited",
+      "id" : "online"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/html/wg/drafts/html/CR/browsers.html#browser-state"
+   },
+   "TR" : "http://www.w3.org/TR/html5/browsers.html#browser-state",
+   "stability" : {
+      "level" : "high",
+      "label" : "Mostly stable"
+   }
+}

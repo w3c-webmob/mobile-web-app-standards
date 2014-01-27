@@ -1,1 +1,26 @@
-{"TR":"http://www.w3.org/TR/webstorage/","coremob":"fulfills","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://dev.w3.org/html5/webstorage/"},"impl":{"id":"webstorage", "level":"high", "label": "Well deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/tutorials/offline_storage", "label":"Offline storage tutorial"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/webstorage/", "repo": "https://github.com/w3c/web-platform-tests/","level":"high", "label": "Complete"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "high",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/webstorage/",
+      "label" : "Complete"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/offline_storage",
+      "label" : "Offline storage tutorial"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "webstorage"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/html5/webstorage/"
+   },
+   "TR" : "http://www.w3.org/TR/webstorage/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

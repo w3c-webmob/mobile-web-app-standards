@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/SVG2/","stability":{"level":"low","label":"Early draft"},"editors":{"url":"https://svgwg.org/svg2-draft/"},"impl":{"id":"svg2", "level":"low", "label": "N/A"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "N/A",
+      "id" : "svg2"
+   },
+   "editors" : {
+      "url" : "https://svgwg.org/svg2-draft/"
+   },
+   "TR" : "http://www.w3.org/TR/SVG2/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

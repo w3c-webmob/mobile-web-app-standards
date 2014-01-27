@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/user-timing/","stability":{"level":"high","label":"Finished"},"editors":{"label":"Finished"},"impl":{"id":"user-timing", "level":"low", "label": "None"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/user-timing/", "repo": "https://github.com/w3c/web-platform-tests/","level":"medium", "label": "Well started"}}
+{
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/user-timing/",
+      "label" : "Well started"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "user-timing"
+   },
+   "editors" : {
+      "label" : "Finished"
+   },
+   "TR" : "http://www.w3.org/TR/user-timing/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Finished"
+   }
+}

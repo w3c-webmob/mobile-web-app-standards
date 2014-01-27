@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/css3-flexbox/","coremob":"fulfills","stability":{"level":"high","label":"Mostly finished"},"editors":{"url":"http://dev.w3.org/csswg/css-flexbox/"},"impl":{"id":"flexbox", "level":"high", "label": "Well deployed"},"tests":{"url":"http://test.csswg.org/suites/css3-flexbox/nightly-unstable/", "repo": "","level":"medium", "label": "Well started"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "medium",
+      "repo" : "",
+      "url" : "http://test.csswg.org/suites/css3-flexbox/nightly-unstable/",
+      "label" : "Well started"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "flexbox"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-flexbox/"
+   },
+   "TR" : "http://www.w3.org/TR/css3-flexbox/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Mostly finished"
+   }
+}

@@ -1,1 +1,29 @@
-{"maturity":"N/A","title":"Application Lifecycle and Events","wgs":[{"label":"System Applications Working Group","url":"http://www.w3.org/2012/sysapps/"}],"TR":"","stability":{"level":"low","label":"Early draft, will likely be replaced by a different approach"},"editors":{"url":"http://www.w3.org/2012/sysapps/runtime/"},"impl":{"id":"runtime", "level":"low", "label": "N/A"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2012/sysapps/",
+         "label" : "System Applications Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "N/A",
+      "id" : "runtime"
+   },
+   "title" : "Application Lifecycle and Events",
+   "TR" : "",
+   "editors" : {
+      "url" : "http://www.w3.org/2012/sysapps/runtime/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft, will likely be replaced by a different approach"
+   }
+}

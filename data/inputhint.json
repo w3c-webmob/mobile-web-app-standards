@@ -1,1 +1,30 @@
-{"TR":"http://www.w3.org/TR/html5/forms.html#the-placeholder-attribute","coremob":"fulfills","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://www.w3.org/html/wg/drafts/html/CR/forms.html#the-placeholder-attribute"},"impl":{"id":"inputhint", "level":"high", "label": "Well deployed"},"wpd":{"url":"http://docs.webplatform.org/wiki/guides/html5_form_features", "label":"HTML5 Form features"},"wdc":{"url":"http://www.w3devcampus.com/html5-w3c-training/", "label":"HTML5 on-line course"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/html/semantics/forms/the-input-element/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "Started"}}
+{
+   "coremob" : "fulfills",
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/guides/html5_form_features",
+      "label" : "HTML5 Form features"
+   },
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/html/semantics/forms/the-input-element/",
+      "label" : "Started"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well deployed",
+      "id" : "inputhint"
+   },
+   "TR" : "http://www.w3.org/TR/html5/forms.html#the-placeholder-attribute",
+   "editors" : {
+      "url" : "http://www.w3.org/html/wg/drafts/html/CR/forms.html#the-placeholder-attribute"
+   },
+   "wdc" : {
+      "url" : "http://www.w3devcampus.com/html5-w3c-training/",
+      "label" : "HTML5 on-line course"
+   },
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

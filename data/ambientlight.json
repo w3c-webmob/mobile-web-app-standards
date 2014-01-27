@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/ambient-light/","stability":{"level":"medium","label":"Stable"},"editors":{"url":"https://dvcs.w3.org/hg/dap/raw-file/tip/light/Overview.html"},"impl":{"id":"ambientlight", "level":"low", "label": "Very limited"},"tests":{"url":"http://w3c-test.org/web-platform-tests/master/ambient-light/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "Started"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/master/ambient-light/",
+      "label" : "Started"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "ambientlight"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/dap/raw-file/tip/light/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/ambient-light/",
+   "stability" : {
+      "level" : "medium",
+      "label" : "Stable"
+   }
+}

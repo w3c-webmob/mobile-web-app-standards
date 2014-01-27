@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/messaging/","stability":{"level":"low","label":"First draft"},"editors":{"url":"http://www.w3.org/2012/sysapps/messaging/"},"impl":{"id":"messaging-sys", "level":"low", "label": "None"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "messaging-sys"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/2012/sysapps/messaging/"
+   },
+   "TR" : "http://www.w3.org/TR/messaging/",
+   "stability" : {
+      "level" : "low",
+      "label" : "First draft"
+   }
+}

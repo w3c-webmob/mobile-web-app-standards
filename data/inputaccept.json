@@ -1,1 +1,22 @@
-{"TR":"http://www.w3.org/TR/html-media-capture/","coremob":"fulfills","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://dev.w3.org/2009/dap/camera/"},"impl":{"id":"inputaccept", "level":"medium", "label": "Growing deployment"},"tests":{"url":"http://w3c-test.org/web-platform-tests/submissions/306/html-media-capture/", "repo": "https://github.com/w3c/web-platform-tests/","level":"low", "label": "started"}}
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/web-platform-tests/submissions/306/html-media-capture/",
+      "label" : "started"
+   },
+   "impl" : {
+      "level" : "medium",
+      "label" : "Growing deployment",
+      "id" : "inputaccept"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/2009/dap/camera/"
+   },
+   "TR" : "http://www.w3.org/TR/html-media-capture/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

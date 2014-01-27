@@ -1,1 +1,21 @@
-{"TR":"http://www.w3.org/TR/resource-timing/","stability":{"level":"high","label":"Stable"},"editors":{"url":"http://w3c-test.org/webperf/specs/ResourceTiming/"},"impl":{"id":"res-timing", "level":"low", "label": "Very limited"},"tests":{"url":"https://dvcs.w3.org/hg/webperf/file/9ec0a6c2c2d5/tests/submission/W3C/ResourceTiming", "repo": "","level":"low", "label": "Early start"}}
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "https://dvcs.w3.org/hg/webperf/file/9ec0a6c2c2d5/tests/submission/W3C/ResourceTiming",
+      "label" : "Early start"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "res-timing"
+   },
+   "editors" : {
+      "url" : "http://w3c-test.org/webperf/specs/ResourceTiming/"
+   },
+   "TR" : "http://www.w3.org/TR/resource-timing/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

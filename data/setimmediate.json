@@ -1,1 +1,29 @@
-{"title":"Efficient Script Yielding","wgs":[{"label":"Web Performance Working Group","url":"http://www.w3.org/2010/webperf/"}],"maturity":"ed","TR":"","stability":{"level":"low","label":"Early draft"},"editors":{"url":"http://w3c-test.org/webperf/specs/setImmediate/"},"impl":{"id":"setimmediate", "level":"low", "label": "Very limited"},"tests":{"url":"", "repo": "","level":"low", "label": "None"}}
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2010/webperf/",
+         "label" : "Web Performance Working Group"
+      }
+   ],
+   "maturity" : "ed",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "setimmediate"
+   },
+   "title" : "Efficient Script Yielding",
+   "TR" : "",
+   "editors" : {
+      "url" : "http://w3c-test.org/webperf/specs/setImmediate/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

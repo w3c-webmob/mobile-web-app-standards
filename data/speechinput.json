@@ -1,1 +1,29 @@
-{"title":"Web Speech API","wgs":[{"label":"Speech API Community Group","url":"http://www.w3.org/community/speech-api/"}],"maturity":"N/A","TR":"","stability":{"level":"low","label":"N/A"},"editors":{"url":"https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html"},"impl":{"id":"speechinput", "level":"low", "label": "N/A"},"tests":{"url":"", "repo": "","level":"low", "label": "N/A"}}
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/community/speech-api/",
+         "label" : "Speech API Community Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "N/A",
+      "id" : "speechinput"
+   },
+   "title" : "Web Speech API",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "N/A"
+   }
+}
