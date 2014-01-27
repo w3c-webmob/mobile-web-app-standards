@@ -40,6 +40,8 @@ specXhr.onload = function() {
 specXhr.send();
 
 function fillTables() {
+    var counterReq = 0 ,counterRes = 0;
+    var editorDrafts = {};
     for (var i = 0; i < sections.length; i++) {
 	var section = sections[i];
 	var dataTable = document.createElement("div");
@@ -84,8 +86,11 @@ function fillTables() {
 		var tsTd = document.createElement("td");
 		var xhr = new XMLHttpRequest();
 		xhr.open("GET", "data/" + spec + ".json");
+		counterReq++;
 		xhr.onload = function(x, s, el1, el2, el3, el4, el5, el6, el7, el8) {
 		    return function() {
+			counterRes++;
+			var obj, level, editorsactivity;
 			var data = JSON.parse(x.responseText);
 			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
 			for (var l = 0 ; l < links.length; l++) {
@@ -120,7 +125,6 @@ function fillTables() {
 			var maturity ;
 			var maturityIcon ;
 			if (!maturityLevels[specData[s].maturity]) {
-			    var level ;
 			    if (specData[s].maturity == "NOTE") {
 				level = "high";
 			    } else {
@@ -134,6 +138,18 @@ function fillTables() {
 			fill(el3, maturity, maturityIcon);
 			fill(el4, data.stability);
 			fill(el5, data.editors);
+			if (data.editors.url) {			    
+			    editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/[^a-z0-9]/g,'');
+			    editorDrafts[editorsactivity] = 1;
+			    el5.appendChild(document.createElement("br"));
+			    obj = document.createElement("object");
+			    obj.setAttribute("type", "image/svg+xml");
+			    obj.setAttribute("data", "editors-activity/" + editorsactivity + ".svg");
+			    obj.setAttribute("class","editorsactivity");
+			    obj.setAttribute("height",55);
+			    obj.setAttribute("width",125);
+			    el5.appendChild(obj);
+			}
 			fill(el6, data.impl);
 			el6.appendChild(document.createElement("br"));
 			var obj = document.createElement("object");
@@ -149,6 +165,9 @@ function fillTables() {
 			    fill(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus"});
 			}
 			fill(el8, data.tests);
+			if (counterReq == counterRes) {
+			    updateEditorsActivity(editorDrafts);
+			}
 		    };
 		}(xhr, spec, specTd, wgTd, maturityTd, stabilityTd, editorsTd, implTd, docTd, tsTd);
 		xhr.send();
@@ -164,4 +183,27 @@ function fillTables() {
 	}
 	section.appendChild(dataTable);
     }
+}
+
+function updateEditorsActivity(editorDrafts) {
+    var drafts = Object.keys(editorDrafts);
+    drafts.forEach(function (d) {
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", "editors-activity/" + d + ".svg");
+	xhr.responseType = "document";
+	xhr.onload = function (draftname) {
+	    return function (e) {
+		var svg = e.target.response;
+		var height = svg.documentElement.getAttribute("height");
+		var desc = svg.getElementsByTagNameNS("http://www.w3.org/2000/svg", "desc")[0].textContent;
+		var draftimages = document.querySelectorAll('object[data="editors-activity/' + draftname + '.svg"');
+		for (var j = 0 ; j < draftimages.length ; j++) {
+		    draftimages[j].setAttribute("height",height);
+		    draftimages[j].parentNode.querySelector("a").textContent = desc;
+		}
+	    };
+	}(d);
+	xhr.send();
+    });
+
 }
