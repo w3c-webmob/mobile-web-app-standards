@@ -6,9 +6,9 @@ This repository holds the data and part of the tools needed to build the quarter
 ### Data model
 Each JSON file contains an object that describes a given spec with the following properties:
 * TR: url of the TR document (if it exists);  if it doesn't, please also document the following data:
-** title: title of the spec (if known)
-** wgs: working groups responsible for the spec, described as an array of objects with properties "label" (name of the group) and "url" (homepage of the group)
-** maturity: "ed" for editors draft, "N/A" if not even a draft is available
+    * title: title of the spec (if known)
+    * wgs: working groups responsible for the spec, described as an array of objects with properties "label" (name of the group) and "url" (homepage of the group)
+    * maturity: "ed" for editors draft, "N/A" if not even a draft is available
 * coremob: "fulfills" if the spec was part of CoreMob 2012; "partial" if the spec partially fulfills CoreMob 2012; omit completely otherwise
 * stability: object with property "level" (one of "low", "medium", "high") and "label" that describes textually the stability of the spec
 * editors: object with property "url" that points to the editors draft of the spec; if there isn't one, use a property "label" set to "N/A" instead
