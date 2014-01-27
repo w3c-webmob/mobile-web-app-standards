@@ -1,7 +1,7 @@
 var sections = document.querySelectorAll("section.featureset");
 var template = document.getElementById("template").textContent;
 
-var maturityLevels = {"ed":"low","LC":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
+var maturityLevels = {"ed":"low","LastCall":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
 
 function fill(el, data, image) {
     if (data.level) {
@@ -120,10 +120,16 @@ function fillTables() {
 			var maturity ;
 			var maturityIcon ;
 			if (!maturityLevels[specData[s].maturity]) {
-			    maturity = {label: specData[s].maturity, level:"low"};
+			    var level ;
+			    if (specData[s].maturity == "NOTE") {
+				level = "high";
+			    } else {
+				level = "low";
+			    }
+			    maturity = {label: specData[s].maturity, level:level};
 			} else {
 			    maturity = {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]};
-			    maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace('/lastcall/','lcwd') + '.svg', alt:specData[s].maturity};
+			    maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:specData[s].maturity};
 			}
 			fill(el3, maturity, maturityIcon);
 			fill(el4, data.stability);
