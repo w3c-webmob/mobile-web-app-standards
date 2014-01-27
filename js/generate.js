@@ -118,6 +118,11 @@ function fillTables() {
 			    wg = specData[s].wgs[w];
 			    wg.label = wg.label.replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS');
 			    if (w > 0) {
+				if (w < specData[s].wgs.length - 1) {
+				    el2.appendChild(document.createTextNode(","));
+				} else {
+				    el2.appendChild(document.createTextNode(" and"));
+				}
 				el2.appendChild(document.createElement("br"));
 			    }
 			    fill(el2, wg);
