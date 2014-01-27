@@ -23,7 +23,9 @@ To enable this generation of summary tables, each feature of the document is ann
 * one or several `a` elements with a `data-featureid` attribute whose value matches the basename of a file in the data directory; each of these elements will generate a row describing the relevant spec
 
 ```html
-<p data-feature="Name of the highlevel feature">Lorem ipsum <a data-featureid="shortname-used-in-data-directory">Foo Specficiation</a> lorem ipsum.</p>
+<p data-feature="Name of the highlevel feature">Lorem ipsum <a 
+ data-featureid="shortname-used-in-data-directory">Foo
+ Specficiation</a> lorem ipsum.</p>
 ```
 
 ## Contributing
@@ -47,7 +49,7 @@ Note that the data about maturity and Working Groups is automatically obtained f
 ### Adding new spec
 To add a new spec to the document:
 * create a JSON file in the data directory with the required information
-* add the document to the relevant section of index.html as in the example given in “Linking document to feature”
+* add the document to the relevant section of index.html as in the example given in “Feature description”
 
 ## Building
 Building the document remains a somewhat convoluted process:
