@@ -167,6 +167,7 @@ function fillTables() {
 			fill(el8, data.tests);
 			if (counterReq == counterRes) {
 			    updateEditorsActivity(editorDrafts);
+			    mergeWGCells();
 			}
 		    };
 		}(xhr, spec, specTd, wgTd, maturityTd, stabilityTd, editorsTd, implTd, docTd, tsTd);
@@ -182,6 +183,31 @@ function fillTables() {
 	    }
 	}
 	section.appendChild(dataTable);
+    }
+}
+
+function mergeWGCells() {
+    var rows = document.querySelectorAll("tbody tr");
+    var wgCells = [];
+    for (var i = 0 ; i < rows.length; i++) {
+	if (rows[i].getElementsByTagName("td")) {
+	    wgCells.push(rows[i].getElementsByTagName("td")[1]);
+	}
+    }
+    for (var i = wgCells.length - 1 ; i >= 0; i--) {
+	var wgCell = wgCells[i];
+	var prevTr = wgCell.parentNode.previousElementSibling;
+	if (prevTr && prevTr.getElementsByTagName("td")[1] && prevTr.getElementsByTagName("td")[1].textContent == wgCell.textContent) {
+	    var rowspan;
+	    if (wgCell.getAttribute("rowspan")) {
+		rowspan = parseInt(wgCell.getAttribute("rowspan"), 10);
+	    } else {
+		rowspan = 1;
+	    }
+	    prevCell = prevTr.getElementsByTagName("td")[1];
+	    prevCell.setAttribute("rowspan", rowspan + 1);
+	    wgCell.remove();
+	}
     }
 }
 
