@@ -7,6 +7,8 @@ trs_rdf = urlopen("http://www.w3.org/2002/01/tr-automation/tr.rdf")
 trs = etree.parse(trs_rdf)
 wgs_rdf = urlopen("http://www.w3.org/2000/04/mem-news/public-groups.rdf")
 wgs = etree.parse(wgs_rdf)
+closed_wgs_rdf = urlopen("http://www.w3.org/2000/04/mem-news/closed-groups.rdf")
+closed_wgs = etree.parse(closed_wgs_rdf)
 
 ns = {"c":"http://www.w3.org/2000/10/swap/pim/contact#", "o":"http://www.w3.org/2001/04/roadmap/org#", "d":"http://www.w3.org/2000/10/swap/pim/doc#", "rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#", "rec":"http://www.w3.org/2001/02pd/rec54#", "dc":"http://purl.org/dc/elements/1.1/"}
 
@@ -44,6 +46,12 @@ for filename in sys.argv[1:]:
         labels = wgs.xpath("/rdf:RDF/*[c:homePage/@rdf:resource='%s']/o:name/text()" % url, namespaces=ns)
         if len(labels) > 0:
             wg["label"] = labels[0]
+        else:
+            labels = closed_wgs.xpath("/rdf:RDF/*[c:homePage/@rdf:resource='%s']/o:name/text()" % url, namespaces=ns)
+            if len(labels) > 0:
+                wg["label"] = labels[0]
+            else:
+                sys.stderr.write("No group with home page %s found in public-groups.rdf nor closed-groups.rdf\n" % (url))
         data[id]["wgs"].append(wg)
 
 print json.dumps(data)
