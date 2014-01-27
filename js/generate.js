@@ -1,7 +1,7 @@
 var sections = document.querySelectorAll("section.featureset");
 var template = document.getElementById("template").textContent;
 
-var maturityLevels = {"LC":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
+var maturityLevels = {"ed":"low","LC":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
 
 function fill(el, data, image) {
     if (data.level) {
@@ -95,7 +95,12 @@ function fillTables() {
 			    }
 			    links[l].setAttribute("href",url);
 			}
-			fill(el1, {label: specData[s].title, url: data.TR});
+			if (data.TR !== "") {
+			    fill(el1, {label: specData[s].title, url: data.TR});
+			} else {
+			    fill(el1, {label: data.title});
+			    specData[s] = { maturity: data.maturity, wgs:data.wgs};
+			}
 			if (data.coremob=="fulfills") {
 			    el1.appendChild(document.createElement("br"));
 			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#specifications-which-address-the-derived-requirements"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob.png",alt:"CoreMob 2012"});
@@ -106,13 +111,21 @@ function fillTables() {
 			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
 			    wg = specData[s].wgs[w];
-			    wg.label[0] = wg.label[0].replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS');
+			    wg.label = wg.label.replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS');
 			    if (w > 0) {
 				el2.appendChild(document.createElement("br"));
 			    }
 			    fill(el2, wg);
 			}
-			fill(el3, {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]},{src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace('/lastcall/','lcwd') + '.svg', alt:specData[s].maturity});
+			var maturity ;
+			var maturityIcon ;
+			if (!maturityLevels[specData[s].maturity]) {
+			    maturity = {label: specData[s].maturity, level:"low"};
+			} else {
+			    maturity = {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]};
+			    maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace('/lastcall/','lcwd') + '.svg', alt:specData[s].maturity};
+			}
+			fill(el3, maturity, maturityIcon);
 			fill(el4, data.stability);
 			fill(el5, data.editors);
 			fill(el6, data.impl);
