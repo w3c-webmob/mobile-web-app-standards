@@ -143,10 +143,10 @@ function fillTables() {
 			    fill(el7, data.wpd, {src:"http://www.webplatform.org/logo/wplogo_transparent.png", alt: "WebPlatform.org"});
 			}
 			if (data.wdc) {
-			    if (data.wpd) {
+			    if (data.wdc) {
 				el7.appendChild(document.createElement("br"));
 			    }
-			    fill(el7, data.wpd, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus"});
+			    fill(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus"});
 			}
 			fill(el8, data.tests);
 		    };
