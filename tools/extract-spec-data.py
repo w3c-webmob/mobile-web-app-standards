@@ -41,7 +41,9 @@ for filename in sys.argv[1:]:
     data[id]={"wgs":[], "maturity":maturity, "title":title}
     for url in wg_urls:
         wg = {"url":url}
-        wg["label"] =wgs.xpath("/rdf:RDF/*[c:homePage/@rdf:resource='%s']/o:name/text()" % url, namespaces=ns)
+        labels = wgs.xpath("/rdf:RDF/*[c:homePage/@rdf:resource='%s']/o:name/text()" % url, namespaces=ns)
+        if len(labels) > 0:
+            wg["label"] = labels[0]
         data[id]["wgs"].append(wg)
 
 print json.dumps(data)
