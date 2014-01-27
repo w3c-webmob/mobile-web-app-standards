@@ -152,7 +152,7 @@ function fillTables() {
 			}
 			fill(el6, data.impl);
 			el6.appendChild(document.createElement("br"));
-			var obj = document.createElement("object");
+			obj = document.createElement("object");
 			obj.setAttribute("data", "images/" + s + ".svg");
 			el6.appendChild(obj);
 			if (data.wpd) {
@@ -164,7 +164,20 @@ function fillTables() {
 			    }
 			    fill(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus"});
 			}
-			fill(el8, data.tests);
+			if (data.tests.repo) {
+			    var div = document.createElement("div");
+			    var div2 = document.createElement("div");
+			    div2.setAttribute("class","githubribbon");
+			    fill(div2, {"url":data.tests.repo, "label":"Fork me on GitHub"});
+			    div.appendChild(div2);
+			    fill(div, data.tests);
+			    el8.appendChild(div);
+			    el8.classList.add(data.tests.level);
+			} else {
+			    fill(el8, data.tests);
+			}
+			el8.classList.add("tests");
+
 			if (counterReq == counterRes) {
 			    updateEditorsActivity(editorDrafts);
 			    mergeWGCells();
