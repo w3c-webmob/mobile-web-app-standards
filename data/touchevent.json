@@ -5,10 +5,10 @@
       "label" : "Mobile Touch"
    },
    "tests" : {
-      "level" : "medium",
+      "level" : "high",
       "repo" : "",
       "url" : "http://w3c-test.org/webevents/tests/touch-events-v1/",
-      "label" : "Started"
+      "label" : "Complete"
    },
    "impl" : {
       "level" : "high",
@@ -25,6 +25,6 @@
    },
    "stability" : {
       "level" : "high",
-      "label" : "Mostly finished"
+      "label" : "Complete"
    }
 }
