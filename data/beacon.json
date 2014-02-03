@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "beacon"
+   },
+   "editors" : {
+      "url" : "http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/Beacon/Overview.html"
+   },
+   "TR" : "http://www.w3.org/TR/beacon/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
