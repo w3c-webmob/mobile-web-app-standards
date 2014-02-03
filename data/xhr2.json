@@ -8,15 +8,15 @@
    },
    "impl" : {
       "level" : "medium",
-      "label" : "Very broad for level 1 features, growing for level 2",
+      "label" : "Very broad for basic features, growing for most recent ones",
       "id" : "xhr2"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html"
+      "url" : "https://dvcs.w3.org/hg/xhr/raw-file/tip/xhr-1/Overview.html"
    },
    "TR" : "http://www.w3.org/TR/XMLHttpRequest/",
    "stability" : {
-      "level" : "low",
-      "label" : "Still changing, but starting to stabilize"
+      "level" : "medium",
+      "label" : "stabilizing"
    }
 }
