@@ -11,8 +11,8 @@
       "label" : "Just started"
    },
    "impl" : {
-      "level" : "medium",
-      "label" : "Growing",
+      "level" : "high",
+      "label" : "Well deployed",
       "id" : "inputtext"
    },
    "TR" : "http://www.w3.org/TR/html5/forms.html#telephone-state-(type=tel)",

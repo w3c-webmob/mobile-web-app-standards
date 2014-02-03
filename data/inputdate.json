@@ -11,7 +11,7 @@
       "label" : "Just started"
    },
    "impl" : {
-      "level" : "low",
+      "level" : "medium",
       "label" : "Growing",
       "id" : "inputdate"
    },

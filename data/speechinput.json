@@ -14,7 +14,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "N/A",
+      "label" : "Limited but growing",
       "id" : "speechinput"
    },
    "title" : "Web Speech API",
