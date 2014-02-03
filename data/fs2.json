@@ -17,14 +17,13 @@
       "label" : "N/A",
       "id" : "fs2"
    },
-   "title" : "N/A",
+   "title" : "FileSystem API",
    "TR" : "",
    "editors" : {
-      "url" : "http://lists.w3.org/Archives/Public/public-script-coord/2013JulSep/0379.html",
-      "label" : "Early proposal"
+      "url" : "http://w3c.github.io/filesystem-api/Overview.html"
    },
    "stability" : {
       "level" : "low",
-      "label" : "N/A"
+      "label" : "Early proposal"
    }
 }
