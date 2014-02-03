@@ -20,10 +20,10 @@
    "title" : "Application Lifecycle and Events",
    "TR" : "",
    "editors" : {
-      "url" : "http://www.w3.org/2012/sysapps/runtime/"
+      "url" : "http://www.w3.org/2012/sysapps/app-lifecycle/"
    },
    "stability" : {
       "level" : "low",
-      "label" : "Early draft, will likely be replaced by a different approach"
+      "label" : "Early draft"
    }
 }
