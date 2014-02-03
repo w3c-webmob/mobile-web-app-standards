@@ -24,7 +24,7 @@
       "label" : "HTML5 on-line course"
    },
    "stability" : {
-      "level" : "medium",
-      "label" : "Mostly stable"
+      "level" : "high",
+      "label" : "Stable"
    }
 }

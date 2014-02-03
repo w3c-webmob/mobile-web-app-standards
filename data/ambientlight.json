@@ -15,7 +15,7 @@
    },
    "TR" : "http://www.w3.org/TR/ambient-light/",
    "stability" : {
-      "level" : "medium",
+      "level" : "high",
       "label" : "Stable"
    }
 }

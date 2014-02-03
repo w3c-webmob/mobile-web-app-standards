@@ -15,7 +15,7 @@
    },
    "TR" : "http://www.w3.org/TR/media-source/",
    "stability" : {
-      "level" : "medium",
-      "label" : "Stabilizing"
+      "level" : "high",
+      "label" : "Stable"
    }
 }
