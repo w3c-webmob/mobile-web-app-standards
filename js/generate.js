@@ -36,6 +36,24 @@ function fill(el, data, image) {
 	}
     }    
 }
+
+function importSVG(svgurl, el, postHook) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET",svgurl);
+    xhr.responseType = "document";
+    xhr.onload = function (e) {
+	if (e.target.status == "200" || e.target.status == "304") {
+	    var svg = e.target.response.documentElement;
+	    svg.querySelector("style").remove();
+	    el.appendChild(svg);
+	    if (postHook) {
+		postHook(el);
+	    }
+	}
+    };
+    xhr.send();
+}
+
 var specData;
 var specXhr = new XMLHttpRequest();
 specXhr.open("GET", "specs/tr.json");
@@ -46,8 +64,6 @@ specXhr.onload = function() {
 specXhr.send();
 
 function fillTables() {
-    var counterReq = 0 ,counterRes = 0;
-    var editorDrafts = {};
     for (var i = 0; i < sections.length; i++) {
 	var section = sections[i];
 	var dataTable = document.createElement("div");
@@ -92,10 +108,8 @@ function fillTables() {
 		var tsTd = document.createElement("td");
 		var xhr = new XMLHttpRequest();
 		xhr.open("GET", "data/" + spec + ".json");
-		counterReq++;
 		xhr.onload = function(x, s, el1, el2, el3, el4, el5, el6, el7, el8) {
 		    return function() {
-			counterRes++;
 			var obj, level, editorsactivity;
 			var data = JSON.parse(x.responseText);
 			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
@@ -154,23 +168,19 @@ function fillTables() {
 			fill(el5, data.editors);
 			if (data.editors.url) {			    
 			    editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/[^a-z0-9]/g,'');
-			    editorDrafts[editorsactivity] = 1;
 			    el5.appendChild(document.createElement("br"));
-			    obj = document.createElement("object");
+			    importSVG("editors-activity/" + editorsactivity + ".svg", el5, updateEditorsActivity);
+/*			    obj = document.createElement("object");
 			    obj.setAttribute("type", "image/svg+xml");
 			    obj.setAttribute("data", "editors-activity/" + editorsactivity + ".svg");
 			    obj.setAttribute("class","editorsactivity");
 			    obj.setAttribute("height",55);
 			    obj.setAttribute("width",125);
-			    el5.appendChild(obj);
+			    el5.appendChild(obj);*/
 			}
 			fill(el6, data.impl);
 			el6.appendChild(document.createElement("br"));
-			obj = document.createElement("object");
-			obj.setAttribute("data", "images/" + s + ".svg");
-			obj.setAttribute("width", 123);
-			obj.setAttribute("height", 70);
-			el6.appendChild(obj);
+			importSVG("images/" + s + ".svg", el6);
 			if (data.wpd) {
 			    fill(el7, data.wpd, {src:"http://www.webplatform.org/logo/wplogo_transparent.png", alt: "WebPlatform.org", width:115,height:124});
 			}
@@ -193,11 +203,6 @@ function fillTables() {
 			    fill(el8, data.tests);
 			}
 			el8.classList.add("tests");
-
-			if (counterReq == counterRes) {
-			    updateEditorsActivity(editorDrafts);
-			    mergeWGCells();
-			}
 		    };
 		}(xhr, spec, specTd, wgTd, maturityTd, stabilityTd, editorsTd, implTd, docTd, tsTd);
 		xhr.send();
@@ -240,38 +245,11 @@ function mergeWGCells() {
     }
 }
 
-function updateEditorsActivity(editorDrafts) {
-    var drafts = Object.keys(editorDrafts);
-    drafts.forEach(function (d) {
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET", "editors-activity/" + d + ".svg");
-	xhr.responseType = "document";
-	xhr.onload = function (draftname) {
-	    return function (e) {
-		var svg, height, desc;
-		if (e.target.status == "200" || e.target.status == "304") {
-		    svg = e.target.response;
-		    if (svg) {
-			height = svg.documentElement.getAttribute("height");
-			desc = svg.getElementsByTagNameNS("http://www.w3.org/2000/svg", "desc")[0].textContent;
-		    }
-		}
-		var draftimages = document.querySelectorAll('object[data="editors-activity/' + draftname + '.svg"');
-		for (var j = 0 ; j < draftimages.length ; j++) {
-		    if (svg) {
-			draftimages[j].setAttribute("height",height);
-			draftimages[j].parentNode.querySelector("a").textContent = desc;
-		    } else {
-			draftimages[j].parentNode.querySelector("a").textContent = "@@@ TBD";
-			draftimages[j].remove();
-
-		    }
-		}
-	    };
-	}(d);
-	xhr.send();
-    });
-
+function updateEditorsActivity(el) {
+    var descEl = el.querySelector("desc");
+    if (descEl) {
+	el.querySelector("a").textContent = descEl.textContent;
+    }
 }
 
 // clean up

@@ -122,3 +122,15 @@ li.recstage { list-style-type:none; border-bottom:thin gray dotted; clear:left; 
 li.recstage:nth-child(even) { background-color: #f9f9f9;}
 
 #rectrack { padding-left:0;}
+
+/* for imported SVG */
+/* editors activty */
+text { font-size:10px; text-anchor:middle;}
+line { stroke: #AAF; stroke-width:5px; }
+text.past { fill:#FFF;}
+
+/* implementation information */
+.unknown, .not { opacity: 0.3 } 
+.partial { opacity: 0.8} 
+text.symbol { font-size:40px;} 
+text.versions { font-size:20px; text-anchor:left;}
