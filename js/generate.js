@@ -11,6 +11,12 @@ function fill(el, data, image) {
 	var img = new Image();
 	img.setAttribute("src", image.src);
 	img.setAttribute("alt", image.alt);
+	if (image.width) {
+	    img.setAttribute("width", image.width);
+	}
+	if (image.height) {
+	    img.setAttribute("height", image.height);
+	}
     }
     if (data.url) {
 	var a = document.createElement("a");
@@ -108,7 +114,7 @@ function fillTables() {
 			}
 			if (data.coremob=="fulfills") {
 			    el1.appendChild(document.createElement("br"));
-			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#specifications-which-address-the-derived-requirements"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob.png",alt:"CoreMob 2012"});
+			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#specifications-which-address-the-derived-requirements"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob.png",alt:"CoreMob 2012", width:50, height:80});
 			} else if (data.coremob=="partial") {
 			    el1.appendChild(document.createElement("br"));
 			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#requirements-only-partially-addressed-by-existing-specifications"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob-wanted.png",alt:"Partially addresses requirements of CoreMob 2012"});
@@ -137,8 +143,11 @@ function fillTables() {
 			    }
 			    maturity = {label: specData[s].maturity, level:level};
 			} else {
-			    maturity = {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]};
-			    maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:specData[s].maturity};
+			    maturity = {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]};			    
+			    maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:specData[s].maturity, width:50, height:50};
+			    if (specData[s].maturity == "REC" || specData[s].maturity == "LastCall") {
+				maturityIcon.height = 53;
+			    }
 			}
 			fill(el3, maturity, maturityIcon);
 			fill(el4, data.stability);
@@ -159,15 +168,17 @@ function fillTables() {
 			el6.appendChild(document.createElement("br"));
 			obj = document.createElement("object");
 			obj.setAttribute("data", "images/" + s + ".svg");
+			obj.setAttribute("width", 123);
+			obj.setAttribute("height", 70);
 			el6.appendChild(obj);
 			if (data.wpd) {
-			    fill(el7, data.wpd, {src:"http://www.webplatform.org/logo/wplogo_transparent.png", alt: "WebPlatform.org"});
+			    fill(el7, data.wpd, {src:"http://www.webplatform.org/logo/wplogo_transparent.png", alt: "WebPlatform.org", width:115,height:124});
 			}
 			if (data.wdc) {
 			    if (data.wdc) {
 				el7.appendChild(document.createElement("br"));
 			    }
-			    fill(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus"});
+			    fill(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus", width:115, height:43});
 			}
 			if (data.tests.repo) {
 			    var div = document.createElement("div");
