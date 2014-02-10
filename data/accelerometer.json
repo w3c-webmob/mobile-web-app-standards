@@ -17,7 +17,7 @@
    },
    "TR" : "http://www.w3.org/TR/orientation-event/",
    "editors" : {
-      "url" : "http://dev.w3.org/geo/api/spec-source-orientation.html"
+      "url" : "http://w3c.github.io/deviceorientation/spec-source-orientation.html"
    },
    "wdc" : {
       "url" : "http://www.w3devcampus.com/writing-great-web-applications-for-mobile/",
