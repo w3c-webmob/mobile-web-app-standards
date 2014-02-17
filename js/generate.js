@@ -3,7 +3,7 @@ var template = document.getElementById("template").textContent;
 
 var maturityLevels = {"ed":"low","LastCall":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
 
-function fill(el, data, image) {
+function fillCell(el, data, image) {
     if (data.level) {
 	el.setAttribute("class",data.level);
     }
@@ -34,7 +34,7 @@ function fill(el, data, image) {
 	} else {
 	    el.appendChild(document.createTextNode(data.label));
 	}
-    }    
+    }
 }
 
 function importSVG(svgurl, el, postHook) {
@@ -54,6 +54,26 @@ function importSVG(svgurl, el, postHook) {
     xhr.send();
 }
 
+function maturityData(spec) {
+    var maturity ;
+    var maturityIcon ;
+    if (!maturityLevels[spec.maturity]) {
+	if (spec.maturity == "NOTE") {
+	    level = "high";
+	} else {
+	    level = "low";
+	}
+	maturity = {label: spec.maturity, level:level};
+    } else {
+	maturity = {label:spec.maturity, level: maturityLevels[spec.maturity]};
+	maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + spec.maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:spec.maturity, width:50, height:50};
+	if (spec.maturity == "REC" || spec.maturity == "LastCall") {
+	    maturityIcon.height = 53;
+	}
+    }
+    return {maturity: maturity, maturityIcon: maturityIcon};
+}
+
 var specData;
 var specXhr = new XMLHttpRequest();
 specXhr.open("GET", "specs/tr.json");
@@ -64,6 +84,7 @@ specXhr.onload = function() {
 specXhr.send();
 
 function fillTables() {
+    var counterReq = 0 ,counterRes = 0;
     for (var i = 0; i < sections.length; i++) {
 	var section = sections[i];
 	var dataTable = document.createElement("div");
@@ -108,9 +129,11 @@ function fillTables() {
 		var tsTd = document.createElement("td");
 		var xhr = new XMLHttpRequest();
 		xhr.open("GET", "data/" + spec + ".json");
+                counterReq++;
 		xhr.onload = function(x, s, el1, el2, el3, el4, el5, el6, el7, el8) {
 		    return function() {
-			var obj, level, editorsactivity;
+                        counterRes++;
+			var obj, level, editorsactivity, maturityInfo;
 			var data = JSON.parse(x.responseText);
 			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
 			for (var l = 0 ; l < links.length; l++) {
@@ -121,17 +144,17 @@ function fillTables() {
 			    links[l].setAttribute("href",url);
 			}
 			if (data.TR !== "") {
-			    fill(el1, {label: specData[s].title, url: data.TR});
+			    fillCell(el1, {label: specData[s].title, url: data.TR});
 			} else {
-			    fill(el1, {label: data.title});
+			    fillCell(el1, {label: data.title});
 			    specData[s] = { maturity: data.maturity, wgs:data.wgs};
 			}
 			if (data.coremob=="fulfills") {
 			    el1.appendChild(document.createElement("br"));
-			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#specifications-which-address-the-derived-requirements"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob.png",alt:"CoreMob 2012", width:50, height:80});
+			    fillCell(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#specifications-which-address-the-derived-requirements"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob.png",alt:"CoreMob 2012", width:50, height:80});
 			} else if (data.coremob=="partial") {
 			    el1.appendChild(document.createElement("br"));
-			    fill(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#requirements-only-partially-addressed-by-existing-specifications"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob-wanted.png",alt:"Partially addresses requirements of CoreMob 2012"});
+			    fillCell(el1,{url:"http://coremob.github.io/coremob-2012/FR-coremob-20130131.html#requirements-only-partially-addressed-by-existing-specifications"},{src:"http://www.w3.org/Mobile/mobile-web-app-state/coremob-wanted.png",alt:"Partially addresses requirements of CoreMob 2012"});
 
 			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
@@ -145,64 +168,47 @@ function fillTables() {
 				}
 				el2.appendChild(document.createElement("br"));
 			    }
-			    fill(el2, wg);
+			    fillCell(el2, wg);
 			}
-			var maturity ;
-			var maturityIcon ;
-			if (!maturityLevels[specData[s].maturity]) {
-			    if (specData[s].maturity == "NOTE") {
-				level = "high";
-			    } else {
-				level = "low";
-			    }
-			    maturity = {label: specData[s].maturity, level:level};
-			} else {
-			    maturity = {label:specData[s].maturity, level: maturityLevels[specData[s].maturity]};			    
-			    maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + specData[s].maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:specData[s].maturity, width:50, height:50};
-			    if (specData[s].maturity == "REC" || specData[s].maturity == "LastCall") {
-				maturityIcon.height = 53;
-			    }
-			}
-			fill(el3, maturity, maturityIcon);
-			fill(el4, data.stability);
-			fill(el5, data.editors);
-			if (data.editors.url) {			    
+                        maturityInfo = maturityData(specData[s]);
+			fillCell(el3, maturityInfo.maturity, maturityInfo.maturityIcon);
+			fillCell(el4, data.stability);
+			fillCell(el5, data.editors);
+			if (data.editors.url) {
 			    editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/[^a-z0-9]/g,'');
 			    el5.appendChild(document.createElement("br"));
 			    importSVG("editors-activity/" + editorsactivity + ".svg", el5, updateEditorsActivity);
-/*			    obj = document.createElement("object");
-			    obj.setAttribute("type", "image/svg+xml");
-			    obj.setAttribute("data", "editors-activity/" + editorsactivity + ".svg");
-			    obj.setAttribute("class","editorsactivity");
-			    obj.setAttribute("height",55);
-			    obj.setAttribute("width",125);
-			    el5.appendChild(obj);*/
 			}
-			fill(el6, data.impl);
+			fillCell(el6, data.impl);
 			el6.appendChild(document.createElement("br"));
 			importSVG("images/" + s + ".svg", el6);
 			if (data.wpd) {
-			    fill(el7, data.wpd, {src:"http://www.webplatform.org/logo/wplogo_transparent.png", alt: "WebPlatform.org", width:115,height:124});
+			    fillCell(el7, data.wpd, {src:"http://www.webplatform.org/logo/wplogo_transparent.png", alt: "WebPlatform.org", width:115,height:124});
 			}
 			if (data.wdc) {
 			    if (data.wdc) {
 				el7.appendChild(document.createElement("br"));
 			    }
-			    fill(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus", width:115, height:43});
+			    fillCell(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus", width:115, height:43});
 			}
 			if (data.tests.repo) {
 			    var div = document.createElement("div");
 			    var div2 = document.createElement("div");
 			    div2.setAttribute("class","githubribbon");
-			    fill(div2, {"url":data.tests.repo, "label":"Fork me on GitHub"});
+			    fillCell(div2, {"url":data.tests.repo, "label":"Fork me on GitHub"});
 			    div.appendChild(div2);
-			    fill(div, data.tests);
+			    fillCell(div, data.tests);
 			    el8.appendChild(div);
 			    el8.classList.add(data.tests.level);
 			} else {
-			    fill(el8, data.tests);
+			    fillCell(el8, data.tests);
 			}
 			el8.classList.add("tests");
+                        console.log(counterReq, counterRes);
+                        if (counterReq == counterRes) {
+                            mergeWGCells();
+                            markDupLinks();
+                        }
 		    };
 		}(xhr, spec, specTd, wgTd, maturityTd, stabilityTd, editorsTd, implTd, docTd, tsTd);
 		xhr.send();
@@ -220,6 +226,8 @@ function fillTables() {
     }
 }
 
+// When two rows in a row (!) have the same content in the WG column,
+// merge the two cells
 function mergeWGCells() {
     var rows = document.querySelectorAll("tbody tr");
     var wgCells = [];
@@ -243,6 +251,23 @@ function mergeWGCells() {
 	    wgCell.remove();
 	}
     }
+}
+
+// For printing, we only want to print the first occurence of the target
+// of a link; so we mark links whose reference has already been printed
+// with a class dupref
+function markDupLinks() {
+    var links = document.querySelectorAll("a[href]");
+    var targets = {};
+    for (var i = 0 ; i < links.length; i++) {
+        var link = links[i];
+        if (targets[link.getAttribute("href")]) {
+            link.classList.add("dupref");
+        } else {
+            targets[link.getAttribute("href")] = 1;
+        }
+    }
+
 }
 
 function updateEditorsActivity(el) {
