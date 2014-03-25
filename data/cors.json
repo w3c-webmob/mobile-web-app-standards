@@ -3,7 +3,7 @@
    "tests" : {
       "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/web-platform-tests/master/cors/",
+      "url" : "http://w3c-test.org/cors/",
       "label" : "Well started"
    },
    "wpd" : {

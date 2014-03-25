@@ -7,7 +7,7 @@
    "tests" : {
       "level" : "high",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/web-platform-tests/master/2dcontext/",
+      "url" : "http://w3c-test.org/2dcontext/",
       "label" : "Good coverage"
    },
    "impl" : {

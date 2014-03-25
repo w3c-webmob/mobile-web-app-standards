@@ -3,7 +3,7 @@
    "tests" : {
       "level" : "low",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/web-platform-tests/master/pointerevents/",
+      "url" : "http://w3c-test.org/pointerevents/",
       "label" : "Just started"
    },
    "wpd" : {

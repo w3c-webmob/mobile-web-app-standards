@@ -3,7 +3,7 @@
    "tests" : {
       "level" : "low",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/web-platform-tests/master/html/browsers/offline/browser-state",
+      "url" : "http://w3c-test.org/html/browsers/offline/browser-state",
       "label" : "None"
    },
    "impl" : {

@@ -2,7 +2,7 @@
    "tests" : {
       "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/web-platform-tests/master/page-visibility/",
+      "url" : "http://w3c-test.org/page-visibility/",
       "label" : "Good coverage"
    },
    "impl" : {

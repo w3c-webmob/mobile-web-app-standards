@@ -7,7 +7,7 @@
    "tests" : {
       "level" : "low",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/web-platform-tests/master/html/browsers/offline/appcache",
+      "url" : "http://w3c-test.org/html/browsers/offline/appcache",
       "label" : "None"
    },
    "impl" : {
