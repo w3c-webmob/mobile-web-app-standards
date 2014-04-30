@@ -16,6 +16,6 @@
    "TR" : "http://www.w3.org/TR/push-api/",
    "stability" : {
       "level" : "low",
-      "label" : "Early draft; will likely evolve to integrate with Service Workers"
+      "label" : "Early draft, now with Service Workers"
    }
 }
