@@ -25,5 +25,6 @@
    "stability" : {
       "level" : "low",
       "label" : "Early draft"
-   }
+   },
+   "feature" : "inputmode attribute"
 }

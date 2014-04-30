@@ -17,5 +17,6 @@
    "stability" : {
       "level" : "high",
       "label" : "Stable"
-   }
+   },
+   "feature" : "Sandboxed iframe"
 }

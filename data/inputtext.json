@@ -26,5 +26,5 @@
    "stability" : {
       "level" : "high",
       "label" : "Stable"
-   }
-}
+   },
+   "feature" : "telephone, email and URL input element"}

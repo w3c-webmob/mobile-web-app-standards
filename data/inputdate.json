@@ -26,5 +26,6 @@
    "stability" : {
       "level" : "low",
       "label" : "Mostly stable"
-   }
+   },
+   "feature" : "Data and Time input element"
 }

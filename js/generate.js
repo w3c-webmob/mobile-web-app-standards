@@ -144,7 +144,7 @@ function fillTables() {
 			    links[l].setAttribute("href",url);
 			}
 			if (data.TR !== "") {
-			    fillCell(el1, {label: specData[s].title, url: data.TR});
+			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + specData[s].title, url: data.TR});
 			} else {
 			    fillCell(el1, {label: data.title});
 			    specData[s] = { maturity: data.maturity, wgs:data.wgs};

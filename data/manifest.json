@@ -26,5 +26,6 @@
    "stability" : {
       "level" : "high",
       "label" : "Stable (but Service Workers will be the preferred approach when available)"
-   }
+   },
+  "feature" : "ApplicationCache"
 }

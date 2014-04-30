@@ -17,5 +17,6 @@
    "stability" : {
       "level" : "low",
       "label" : "Early draft"
-   }
+   },
+   "feature" : "Canvas Proxy for Web Workers"
 }

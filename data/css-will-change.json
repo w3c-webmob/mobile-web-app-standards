@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "A few experimental ones",
+      "id" : "css-will-change"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-will-change/"
+   },
+   "TR" : "http://www.w3.org/TR/css-will-change-1/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

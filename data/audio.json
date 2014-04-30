@@ -26,5 +26,6 @@
    "stability" : {
       "level" : "high",
       "label" : "Stable"
-   }
+   },
+   "feature" : "audio element"
 }
