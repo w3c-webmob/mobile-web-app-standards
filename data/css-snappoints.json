@@ -1,0 +1,30 @@
+{
+   "title" : "CSS Scroll Snap Points Module Level 1",
+   "stability" : {
+      "label" : "Early draft",
+      "level" : "low"
+   },
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/Style/CSS/members",
+         "label" : "Cascading Style Sheets (CSS) Working Group"
+      }
+   ],
+   "TR" : "",
+   "maturity" : "ed",
+   "tests" : {
+      "url" : "",
+      "label" : "None",
+      "repo" : "",
+      "level" : "low"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-snappoints/"
+   },
+   "coremob" : "partial",
+   "impl" : {
+      "level" : "low",
+      "id" : "css-snappoints",
+      "label" : "Experimental"
+   }
+}
