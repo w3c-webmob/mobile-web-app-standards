@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited",
+      "id" : "css-font-loading"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-font-loading/"
+   },
+   "TR" : "http://www.w3.org/TR/css-font-loading-3/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
