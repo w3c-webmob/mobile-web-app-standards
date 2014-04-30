@@ -16,6 +16,6 @@
    "TR" : "http://www.w3.org/TR/file-writer-api/",
    "stability" : {
       "level" : "low",
-      "label" : "Early draft, unsure future"
+      "label" : "Abandoned"
    }
 }
