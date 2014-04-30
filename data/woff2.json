@@ -11,17 +11,16 @@
       "id" : "woff2"
    },
    "editors" : {
-      "url" : "http://www.w3.org/TR/2014/WD-WOFF20ER-20140128/",
-      "label" : "WOFF2 Requirements"
+      "url" : "http://www.w3.org/Fonts/WG/WOFF2/"
    },
    "TR" : "",
    "stability" : {
       "level" : "low",
-      "label" : "Not started"
+      "label" : "Early draft"
    },
    "wgs": [
    {"url":"http://www.w3.org/Fonts/WG/", "label":"WebFonts Working Group"}
    ],
-   "maturity" : "N/A",
-   "title": "WOFF 2"
+   "maturity" : "ed",
+   "title": "WOFF File Format 2.0"
 }
