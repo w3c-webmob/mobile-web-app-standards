@@ -25,6 +25,6 @@
    },
    "stability" : {
       "level" : "low",
-      "label" : "Mostly stable, but feature marked at risk"
+      "label" : "Mostly stable"
    }
 }

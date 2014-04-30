@@ -24,7 +24,7 @@
       "label" : "Mobile Web 2: Programming Web Applications on-line course"
    },
    "stability" : {
-      "level" : "low",
-      "label" : "Feature at risk (Possibly major overhaul under consideration)"
+      "level" : "high",
+      "label" : "Stable (but Service Workers will be the preferred approach when available)"
    }
 }
