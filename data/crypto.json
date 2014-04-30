@@ -15,7 +15,7 @@
    },
    "TR" : "http://www.w3.org/TR/WebCryptoAPI/",
    "stability" : {
-      "level" : "low",
-      "label" : "Early work"
+      "level" : "medium",
+      "label" : "Stabilizing"
    }
 }

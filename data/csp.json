@@ -1,0 +1,25 @@
+{
+   "tests" : {
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/submissions/113/csp/",
+      "label" : "Well started"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/content-security-policy",
+      "label" : "Introduction to content security policy"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Well-deployed",
+      "id" : "csp"
+   },
+   "editors" : {
+      "url" : "http://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-1.0-specification.html"
+   },
+   "TR" : "http://www.w3.org/TR/CSP/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}

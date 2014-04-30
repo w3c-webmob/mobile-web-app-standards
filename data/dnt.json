@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "medium",
+      "label" : "Good deployment",
+      "id" : "dnt"
+   },
+   "TR" : "http://www.w3.org/TR/tracking-dnt/",
+   "editors" : {
+      "url" : "http://www.w3.org/2011/tracking-protection/drafts/tracking-dnt.html"
+   },
+   "stability" : {
+      "level" : "medium",
+      "label" : "Stabilizing"
+   }
+}

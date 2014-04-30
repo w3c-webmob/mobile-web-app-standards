@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "subres-integrity"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/webappsec/specs/subresourceintegrity/"
+   },
+   "TR" : "http://www.w3.org/TR/SRI/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Just started"
+   }
+}
