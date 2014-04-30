@@ -7,8 +7,8 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "datalist"
    },
    "editors" : {

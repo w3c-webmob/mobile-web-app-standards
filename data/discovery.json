@@ -16,6 +16,6 @@
    "TR" : "http://www.w3.org/TR/discovery-api/",
    "stability" : {
       "level" : "low",
-      "label" : "Early draft"
+      "label" : "Early draft, unsure future"
    }
 }
