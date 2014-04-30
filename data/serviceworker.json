@@ -5,7 +5,7 @@
          "label" : "Web Applications Working Group"
       }
    ],
-   "maturity" : "N/A",
+   "maturity" : "ed",
    "coremob" : "partial",
    "tests" : {
       "level" : "low",
