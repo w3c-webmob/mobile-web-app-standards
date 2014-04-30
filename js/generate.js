@@ -204,7 +204,6 @@ function fillTables() {
 			    fillCell(el8, data.tests);
 			}
 			el8.classList.add("tests");
-                        console.log(counterReq, counterRes);
                         if (counterReq == counterRes) {
                             mergeWGCells();
                             markDupLinks();
