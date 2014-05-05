@@ -19,9 +19,9 @@
       "id" : "serviceworker"
    },
    "title" : "Service Workers",
-   "TR" : "",
+   "TR" : "http://www.w3.org/TR/service-workers/",
    "editors" : {
-      "url" : "https://github.com/slightlyoff/ServiceWorker/blob/master/spec/service_worker/index.html"
+      "url" : "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/"
    },
    "stability" : {
       "level" : "low",
