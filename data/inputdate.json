@@ -15,9 +15,9 @@
       "label" : "Growing",
       "id" : "inputdate"
    },
-   "TR" : "http://www.w3.org/TR/html5/forms.html#date-and-time-state-(type=datetime)",
+   "TR" : "http://www.w3.org/TR/html5/forms.html#date-state-(type=date)",
    "editors" : {
-      "url" : "http://www.w3.org/html/wg/drafts/html/CR/forms.html#date-and-time-state-(type=datetime)"
+      "url" : "http://www.w3.org/html/wg/drafts/html/CR/forms.html#date-state-(type=date)"
    },
    "wdc" : {
       "url" : "http://www.w3devcampus.com/html5-w3c-training/",

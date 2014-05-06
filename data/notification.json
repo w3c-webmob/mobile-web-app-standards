@@ -5,10 +5,6 @@
       "url" : "http://w3c-test.org/notifications/",
       "label" : "None"
    },
-   "wpd" : {
-      "url" : "http://docs.webplatform.org/wiki/tutorials/notifications_api",
-      "label" : "Notification API tutorial"
-   },
    "impl" : {
       "level" : "medium",
       "label" : "Growing deployment",

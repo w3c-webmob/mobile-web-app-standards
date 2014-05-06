@@ -20,7 +20,7 @@
    "title" : "Efficient Script Yielding",
    "TR" : "",
    "editors" : {
-      "url" : "http://w3c-test.org/webperf/specs/setImmediate/"
+      "url" : "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/setImmediate/Overview.html"
    },
    "stability" : {
       "level" : "low",
