@@ -7,7 +7,7 @@
    "tests" : {
       "level" : "high",
       "repo" : "",
-      "url" : "http://w3c-test.org/webevents/tests/touch-events-v1/",
+      "url" : "http://w3c-test.org/touch-events/",
       "label" : "Complete"
    },
    "impl" : {

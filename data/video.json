@@ -7,7 +7,7 @@
    "tests" : {
       "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/html/semantics/embedded-content-0/the-video-element/",
+      "url" : "http://w3c-test.org/html/semantics/embedded-content/the-video-element/",
       "label" : "Well started"
    },
    "impl" : {

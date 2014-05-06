@@ -12,7 +12,7 @@
       "id" : "animation-timing"
    },
    "editors" : {
-      "url" : "http://w3c-test.org/webperf/specs/RequestAnimationFrame/"
+      "url" : "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/RequestAnimationFrame/Overview.html"
    },
    "TR" : "http://www.w3.org/TR/animation-timing/",
    "stability" : {
