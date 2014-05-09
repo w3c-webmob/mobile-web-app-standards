@@ -1,11 +1,4 @@
 {
-   "wgs" : [
-      {
-         "url" : "http://www.w3.org/2008/webapps/",
-         "label" : "Web Applications Working Group"
-      }
-   ],
-   "maturity" : "ed",
    "coremob" : "partial",
    "tests" : {
       "level" : "low",
@@ -18,7 +11,6 @@
       "label" : "None",
       "id" : "serviceworker"
    },
-   "title" : "Service Workers",
    "TR" : "http://www.w3.org/TR/service-workers/",
    "editors" : {
       "url" : "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/"
