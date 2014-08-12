@@ -1,0 +1,27 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "css-size-adjust"
+   },
+   "editors" : {
+      "url" : "http://dev.w3.org/csswg/css-size-adjust/"
+   },
+   "TR" : "",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   },
+   "wgs": [
+   {"url":"http://dev.w3.org/Style/CSS/members", "label":"CSS Working Group"}
+   ],
+   "maturity" : "ed",
+   "title": "CSS Mobile Text Size Adjustment Module Level 1"
+
+}
