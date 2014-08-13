@@ -1,11 +1,4 @@
 {
-   "wgs" : [
-      {
-         "url" : "http://www.w3.org/Style/CSS/members",
-         "label" : "Cascading Style Sheets (CSS) Working Group"
-      }
-   ],
-   "maturity" : "ed",
    "tests" : {
       "level" : "low",
       "repo" : "",
@@ -17,8 +10,7 @@
       "label" : "None",
       "id" : "mediaqueries4"
    },
-   "title" : "Media Queries Level 4",
-   "TR" : "",
+   "TR" : "http://www.w3.org/TR/mediaqueries-4/",
    "editors" : {
       "url" : "http://dev.w3.org/csswg/mediaqueries4/"
    },

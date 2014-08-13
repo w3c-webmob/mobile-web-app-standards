@@ -13,14 +13,9 @@
    "editors" : {
       "url" : "http://www.w3.org/Fonts/WG/WOFF2/"
    },
-   "TR" : "",
+   "TR" : "http://www.w3.org/TR/WOFF2/",
    "stability" : {
       "level" : "low",
       "label" : "Early draft"
-   },
-   "wgs": [
-   {"url":"http://www.w3.org/Fonts/WG/", "label":"WebFonts Working Group"}
-   ],
-   "maturity" : "ed",
-   "title": "WOFF File Format 2.0"
+   }
 }

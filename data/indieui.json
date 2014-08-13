@@ -11,7 +11,7 @@
       "id" : "indieui"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/IndieUI/raw-file/tip/src/indie-ui-events.html"
+      "url" : "https://dvcs.w3.org/hg/IndieUI/raw-file/default/src/indie-ui-events.html"
    },
    "TR" : "http://www.w3.org/TR/indie-ui-events/",
    "stability" : {
