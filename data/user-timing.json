@@ -6,8 +6,8 @@
       "label" : "Well started"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "user-timing"
    },
    "editors" : {
