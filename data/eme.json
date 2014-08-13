@@ -7,7 +7,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "Very limited",
+      "label" : "Limited",
       "id" : "drm"
    },
    "editors" : {
