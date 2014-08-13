@@ -6,8 +6,8 @@
       "label" : "Good coverage"
    },
    "impl" : {
-      "level" : "medium",
-      "label" : "Growing deployment",
+      "level" : "high",
+      "label" : "Well deployed",
       "id" : "nav-timing"
    },
    "editors" : {
