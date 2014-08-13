@@ -6,8 +6,8 @@
       "label" : "Early start"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "res-timing"
    },
    "editors" : {
