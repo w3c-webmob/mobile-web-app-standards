@@ -11,7 +11,7 @@
       "id" : "push"
    },
    "editors" : {
-      "url" : "http://w3c.github.io/push-api"
+      "url" : "http://w3c.github.io/push-api/"
    },
    "TR" : "http://www.w3.org/TR/push-api/",
    "stability" : {
