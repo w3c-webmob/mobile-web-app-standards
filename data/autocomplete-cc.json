@@ -1,0 +1,22 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Very limited",
+      "id" : "autocomplete-cc"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-fe-autocomplete-cc-name"
+   },
+   "TR" : "http://www.w3.org/TR/html51/forms.html#attr-fe-autocomplete-cc-name",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   },
+   "feature" : "Credit card details autocomplete"
+}
