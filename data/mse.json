@@ -17,5 +17,9 @@
    "stability" : {
       "level" : "high",
       "label" : "Stable"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/MSEPrimer",
+      "label" : "Media Source Extensions primer"
    }
 }
