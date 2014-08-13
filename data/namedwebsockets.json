@@ -1,0 +1,29 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "namedwebsockets"
+   },
+   "editors" : {
+      "url" : "https://github.com/namedwebsockets/namedwebsockets"
+   },
+   "TR" : "",
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2009/dap/",
+         "label" : "Device APIs Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "title": "Named Web Sockets",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early proposal"
+   }
+}
