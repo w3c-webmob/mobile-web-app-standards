@@ -8,15 +8,16 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "None",
+      "label" : "Limited",
       "id" : "picture"
    },
    "editors" : {
-      "url" : "http://picture.responsiveimages.org/"
+      "url" : "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-picture-element"
    },
-   "TR" : "http://www.w3.org/TR/html-picture-element/",
+   "feature": "picture element",
+   "TR" : "http://www.w3.org/TR/html51/embedded-content.html#the-picture-element",
    "stability" : {
-      "level" : "low",
-      "label" : "First draft"
+      "level" : "medium",
+      "label" : "stabilizing"
    }
 }
