@@ -167,7 +167,7 @@ function fillTables() {
 			fillCell(el4, data.stability);
 			fillCell(el5, data.editors);
 			if (data.editors.url) {
-			    editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/[^a-z0-9]/g,'');
+			    editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/#.*/,'').replace(/[^a-z0-9]/g,'');
 			    el5.appendChild(document.createElement("br"));
 			    importSVG("editors-activity/" + editorsactivity + ".svg", el5, updateEditorsActivity);
 			}
