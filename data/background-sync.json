@@ -1,0 +1,29 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "background-sync"
+   },
+   "TR" : "",
+   "title": "Web Background Synchronization",
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2008/webapps/",
+         "label" : "Web Applications Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "editors" : {
+      "url" : "https://github.com/slightlyoff/BackgroundSync/blob/master/explainer.md"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
