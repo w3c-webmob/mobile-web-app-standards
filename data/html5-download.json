@@ -6,7 +6,7 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "medium",
+      "level" : "low",
       "label" : "Limited, but growing",
       "id" : "html5-download"
    },
