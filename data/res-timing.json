@@ -2,7 +2,7 @@
    "tests" : {
       "level" : "low",
       "repo" : "",
-      "url" : "https://dvcs.w3.org/hg/webperf/file/9ec0a6c2c2d5/tests/submission/W3C/ResourceTiming",
+      "url" : "https://dvcs.w3.org/hg/webperf/file/default/tests/submission/W3C/ResourceTiming",
       "label" : "Early start"
    },
    "impl" : {
@@ -11,7 +11,7 @@
       "id" : "res-timing"
    },
    "editors" : {
-      "url" : "http://w3c-test.org/webperf/specs/ResourceTiming/"
+      "url" : "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/ResourceTiming/Overview.html"
    },
    "TR" : "http://www.w3.org/TR/resource-timing/",
    "stability" : {
