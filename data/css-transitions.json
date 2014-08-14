@@ -1,10 +1,10 @@
 {
    "coremob" : "fulfills",
    "tests" : {
-      "level" : "low",
-      "repo" : "https://github.com/w3c/csswg-test/tree/master/approved/css3-transitions",
-      "url" : "https://github.com/w3c/csswg-test/tree/master/approved/css3-transitions",
-      "label" : "None"
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/csswg-test/tree/master/css-transitions-1",
+      "url" : "https://github.com/w3c/csswg-test/tree/master/css-transitions-1",
+      "label" : "well started"
    },
    "wpd" : {
       "url" : "http://docs.webplatform.org/wiki/tutorials/css_transitions",
