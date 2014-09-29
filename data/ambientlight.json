@@ -11,11 +11,11 @@
       "id" : "ambientlight"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/dap/raw-file/tip/light/Overview.html"
+      "url" : "http://w3c.github.io/ambient-light/"
    },
    "TR" : "http://www.w3.org/TR/ambient-light/",
    "stability" : {
-      "level" : "high",
-      "label" : "Stable"
+      "level" : "low",
+      "label" : "Likely to evolve significantly"
    }
 }
