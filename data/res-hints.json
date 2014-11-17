@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Experimental",
+      "id" : "lazy"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/resource-hints/"
+   },
+   "TR" : "http://www.w3.org/TR/resource-hints/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
