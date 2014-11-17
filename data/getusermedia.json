@@ -11,7 +11,7 @@
       "id" : "getusermedia"
    },
    "editors" : {
-      "url" : "http://dev.w3.org/2011/webrtc/editor/getusermedia.html"
+      "url" : "http://w3c.github.io/mediacapture-main/"
    },
    "TR" : "http://www.w3.org/TR/mediacapture-streams/",
    "stability" : {

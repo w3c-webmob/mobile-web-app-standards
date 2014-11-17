@@ -15,7 +15,7 @@
       "id" : "p2p"
    },
    "editors" : {
-      "url" : "http://dev.w3.org/2011/webrtc/editor/webrtc.html"
+      "url" : "http://w3c.github.io/webrtc-pc/"
    },
    "TR" : "http://www.w3.org/TR/webrtc/",
    "stability" : {

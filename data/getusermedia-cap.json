@@ -11,11 +11,11 @@
       "id" : "getusermedia-cap"
    },
    "editors" : {
-      "url" : "http://dev.w3.org/2011/webrtc/editor/getusermedia.html"
+      "url" : "http://w3c.github.io/mediacapture-main/"
    },
    "TR" : "http://www.w3.org/TR/mediacapture-streams/",
    "stability" : {
-      "level" : "low",
-      "label" : "Early draft"
+      "level" : "medium",
+      "label" : "Stabilizing"
    }
 }
