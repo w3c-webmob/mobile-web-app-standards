@@ -11,7 +11,7 @@
       "id" : "woff2"
    },
    "editors" : {
-      "url" : "http://www.w3.org/Fonts/WG/WOFF2/"
+      "url" : "http://dev.w3.org/webfonts/WOFF2/spec/"
    },
    "TR" : "http://www.w3.org/TR/WOFF2/",
    "stability" : {
