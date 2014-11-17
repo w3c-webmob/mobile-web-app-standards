@@ -1,0 +1,26 @@
+{
+   "coremob" : "partial",
+   "tests" : {
+      "level" : "high",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/pointerevents/",
+      "label" : "Good covergae"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/concepts/PointerEvents",
+      "label" : "Pointer Events primer"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Limited deployment but growing",
+      "id" : "css-touch-action"
+   },
+   "editors" : {
+      "url" : "https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html#the-touch-action-css-property"
+   },
+   "TR" : "http://www.w3.org/TR/pointerevents/#the-touch-action-css-property",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   }
+}
