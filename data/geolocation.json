@@ -6,8 +6,8 @@
    },
    "tests" : {
       "level" : "medium",
-      "repo" : "",
-      "url" : "http://dev.w3.org/geo/api/test-suite/Overview.html",
+      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/geolocation-API",
+      "url" : "http://w3c-test.org/geolocation-API/",
       "label" : "Good coverage"
    },
    "impl" : {
