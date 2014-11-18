@@ -22,5 +22,6 @@
    "stability" : {
       "level" : "high",
       "label" : "Stable"
-   }
+   },
+   "feature": "touch-action property"
 }
