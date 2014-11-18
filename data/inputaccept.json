@@ -1,10 +1,10 @@
 {
    "coremob" : "fulfills",
    "tests" : {
-      "level" : "medium",
+      "level" : "high",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/html-media-capture/",
-      "label" : "well started"
+      "label" : "Good coverage"
    },
    "impl" : {
       "level" : "medium",

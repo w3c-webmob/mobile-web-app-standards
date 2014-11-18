@@ -7,8 +7,8 @@
       "label" : "Well started"
    },
    "impl" : {
-      "level" : "medium",
-      "label" : "Very broad for basic features, growing for most recent ones",
+      "level" : "good",
+      "label" : "Well deployed",
       "id" : "xhr2"
    },
    "editors" : {

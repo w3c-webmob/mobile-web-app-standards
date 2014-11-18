@@ -11,8 +11,8 @@
       "label" : "Good coverage"
    },
    "impl" : {
-      "level" : "medium",
-      "label" : "Growing",
+      "level" : "high",
+      "label" : "Well deployed",
       "id" : "indexeddb"
    },
    "TR" : "http://www.w3.org/TR/IndexedDB/",

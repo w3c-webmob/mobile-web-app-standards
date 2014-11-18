@@ -2,8 +2,8 @@
    "coremob" : "fulfills",
    "tests" : {
       "level" : "medium",
-      "repo" : "",
-      "url" : "https://dvcs.w3.org/hg/webperf/file/tip/tests",
+      "repo" : "http://w3c-test.org/animation-timing/",
+      "url" : "https://github.com/w3c/web-platform-tests/tree/master/animation-timing",
       "label" : "Well started"
    },
    "impl" : {
@@ -12,7 +12,7 @@
       "id" : "animation-timing"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/RequestAnimationFrame/Overview.html"
+      "url" : "http://w3c.github.io/animation-timing/"
    },
    "TR" : "http://www.w3.org/TR/animation-timing/",
    "stability" : {

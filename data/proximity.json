@@ -15,7 +15,7 @@
    },
    "TR" : "http://www.w3.org/TR/proximity/",
    "stability" : {
-      "level" : "high",
-      "label" : "Stable"
+      "level" : "low",
+      "label" : "Likely to evolve substantially"
    }
 }

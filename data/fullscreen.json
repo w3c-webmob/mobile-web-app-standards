@@ -11,8 +11,8 @@
       "label" : "Using the full-screen API"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited",
+      "level" : "medium",
+      "label" : "Growing deployment",
       "id" : "fullscreen"
    },
    "editors" : {

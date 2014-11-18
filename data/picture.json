@@ -2,9 +2,9 @@
    "coremob" : "partial",
    "tests" : {
       "level" : "low",
-      "repo" : "",
-      "url" : "",
-      "label" : "N/A"
+      "repo" : "https://github.com/w3c/web-platform-tests/blob/master/html/semantics/embedded-content/the-img-element/update-the-source-set.html",
+      "url" : "http://w3c-test.org/html/semantics/embedded-content/the-img-element/update-the-source-set.html",
+      "label" : "Started"
    },
    "impl" : {
       "level" : "low",

@@ -1,10 +1,10 @@
 {
    "coremob" : "fulfills",
    "tests" : {
-      "level" : "medium",
+      "level" : "high",
       "repo" : "",
       "url" : "http://test.csswg.org/suites/css3-flexbox/nightly-unstable/",
-      "label" : "Well started"
+      "label" : "Good coverage"
    },
    "impl" : {
       "level" : "high",

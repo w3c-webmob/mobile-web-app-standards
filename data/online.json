@@ -17,7 +17,7 @@
    "TR" : "http://www.w3.org/TR/html5/browsers.html#browser-state",
    "stability" : {
       "level" : "high",
-      "label" : "Mostly stable"
+      "label" : "Stable"
    },
   "feature" : "onLine state"
 }

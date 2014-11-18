@@ -2,9 +2,9 @@
    "coremob" : "partial",
    "tests" : {
       "level" : "low",
-      "repo" : "",
-      "url" : "",
-      "label" : "None"
+      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/service-workers",
+      "url" : "http://w3c-test.org/service-workers/",
+      "label" : "Stubs"
    },
    "impl" : {
       "level" : "low",

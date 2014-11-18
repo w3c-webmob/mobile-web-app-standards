@@ -6,8 +6,8 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited but growing",
+      "level" : "high",
+      "label" : "Well deployed",
       "id" : "crypto"
    },
    "editors" : {

@@ -6,8 +6,8 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited, but growing",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "html5-download"
    },
    "TR" : "http://www.w3.org/TR/html5/links.html#attr-hyperlink-download",

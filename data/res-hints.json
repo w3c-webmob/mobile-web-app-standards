@@ -7,8 +7,8 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "Experimental",
-      "id" : "lazy"
+      "label" : "None?",
+      "id" : "res-hints"
    },
    "editors" : {
       "url" : "http://w3c.github.io/resource-hints/"

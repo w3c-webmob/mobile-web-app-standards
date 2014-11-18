@@ -12,7 +12,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "Very limited",
+      "label" : "Limited",
       "id" : "css-device-adapt"
    },
    "editors" : {

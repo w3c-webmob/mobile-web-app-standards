@@ -7,8 +7,8 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Very limited",
+      "level" : "medium",
+      "label" : "Growing deployment",
       "id" : "screenlock"
    },
    "editors" : {

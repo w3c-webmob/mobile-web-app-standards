@@ -6,12 +6,12 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited",
+      "level" : "medium",
+      "label" : "Growing deployment",
       "id" : "drm"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html"
+      "url" : "http://w3c.github.io/encrypted-media/"
    },
    "TR" : "http://www.w3.org/TR/encrypted-media/",
    "stability" : {
