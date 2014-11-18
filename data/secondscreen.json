@@ -1,0 +1,29 @@
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2014/secondscreen/",
+         "label" : "Second Screen Presentation Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "presentation"
+   },
+   "title" : " Presentation API",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://w3c.github.io/permissions/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Editors draft"
+   }
+}

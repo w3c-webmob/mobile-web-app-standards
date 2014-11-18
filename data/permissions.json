@@ -1,0 +1,29 @@
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2011/webappsec/",
+         "label" : "Proposed addition to Web Application Security Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "permissions"
+   },
+   "title" : "Permissions API",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://w3c.github.io/permissions/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Draft proposal"
+   }
+}
