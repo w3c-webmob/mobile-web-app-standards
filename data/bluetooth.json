@@ -1,0 +1,29 @@
+{
+   "wgs" : [
+      {
+         "url" : "https://www.w3.org/community/web-bluetooth/",
+         "label" : "Web Bluetooth Community Group"
+      }
+   ],
+   "maturity" : "Not on standards track",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "bluetooth"
+   },
+   "title" : "Web Bluetooth",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://webbluetoothcg.github.io/web-bluetooth/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
