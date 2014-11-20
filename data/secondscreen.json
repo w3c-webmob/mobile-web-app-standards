@@ -20,7 +20,7 @@
    "title" : " Presentation API",
    "TR" : "",
    "editors" : {
-      "url" : "https://w3c.github.io/permissions/"
+      "url" : "http://w3c.github.io/presentation-api/"
    },
    "stability" : {
       "level" : "low",
