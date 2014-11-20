@@ -54,4 +54,4 @@ for filename in sys.argv[1:]:
                 sys.stderr.write("No group with home page %s found in public-groups.rdf nor closed-groups.rdf\n" % (url))
         data[id]["wgs"].append(wg)
 
-print json.dumps(data)
+print json.dumps(data, sort_keys=True, indent=2)
