@@ -47,14 +47,14 @@
 <li><a href="#Sensors_and_hardware_integration">Sensors and hardware integration</a></li>
 <li><a href="#Network">Network</a></li>
 <li><a href="#Communication_and_Discovery">Communication &amp; Discovery</a></li>
-<li><a href="#Packaging">Packaging</a></li>
+<li><a href="#Packaging">Application Lifecyle</a></li>
 <li><a href="#Payment">Payment</a></li>
 <li><a href="#Performance_.26_Optimization">Performance &amp; Optimization</a></li>
 <li><a href="#Security">Privacy &amp; Security</a></li>
 </ol>
 <section>
       <h2>Document structure</h2>
-      <p>The features that these technologies add to the Web platform are organized under the following categories: <a href="#Graphics">graphics</a>, <a href="#Multimedia">multimedia</a>, <a href="#Device_Adaptation">device adaptation</a>, <a href="#Forms">forms</a>, <a href="#User_interactions">user interactions</a>, <a href="#Data_storage">data storage</a>, <a href="#Personal_Information_Management">personal information management</a>, <a href="#Sensors_and_hardware_integration">sensors and hardware integration</a>, <a href="#Network">network</a>, <a href="#Communication_and_Discovery">communication and discovery</a>, <a href="#Packaging">packaging</a>, <a href="#Payment">payment</a>, <a href="#Performance_.26_Optimization">performance &amp; optimization</a> and <a href="#Security">privacy &amp; security</a>.</p>
+      <p>The features that these technologies add to the Web platform are organized under the following categories: <a href="#Graphics">graphics</a>, <a href="#Multimedia">multimedia</a>, <a href="#Device_Adaptation">device adaptation</a>, <a href="#Forms">forms</a>, <a href="#User_interactions">user interactions</a>, <a href="#Data_storage">data storage</a>, <a href="#Personal_Information_Management">personal information management</a>, <a href="#Sensors_and_hardware_integration">sensors and hardware integration</a>, <a href="#Network">network</a>, <a href="#Communication_and_Discovery">communication and discovery</a>, <a href="#Packaging">application lifecycle</a>, <a href="#Payment">payment</a>, <a href="#Performance_.26_Optimization">performance &amp; optimization</a> and <a href="#Security">privacy &amp; security</a>.</p>
       <p class="figure"><object type="image/svg+xml" data="webapp.svg" style="width:600px;height:308px"><a href="webapp.svg" title="SVG version of the diagram"><img src="webapp.png" alt="Diagram showing the various components of the Web platform" width="600" height="308"/></a></object><br/>The Web as an application development platform</p>
       <p>In each category, a table summarizes for each feature:</p>
       <ul>
@@ -283,13 +283,25 @@
 </section>
 <section class="featureset">
       <h2 id="Packaging">11.
-        Packaging </h2>
-      <p>An important aspect of the user experience of applications is linked to how the user perceives the said application is available permanently (even when off-line, which is particularly important on mobile devices), as well as how it can be shared and distributed, typically through purchases via applications stores — this is adequately addressed by packaging the application.</p>
-      <p>The Web platform offers two complementary approaches to packaging Web applications:</p>
-      <ul>
-<li data-feature="Offline Web apps">HTML5’s <code><strong><a data-featureid="manifest">ApplicationCache</a></strong></code> enables access to Web applications off-line through the definition of a manifest of files that the browser is expected to keep in its cache; while relatively well deployed, the current approach has shown some strong limitations and the HTML and Web Applications Working Groups are considering a potentially major overhaul of the technology, likely based on <a data-featureid="serviceworker">ServiceWorker</a></li>
-<li data-feature="Packaged Web App">a <a data-featureid="manifestjson">JSON-based manifest format</a> in development by the the <a href="http://www.w3.org/2008/webapps/">Web Apps Working Group</a>. The System Applications Working Group was building a <a data-featureid="runtime">runtime and security model</a> on top of that packaging, but is now instead defining an <a data-featureid="app-lifecycle">application lifecycle specification</a> based on top of Service Workers.</li>
-</ul>
+        Application Lifecycle </h2>
+      <p>An important aspect of the user experience of applications is linked to how the user perceives the said application is available permanently (even when off-line, which is particularly important on mobile devices), as well as its ability to get started based on external notifications.</p>
+      <p>These notions are part of the overall <em>application lifecycle</em>: how applications get installed, shown to the user in applications list, started, stopped, woken up from remote notifications, synced up when the device goes on-line.</p>
+
+      <p>These various capabilities are brought the Web platform through different mechanisms.</p>
+      <p>Although the notion of installed Web applications is still not well-defined, there are several components to the notion of installation that are under development.</p>
+      <div data-feature="Packaging">
+        <p><a data-featureid="packaging">Packaging on the Web</a> describes a Web-adapted format to make Web content available in a singe file for ease of download, sharing or archiving.</p>
+
+        <p>Whether packaged or not, users rely on a variety of metadata (name, icons) to identify the apps they want to use among their list of regularly used applications. The <a data-featureid="manifestjson">JSON-based manifest format</a> lets developers group all these metadata in a single JSON file.</p>
+      </div>
+      <div data-feature="Offline Web Apps">
+        <p>HTML5’s <code><strong><a data-featureid="manifest">ApplicationCache</a></strong></code> enables access to Web applications off-line through the definition of a manifest of files that the browser is expected to keep in its cache.</p>
+        <p>While relatively well deployed, the current approach has shown some strong limitations in terms of how much developers can control what gets cached when. The Web Applications Working Group has thus been developing a more powerful approach, <a data-featureid="serviceworker">ServiceWorker</a>.</p>
+      </div>
+      <p>Not only does Service Worker enables Web applications to work seamlessly off-line or in poor network conditions, it also creates a model for Web applications to operate when they have not been opened in a browser window, or even if the browser itself is not running.</p>
+      <p>That ability opens the door for Web applications that run in the background and can react to remotely triggered events.</p>
+      <p data-feature="Remote Notifications">The <a data-featureid="push">Push API</a> enables Web applications to subscribe to remove notifications that, upon reception, wake them up. Native applications have long enjoyed the benefits of greater user engagement that these notifications bring, and soon Web applications will share that ability.</p>
+      <p data-feature="Background Sync">Likewise, the <a data-featureid="background-sync">Web Background Synchronization</a> specification will enable Web applications to keep their user data up to date seamlessly, by running network operations in the background.</p>
 
 </section>
 <section class="featureset">
