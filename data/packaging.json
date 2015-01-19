@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "packaging"
+   },
+   "editors" : {
+      "url" : "http://w3ctag.github.io/packaging-on-the-web/"
+   },
+   "TR" : "http://www.w3.org/TR/web-packaging/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
