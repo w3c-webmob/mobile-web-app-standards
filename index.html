@@ -37,24 +37,23 @@
       <p>Web technologies have become powerful enough that they are used to build full-featured applications; this has been true for many years in the desktop and laptop computer realm, but is increasingly so on mobile devices as well.</p>
       <p>This document summarizes the various technologies developed in W3C that increase the capabilities of Web applications, and how they apply more specifically to the mobile context.  A good subset of these technologies are described and explained in the <a href="http://www.w3devcampus.com/writing-great-web-applications-for-mobile/">W3C on-line training on programming Web applications</a>.</p>
       <ol>
-<li><a href="#Graphics">Graphics</a></li>
-<li><a href="#Multimedia">Multimedia</a></li>
+<li><a href="#Graphics">Core Web Design and Development</a></li>
 <li><a href="#Device_Adaptation">Device Adaptation</a></li>
 <li><a href="#Forms">Forms</a></li>
-<li><a href="#User_interactions">User interactions</a></li>
 <li><a href="#Data_storage">Data storage</a></li>
 <li><a href="#Personal_Information_Management">Personal Information Management</a></li>
-<li><a href="#Sensors_and_hardware_integration">Sensors and hardware integration</a></li>
-<li><a href="#Network">Network</a></li>
-<li><a href="#Communication_and_Discovery">Communication &amp; Discovery</a></li>
+<li><a href="#Sensors_and_hardware_integration">Device Interaction</li>
 <li><a href="#Packaging">Application Lifecyle</a></li>
+<li><a href="#Multimedia">Media and Real-Time Communications</a></li>
+<li><a href="#Performance_.26_Optimization">Performance &amp; Tuning</a></li>
+<li><a href="#User_interactions">Usability and Accessibility</a></li>
+<li><a href="#Network">Network</a></li>
 <li><a href="#Payment">Payment</a></li>
-<li><a href="#Performance_.26_Optimization">Performance &amp; Optimization</a></li>
-<li><a href="#Security">Privacy &amp; Security</a></li>
+<li><a href="#Security">Security &amp; Privacy</a></li>
 </ol>
 <section>
       <h2>Document structure</h2>
-      <p>The features that these technologies add to the Web platform are organized under the following categories: <a href="#Graphics">graphics</a>, <a href="#Multimedia">multimedia</a>, <a href="#Device_Adaptation">device adaptation</a>, <a href="#Forms">forms</a>, <a href="#User_interactions">user interactions</a>, <a href="#Data_storage">data storage</a>, <a href="#Personal_Information_Management">personal information management</a>, <a href="#Sensors_and_hardware_integration">sensors and hardware integration</a>, <a href="#Network">network</a>, <a href="#Communication_and_Discovery">communication and discovery</a>, <a href="#Packaging">application lifecycle</a>, <a href="#Payment">payment</a>, <a href="#Performance_.26_Optimization">performance &amp; optimization</a> and <a href="#Security">privacy &amp; security</a>.</p>
+      <p>The features that these technologies add to the Web platform are organized under the following categories: <a href="#Graphics">Core Web Design and Development</a>, <a href="#Device_Adaptation">device adaptation</a>, <a href="#Forms">forms</a>, <a href="#Data_storage">data storage</a>, <a href="#Personal_Information_Management">personal information management</a>, <a href="#Sensors_and_hardware_integration">device interaction</a>, <a href="#Multimedia">media and real-time communications</a>, <a href="#Network">network</a>, <a href="#Packaging">application lifecycle</a>, <a href="#Payment">payment</a>, <a href="#Performance_.26_Optimization">performance &amp; tuning</a>, <a href="#User_interactions">usability and accessibility</a> and <a href="#Security">security &amp; privacy</a>.</p>
       <p class="figure"><object type="image/svg+xml" data="webapp.svg" style="width:600px;height:308px"><a href="webapp.svg" title="SVG version of the diagram"><img src="webapp.png" alt="Diagram showing the various components of the Web platform" width="600" height="308"/></a></object><br/>The Web as an application development platform</p>
       <p>In each category, a table summarizes for each feature:</p>
       <ul>
@@ -83,7 +82,7 @@
 </section>
 <section class="featureset">
       <h2 id="Graphics">1.
-        Graphics </h2>
+        Core Web Design and Development </h2>
       <div  data-feature="2D Vector Graphics">
       <p><strong><a  data-featureid="svg12">SVG</a></strong>, Scalable Vector Graphics, provides an XML-based markup language to describe two-dimensions vector graphics. Since these graphics are described as a set of geometric shapes, they can be zoomed at the user request, which makes them well-suited to create graphics on mobile devices where screen space is limited. They can also be easily animated, enabling the creation of very advanced and slick user interfaces.</p>
       <p>The integration of SVG in HTML5 opens up new possibilities, for instance applying advanced graphic filters (through SVG filters) to multimedia content, including videos. <a data-featureid="svg2">SVG 2.0</a> is set to facilitate that integration and complete the set of features in SVG.</p></div>
@@ -127,14 +126,25 @@
 <section class="featureset">
 
       <h2 id="Multimedia">2.
-        Multimedia </h2>
+        Media and Real-Time Communications </h2>
       <p>HTML5 adds two tags that dramatically improve the integration of multimedia content on the Web: the <code><strong data-feature="Video playback" ><a data-featureid="video">&lt;video&gt;</a></strong></code> and <code><strong data-feature="Audio playback"><a data-featureid="audio">&lt;audio&gt;</a></strong></code> tags. Respectively, these tags allow embedding video and audio content, and make it possible for Web developers to interact much more freely with that content than they would through plug-ins. They make multimedia content first-class citizens of the Web, the same way images have been for the past 20 years.</p>
       <p data-feature="Generation of media content">The playback content can be augmented and completed via <a data-featureid="mse">Media Source Extensions</a> that lets developers generate media content in JavaScript.</p>
       <p data-feature="Protected content playback">To cater for the needs of some content providers, a proposal to enable <strong>playback of protected content</strong>, <cite><a data-featureid="eme">Encrypted Media Extensions</a></cite> is an API that is under consideration in the <a href="http://www.w3.org/html/wg/">HTML Working Group</a>.</p>
-      <p data-feature="Multimedia Gallery access">The <a data-featureid="discovery"><cite>Network Service Discovery</cite> API</a> opens the door for integrating DLNA-hosted content into Web applications, although the future of that specification is currently under scrutiny, due to the current lack of implementors interest.</p>
+
       <p data-feature="Capturing audio/video">While the new HTML5 tags allow to play multimedia content, the <cite><a data-featureid="inputaccept">HTML Media Capture</a></cite> defines a <strong>markup-based mechanism to access captured multimedia content</strong> using attached camera and microphones, a very common feature on mobile devices. The <a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> and the <a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a> are building together an <a data-featureid="getusermedia">API (<code>getUserMedia</code>)</a> to directly manipulate <strong>streams from camera and microphones</strong>, as well as an <a data-featureid="recording">API to record these streams</a> into files, and another API to use access to cameras to <a data-featureid="imagecapture">take photos programatically</a>.</p>
       <p data-feature="Image &amp; Video analysis, modification">Beyond capturing and recording, two additional APIs add multimedia manipulation capabilities to the Web platform. We have already mentioned the <cite><a data-featureid="canvas">Canvas 2D Context</a></cite> API: it enables modifying images, which in turn opens up the possibility of <strong>video editing</strong>.</p>
       <p data-feature="Audio analysis, modification">In a similar vein, the <a href="http://www.w3.org/2011/audio/">Audio Working Group</a> is working on an API that  that makes it possible to modify audio content, as well as <strong>analyze, modify and synthesize sounds</strong>, the <a data-featureid="webaudio">Web Audio API</a>.</p>
+      <div data-feature="Local network services">
+        <p>The <a data-featureid="discovery">Network Service Discovery</a> API offers to discover services on the local network (such as the ones offered via DLNA), enabling mobile Web applications to integrate seamlessly with these services.</p>
+        <p>An alternative proposal to the Network Service Discovery API has emerged: <a data-featureid="namedwebsockets">Named Web Sockets</a> offers to provide well-known sockets to existing and approved local network services.</p>
+        <p>The <a href="http://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group</a> is building an <a data-featureid="secondscreen">an API to request display of content on an external screen</a>, including through network-based protocols, forming the basis for second-screen scenarios.</p>
+      </div>
+      <p>The <strong><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a></strong> is the host of specifications for a wider set of communication opportunities:</p>
+      <ul>
+<li data-feature="P2P connections and audio/video streams"><strong><a data-featureid="p2p">Peer-to-peer connection</a></strong> across devices,</li>
+<li><strong>P2P Audio and video streams</strong> allowing for real-time communications between users.</li>
+</ul>
+
       <p>The combination of all these features marks the starting point of the Web as a comprehensive platform for multimedia, both for consuming and producing. The rising interest around bridging the Web and TV worlds (manifested through the <a href="http://www.w3.org/2011/webtv/">W3C Web and TV Interest Group</a>) should strengthen that trend in the coming months. Mobile devices are expected to take a growing role in many users TV experience, providing a “second screen” experience, where users can find more information on or interact with a TV program they're watching via their mobile devices.</p>
 
 
@@ -173,7 +183,7 @@
 </section>
 <section class="featureset">
       <h2 id="User_interactions">5.
-        User interactions </h2>
+        Usability and Accessibility </h2>
       <div data-feature="Touch-based interactions">
       <p>An increasing share of mobile devices relies on touch-based interactions. While the traditional interactions recognized in the Web platform (keyboard, mouse input) can still be applied in this context, a more specific handling of touch-based input is a critical aspect of creating well-adapted user experiences, which <strong><a data-featureid="touchevent">Touch Events in the DOM</a></strong> (Document Object Model) enable. The work on that specification is now nearly finished.</p>
       <p>Meanwhile, the <a href="http://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> has made good progress on an alternative approach to handle user input, <a data-featureid="pointer-events">Pointer Events</a>, that allows to handle mouse, touch and pen events under a single model. This new approach was expected to replace the currently more widely deployed Touch Events, but <a href="http://lists.w3.org/Archives/Public/public-pointer-events/2014JulSep/0051.html">recent developments</a> show a less clear picture where a mix of Touch and Pointer Events will remain.</p>
@@ -227,7 +237,7 @@
 </section>
 <section class="featureset">
       <h2 id="Sensors_and_hardware_integration">8.
-        Sensors and hardware integration </h2>
+        Device interaction </h2>
       <p>Mobile devices are packed with sensors, making them a great bridge between the real and virtual worlds: GPS, accelerometer, ambient light detector, microphone, camera, thermometer, etc.</p>
       <p>To take full advantage of these sensors in mobile Web applications, Web developers need to be provided with hooks to interact with them.</p>
       <p data-feature="Geolocation">The <cite><strong><a data-featureid="geolocation">Geolocation API</a></strong></cite> provides a common interface for locating the device, independently of the underlying technology (GPS, WIFI networks identification, triangulation in cellular networks, etc.). Work towards a new version of the API that would include geofencing is <a href="http://lists.w3.org/Archives/Public/public-geolocation/2014Jan/0008.html">under consideration</a>.</p>
@@ -262,27 +272,7 @@
       </div>
 </section>
 <section class="featureset">
-      <h2 id="Communication_and_Discovery">10.
-        Communication and Discovery </h2>
-      <p>Beyond connection to on-line services, allowing communications between users, but also between devices and between applications is an important aspect of a good mobile development platform. To communicate with unknown devices or pre-existing services, a discovery component is critical.</p>
-      <p data-feature="Emails, SMS and MMS">For Web apps not in a browser, the <a href="http://www.w3.org/2012/sysapps/">System Applications Working Group</a> is working on a complete <a data-featureid="messaging-sys">Messaging API</a>.</p>
-      <div data-feature="Inter-app communications">
-	<p>The <code><strong>postMessage</strong></code> API of <cite><a data-featureid="postmessage">HTML5 Web Messaging</a></cite> allows for Web Applications to communicate between each other.</p>
-      </div>
-      <div data-feature="Local network services">
-        <p>The <a data-featureid="discovery">Network Service Discovery</a> API offers to discover services on the local network (such as the ones offered via DLNA), enabling mobile Web applications to integrate seamlessly with these services.</p>
-        <p>An alternative proposal to the Network Service Discovery API has emerged: <a data-featureid="namedwebsockets">Named Web Sockets</a> offers to provide well-known sockets to existing and approved local network services.</p>
-        <p>The <a href="http://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group</a> is building an <a data-featureid="secondscreen">an API to request display of content on an external screen</a>, including through network-based protocols, forming the basis for second-screen scenarios.</p>
-      </div>
-      <p>The <strong><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a></strong> is the host of specifications for a wider set of communication opportunities:</p>
-      <ul>
-<li data-feature="P2P connections and audio/video streams"><strong><a data-featureid="p2p">Peer-to-peer connection</a></strong> across devices,</li>
-<li><strong>P2P Audio and video streams</strong> allowing for real-time communications between users.</li>
-</ul>
-
-</section>
-<section class="featureset">
-      <h2 id="Packaging">11.
+      <h2 id="Packaging">10.
         Application Lifecycle </h2>
       <p>An important aspect of the user experience of applications is linked to how the user perceives the said application is available permanently (even when off-line, which is particularly important on mobile devices), as well as its ability to get started based on external notifications.</p>
       <p>These notions are part of the overall <em>application lifecycle</em>: how applications get installed, shown to the user in applications list, started, stopped, woken up from remote notifications, synced up when the device goes on-line.</p>
@@ -306,7 +296,7 @@
 
 </section>
 <section class="featureset">
-      <h2 id="Payment">12.
+      <h2 id="Payment">11.
         Payment</h2>
 
 <p>Native mobile application stores have made it much easier for developers to monetize some of their applications, either by selling the application itself to users, or by providing in-app purchases.</p>
@@ -317,8 +307,8 @@
 </section>
 
 <section class="featureset">
-      <h2 id="Performance_.26_Optimization">13.
-        Performance &amp; Optimization </h2>
+      <h2 id="Performance_.26_Optimization">12.
+        Performance &amp; Tuning </h2>
       <p>Due to their limited CPU, and more importantly to their limited battery, mobile devices require a lot of attention in terms of performance.</p>
       <p data-feature="Timing hooks">The work started by the <a href="http://www.w3.org/2010/webperf/">Web Performance Working Group</a> on <cite><strong><a data-featureid="nav-timing">Navigation Timing</a></strong></cite>, <cite><strong><a  data-featureid="res-timing">Resource Timing</a></strong></cite>, <cite><strong><a  data-featureid="perf-timeline">Performance Timeline</a></strong></cite> and <cite><strong><a data-featureid="user-timing">User Timing</a></strong></cite>, gives tools to Web developers for optimizing their Web applications. </p>
       <p data-feature="Network prioritization">The early work on a <cite><a data-featureid="lazy">Resource Priorities</a></cite> specification, part of the <a href="http://www.w3.org/2013/01/webperf.html">Web Performance Working Group charter</a>, would have let developers indicate which network requests should be prioritized, has now been abandoned. It is replaced by the <cite><a data-featureid="res-hints">Resource Hints</a></cite> specification, which let developers indicate what resources should be downloaded when the browser can afford it.</p>
@@ -329,8 +319,8 @@
       <p data-feature="Optimization Best Practices">The <cite><a data-featureid="mwabp">Mobile Web Application Best Practices</a></cite> provide general advice on how to build Web applications that work well on mobile devices, taking into account in particular the needs for optimization. The opportunity to update these best practices is <a href="https://github.com/w3c-webmob/mobile_best_practices">under discussion</a> in the <a href="http://www.w3.org/Mobile/IG/">Web and Mobile Interest Group</a>.</p>
 </section>
 <section class="featureset">
-      <h2 id="Security">14.
-        Privacy &amp; Security</h2>
+      <h2 id="Security">13.
+        Security &amp; Privacy</h2>
       <p>Mobile devices follow their users everywhere, and hold some of their most private or confidential data (contacts, pictures, calendar, etc.) As a result, it is critical for users to be able to rely on their phones to keep that data safe from attackers.</p>
       <p>W3C specifications are reviewed for their security and privacy impact as part of their progress through the Recommendation track; the <a href="http://www.w3.org/Privacy/">Privacy Interest Group</a> and the <a href="http://www.w3.org/Security/wiki/IG">Web Security Interest Group</a> in particular are coordinating reviews on their respective fields.</p>
       <p data-feature="Permission management">Many sensitive APIs are gated by a request for user consent; while these requests give control to the user, they can be sometimes hard to integrate in the overall user experience without visibility on which permission has been granted or denied. The <a data-featureid="permissions">Permissions API</a> aims at fixing this.</p>
