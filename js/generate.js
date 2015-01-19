@@ -184,17 +184,15 @@ function fillTables() {
 			    fillCell(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus", width:115, height:43});
 			}
 			if (data.tests.repo) {
-			    var div = document.createElement("div");
-			    var div2 = document.createElement("div");
-			    div2.setAttribute("class","githubribbon");
-			    fillCell(div2, {"url":data.tests.repo, "label":"Fork me on GitHub"});
-			    div.appendChild(div2);
-			    fillCell(div, data.tests);
-			    el8.appendChild(div);
-			    el8.classList.add(data.tests.level);
-			} else {
-			    fillCell(el8, data.tests);
+			    var gh_link = document.createElement("a");
+			    var gh_logo = document.createElement("img");
+                            gh_logo.setAttribute("src", "github.svg");
+                            gh_link.setAttribute("href", data.tests.repo);
+                            gh_link.setAttribute("title", "Fork the test suite for " + specData[s].title + " on GitHub");
+                            gh_link.appendChild(gh_logo);
+			    el8.appendChild(gh_link);
 			}
+			fillCell(el8, data.tests);
 			el8.classList.add("tests");
                         if (counterReq == counterRes) {
                             mergeWGCells();
