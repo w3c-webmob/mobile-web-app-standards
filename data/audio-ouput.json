@@ -1,0 +1,33 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "audio-output"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/mediacapture-output/"
+   },
+   "TR" : "http://www.w3.org/TR/mediacapture-streams/",
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2009/dap/",
+         "label" : "Device APIs Working Group"
+      },
+      {
+         "url" : "http://www.w3.org/2011/04/webrtc/",
+         "label" : "Web Real-Time Communications Working Group"
+      }
+   ],
+   "maturity" : "N/A",
+   "title": "Audio output devices API",
+   "stability" : {
+      "level" : "low",
+      "label" : "early draft"
+   }
+}
