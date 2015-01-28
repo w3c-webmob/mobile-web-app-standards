@@ -2,8 +2,8 @@
    "coremob" : "fulfills",
    "tests" : {
       "level" : "medium",
-      "repo" : "http://w3c-test.org/animation-timing/",
-      "url" : "https://github.com/w3c/web-platform-tests/tree/master/animation-timing",
+      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/animation-timing",
+      "url" : "http://w3c-test.org/animation-timing/",
       "label" : "Well started"
    },
    "impl" : {

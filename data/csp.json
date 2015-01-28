@@ -2,7 +2,7 @@
    "tests" : {
       "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/submissions/113/csp/",
+      "url" : "http://w3c-test.org/content-security-policy/",
       "label" : "Well started"
    },
    "wpd" : {
