@@ -7,8 +7,8 @@
       "label" : "Well started"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited but growing",
+      "level" : "medium",
+      "label" : "Growing deployment",
       "id" : "srcset"
    },
    "editors" : {
