@@ -11,7 +11,7 @@
       "id" : "crypto"
    },
    "editors" : {
-      "url" : "http://www.w3.org/2012/webcrypto/WebCryptoAPI/"
+      "url" : "https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html"
    },
    "TR" : "http://www.w3.org/TR/WebCryptoAPI/",
    "stability" : {
