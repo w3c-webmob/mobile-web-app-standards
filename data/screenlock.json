@@ -12,7 +12,7 @@
       "id" : "screenlock"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/screen-orientation/raw-file/tip/Overview.html"
+      "url" : "https://w3c.github.io/screen-orientation/"
    },
    "TR" : "http://www.w3.org/TR/screen-orientation/",
    "stability" : {
