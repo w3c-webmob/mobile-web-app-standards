@@ -11,7 +11,7 @@
       "id" : "mse"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/html-media/raw-file/default/media-source/media-source.html"
+      "url" : "http://w3c.github.io/media-source/"
    },
    "TR" : "http://www.w3.org/TR/media-source/",
    "stability" : {
