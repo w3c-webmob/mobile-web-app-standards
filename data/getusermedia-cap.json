@@ -13,7 +13,8 @@
    "editors" : {
       "url" : "http://w3c.github.io/mediacapture-main/"
    },
-   "TR" : "http://www.w3.org/TR/mediacapture-streams/",
+   "TR" : "http://www.w3.org/TR/mediacapture-streams/#source-capabilities",
+   "feature": "Source capabilities"
    "stability" : {
       "level" : "medium",
       "label" : "Stabilizing"
