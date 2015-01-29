@@ -1,9 +1,9 @@
 {
    "tests" : {
-      "level" : "low",
-      "repo" : "",
-      "url" : "",
-      "label" : "None"
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/web-animations/animation-node",
+      "url" : "http://w3c-test.org/web-animations/",
+      "label" : "Well started"
    },
    "impl" : {
       "level" : "low",
