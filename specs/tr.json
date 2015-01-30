@@ -49,6 +49,20 @@
       }
     ]
   }, 
+  "audio-ouput": {
+    "maturity": "WD", 
+    "title": "Media Capture and Streams", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
   "autocomplete": {
     "maturity": "WD", 
     "title": "HTML 5.1", 
@@ -70,7 +84,7 @@
     ]
   }, 
   "battery": {
-    "maturity": "LastCall", 
+    "maturity": "CR", 
     "title": "Battery Status API", 
     "wgs": [
       {
@@ -154,7 +168,7 @@
     ]
   }, 
   "crypto": {
-    "maturity": "LastCall", 
+    "maturity": "CR", 
     "title": "Web Cryptography API", 
     "wgs": [
       {
@@ -272,7 +286,7 @@
     ]
   }, 
   "css-touch-action": {
-    "maturity": "LastCall", 
+    "maturity": "PR", 
     "title": "Pointer Events", 
     "wgs": [
       {
@@ -352,7 +366,7 @@
     ]
   }, 
   "eventsource": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Server-Sent Events", 
     "wgs": [
       {
@@ -386,12 +400,12 @@
     "title": "Fullscreen", 
     "wgs": [
       {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
-      }, 
-      {
         "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
+      }, 
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
@@ -488,7 +502,7 @@
     ]
   }, 
   "indexeddb": {
-    "maturity": "CR", 
+    "maturity": "REC", 
     "title": "Indexed Database API", 
     "wgs": [
       {
@@ -666,12 +680,12 @@
     "title": "Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)", 
     "wgs": [
       {
-        "label": "Education and Outreach Working Group", 
-        "url": "http://www.w3.org/WAI/EO/"
-      }, 
-      {
         "label": "Mobile Web Best Practices Working Group", 
         "url": "http://www.w3.org/2005/MWI/BPWG/"
+      }, 
+      {
+        "label": "Education and Outreach Working Group", 
+        "url": "http://www.w3.org/WAI/EO/"
       }
     ]
   }, 
@@ -735,6 +749,20 @@
       }
     ]
   }, 
+  "packaging": {
+    "maturity": "WD", 
+    "title": "Packaging on the Web", 
+    "wgs": [
+      {
+        "label": "Technical Architecture Group", 
+        "url": "http://www.w3.org/2001/tag/"
+      }, 
+      {
+        "label": "Web Applications Working Group", 
+        "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
   "perf-timeline": {
     "maturity": "REC", 
     "title": "Performance Timeline", 
@@ -756,7 +784,7 @@
     ]
   }, 
   "pointer-events": {
-    "maturity": "LastCall", 
+    "maturity": "PR", 
     "title": "Pointer Events", 
     "wgs": [
       {
@@ -830,7 +858,7 @@
     ]
   }, 
   "res-timing": {
-    "maturity": "CR", 
+    "maturity": "WD", 
     "title": "Resource Timing", 
     "wgs": [
       {
@@ -940,7 +968,7 @@
     ]
   }, 
   "vibration": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Vibration API", 
     "wgs": [
       {
