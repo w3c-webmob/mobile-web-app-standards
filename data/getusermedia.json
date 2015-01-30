@@ -3,11 +3,11 @@
       "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/mediacapture-streams/",
-      "label" : "well started"
+      "label" : "started"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited but growing",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "getusermedia"
    },
    "editors" : {

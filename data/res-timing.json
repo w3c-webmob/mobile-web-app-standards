@@ -11,7 +11,7 @@
       "id" : "res-timing"
    },
    "editors" : {
-      "url" : "http://w3c.github.io/resource-timing/1"
+      "url" : "http://w3c.github.io/resource-timing/"
    },
    "TR" : "http://www.w3.org/TR/resource-timing/",
    "stability" : {

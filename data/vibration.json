@@ -1,9 +1,9 @@
 {
    "tests" : {
-      "level" : "low",
+      "level" : "high",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/vibration/",
-      "label" : "Started"
+      "label" : "Good coverage"
    },
    "impl" : {
       "level" : "medium",

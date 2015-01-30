@@ -1,9 +1,9 @@
 {
    "tests" : {
-      "level" : "low",
+      "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/notifications/",
-      "label" : "None"
+      "label" : "Well started"
    },
    "impl" : {
       "level" : "medium",

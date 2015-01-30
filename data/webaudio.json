@@ -10,8 +10,8 @@
       "label" : "An introduction to the Web Audio API"
    },
    "impl" : {
-      "level" : "medium",
-      "label" : "Growing",
+      "level" : "high",
+      "label" : "Good deployment",
       "id" : "webaudio"
    },
    "editors" : {

@@ -4,15 +4,15 @@
       "level" : "high",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/pointerevents/",
-      "label" : "Good covergae"
+      "label" : "Good coverage"
    },
    "wpd" : {
       "url" : "http://docs.webplatform.org/wiki/concepts/PointerEvents",
       "label" : "Pointer Events primer"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited deployment but growing",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "css-touch-action"
    },
    "editors" : {

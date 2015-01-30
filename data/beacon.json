@@ -15,7 +15,7 @@
    },
    "TR" : "http://www.w3.org/TR/beacon/",
    "stability" : {
-      "level" : "low",
-      "label" : "Early draft"
+      "level" : "medium",
+      "label" : "Stabilizing"
    }
 }

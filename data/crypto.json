@@ -3,7 +3,7 @@
       "level" : "low",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/WebCryptoAPI/",
-      "label" : "None"
+      "label" : "Early start"
    },
    "impl" : {
       "level" : "high",
@@ -15,7 +15,7 @@
    },
    "TR" : "http://www.w3.org/TR/WebCryptoAPI/",
    "stability" : {
-      "level" : "medium",
-      "label" : "Stabilizing"
+      "level" : "high",
+      "label" : "Stable"
    }
 }

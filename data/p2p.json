@@ -10,8 +10,8 @@
       "label" : "WebRTC Introduction"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited but growing",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "p2p"
    },
    "editors" : {

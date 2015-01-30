@@ -7,7 +7,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "A few experimental ones",
+      "label" : "Limited",
       "id" : "css-will-change"
    },
    "editors" : {

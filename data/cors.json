@@ -12,7 +12,7 @@
    },
    "impl" : {
       "level" : "high",
-      "label" : "Getting well-deployed",
+      "label" : "Well-deployed",
       "id" : "cors"
    },
    "editors" : {

@@ -17,7 +17,7 @@
    },
    "TR" : "http://www.w3.org/TR/IndexedDB/",
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html"
+      "url" : "http://w3c.github.io/IndexedDB/"
    },
    "wdc" : {
       "url" : "http://www.w3devcampus.com/html5-w3c-training/",
