@@ -5,7 +5,7 @@
       "label" : "Offline storage tutorial"
    },
    "tests" : {
-      "level" : "medium",
+      "level" : "high",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/IndexedDB/",
       "label" : "Good coverage"
