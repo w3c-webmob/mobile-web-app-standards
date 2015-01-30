@@ -395,6 +395,16 @@
       }
     ]
   }, 
+  "frame-timing": {
+    "maturity": "WD", 
+    "title": "Frame Timing", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "http://www.w3.org/2010/webperf/"
+      }
+    ]
+  }, 
   "fullscreen": {
     "maturity": "Retired", 
     "title": "Fullscreen", 
@@ -944,6 +954,16 @@
       {
         "label": "SVG Working Group", 
         "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }
+    ]
+  }, 
+  "task-scheduler": {
+    "maturity": "WD", 
+    "title": "Task Scheduler API Specification", 
+    "wgs": [
+      {
+        "label": "System Applications Working Group", 
+        "url": "http://www.w3.org/2012/sysapps/"
       }
     ]
   }, 
