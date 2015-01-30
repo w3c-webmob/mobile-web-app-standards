@@ -15,7 +15,7 @@
       "id" : "csp"
    },
    "editors" : {
-      "url" : "http://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-1.0-specification.html"
+      "url" : ""
    },
    "TR" : "http://www.w3.org/TR/CSP/",
    "stability" : {
