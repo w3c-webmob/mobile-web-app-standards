@@ -15,7 +15,7 @@
       "id" : "csp"
    },
    "editors" : {
-      "url" : ""
+      "label" : "N/A"
    },
    "TR" : "http://www.w3.org/TR/CSP/",
    "stability" : {
