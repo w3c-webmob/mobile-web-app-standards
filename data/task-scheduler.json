@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "task-scheduler"
+   },
+   "editors" : {
+      "url" : "http://www.w3.org/2012/sysapps/web-alarms/"
+   },
+   "TR" : "http://www.w3.org/TR/task-scheduler/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
