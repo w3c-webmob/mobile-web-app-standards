@@ -11,7 +11,7 @@
       "id" : "mediacapture"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/dap/raw-file/default/media-stream-capture/ImageCapture.html"
+      "url" : "http://w3c.github.io/mediacapture-image/"
    },
    "TR" : "http://www.w3.org/TR/image-capture/",
    "stability" : {

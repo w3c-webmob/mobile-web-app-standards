@@ -11,7 +11,7 @@
       "id" : "recording"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/dap/raw-file/default/media-stream-capture/MediaRecorder.html"
+      "url" : "http://w3c.github.io/mediacapture-record/MediaRecorder.html"
    },
    "TR" : "http://www.w3.org/TR/mediastream-recording/",
    "stability" : {
