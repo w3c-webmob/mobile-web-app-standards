@@ -111,3 +111,4 @@ text.past { fill:#FFF;}
 .partial { opacity: 0.8} 
 text.symbol { font-size:40px;} 
 text.versions { font-size:20px; text-anchor:start;}
+.logo img { vertical-align: middle;}
