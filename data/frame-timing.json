@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "frame-timing"
+   },
+   "editors" : {
+      "url": "https://w3c.github.io/frame-timing/"
+   },
+   "TR" : "http://www.w3.org/TR/frame-timing/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
