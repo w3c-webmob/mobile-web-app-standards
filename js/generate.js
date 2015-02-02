@@ -151,7 +151,7 @@ function fillTables() {
 			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
 			    wg = specData[s].wgs[w];
-			    wg.label = wg.label.replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS');
+			    wg.label = wg.label.replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS').replace(/Technical Architecture Group/,'TAG');
 			    if (w > 0) {
 				if (w < specData[s].wgs.length - 1) {
 				    el2.appendChild(document.createTextNode(","));
