@@ -1,0 +1,29 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "geofencing"
+   },
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2008/geolocation/",
+         "label" : "Geolocation Working Group"
+      }
+   ],
+   "maturity" : "ed",
+   "TR" : "",
+   "title": "Geofencing API",
+   "editors" : {
+      "url" : "https://w3c.github.io/geolocation-api/geofencing-spec.html"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Just started"
+   }
+}
