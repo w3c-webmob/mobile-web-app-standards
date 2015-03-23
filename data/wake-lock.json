@@ -1,11 +1,4 @@
 {
-   "wgs" : [
-      {
-         "url" : "http://www.w3.org/2009/dap/",
-         "label" : "Device APIs Working Group"
-      }
-   ],
-   "maturity" : "N/A",
    "tests" : {
       "level" : "low",
       "repo" : "",
@@ -17,13 +10,12 @@
       "label" : "None",
       "id" : "wake-lock"
    },
-   "title" : "Wake Lock API",
-   "TR" : "",
+   "TR" : "http://www.w3.org/TR/wake-lock/",
    "editors" : {
       "url" : "http://w3c.github.io/wake-lock/"
    },
    "stability" : {
       "level" : "low",
-      "label" : "Unofficial draft"
+      "label" : "Just started"
    }
 }
