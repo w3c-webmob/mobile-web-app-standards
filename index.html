@@ -173,8 +173,13 @@
       </div>
       <p data-feature="Database query/update">On top of this file-based access, the <cite><strong><a data-featureid="indexeddb">Indexed Database API</a></strong></cite> (IndexedDB) defines a database of values and hierarchical objects that integrates naturally with JavaScript, and can be queried and updated very efficiently - a <a href="http://www.w3.org/2008/webapps/wiki/IndexedDatabaseFeatures">new version of the specification</a> is under consideration. Note that the work around a <a data-featureid="websql">client-side SQL-based database</a>, which had been started in 2009, has been abandoned in favor of this new system.</p>
       <p data-feature="Quota for storage">As more and more data need to be stored by the browser (e.g. for offline usage), it becomes critical for developers to get reliable storage space, which the proposed <strong><a data-featureid="quota">Quota Management API</a></strong> will offer to Web applications.</p>
-      <p data-feature="Encrypted storage">Likewise, as some of this data need to be encrypted, the <a data-featureid="crypto">Web Cryptography API</a> from the <a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a> exposes strong cryptography primitives to Web applications, and can be bound to pre-provisioned keys via the <a data-featureid="cryptokey">WebCrypto Key Discovery</a> API.</p>
+      <div data-feature="Addressbook data">
+        <p>Communication applications can benefit from integrating with their users’ existing data records; on mobile devices, the address book is a  particularly useful source of information.</p>
+	<p>For Web apps outside of the browser, a purely programmatic approach is part of the <a href="http://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a>, with work on a <a data-featureid="contacts-sys">Contacts Manager API</a> in progress.</p>
+        <p>In the browser, HTML 5.1 provides <a data-featureid="autocomplete">autocompleted fields for contacts information</a> that would let browsers re-use data from addressbooks.</p>
+      </div>
 
+      <p data-feature="Encrypted storage">Some of this data need to be encrypted, the <a data-featureid="crypto">Web Cryptography API</a> from the <a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a> exposes strong cryptography primitives to Web applications, and can be bound to pre-provisioned keys via the <a data-featureid="cryptokey">WebCrypto Key Discovery</a> API.</p>
 
 </section>
 
@@ -204,11 +209,6 @@
       <p>The combination of all these features marks the starting point of the Web as a comprehensive platform for multimedia, both for consuming and producing. The rising interest around bridging the Web and TV worlds (manifested through the <a href="http://www.w3.org/2011/webtv/">W3C Web and TV Interest Group</a>) should strengthen that trend in the coming months. Mobile devices are expected to take a growing role in many users TV experience, providing a “second screen” experience, where users can find more information on or interact with a TV program they're watching via their mobile devices.</p>
 
       <p>Likewise, the opportunity offered to deploy real-time communication services on the Web is another step towards the unification of the telecommunication and Web ecosystems.</p>
-      <div data-feature="Addressbook data">
-        <p>Communication applications can benefit from integrating with their users’ existing data records; on mobile devices, the address book is a  particularly useful source of information.</p>
-	<p>For Web apps outside of the browser, a purely programmatic approach is part of the <a href="http://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a>, with work on a <a data-featureid="contacts-sys">Contacts Manager API</a> in progress.</p>
-        <p>In the browser, HTML 5.1 provides <a data-featureid="autocomplete">autocompleted fields for contacts information</a> that would let browsers re-use data from addressbooks.</p>
-
 
 
 </section>
