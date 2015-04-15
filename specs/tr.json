@@ -187,16 +187,6 @@
       }
     ]
   }, 
-  "csp": {
-    "maturity": "CR", 
-    "title": "Content Security Policy 1.0", 
-    "wgs": [
-      {
-        "label": "Web Application Security Working Group", 
-        "url": "http://www.w3.org/2011/webappsec/"
-      }
-    ]
-  }, 
   "css-2d": {
     "maturity": "WD", 
     "title": "CSS Transforms Module Level 1", 
@@ -285,8 +275,18 @@
       }
     ]
   }, 
+  "css-snappoints": {
+    "maturity": "WD", 
+    "title": "CSS Scroll Snap Points Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-touch-action": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Pointer Events", 
     "wgs": [
       {
@@ -366,7 +366,7 @@
     ]
   }, 
   "eventsource": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Server-Sent Events", 
     "wgs": [
       {
@@ -392,16 +392,6 @@
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
         "url": "http://www.w3.org/Style/CSS/members"
-      }
-    ]
-  }, 
-  "frame-timing": {
-    "maturity": "WD", 
-    "title": "Frame Timing", 
-    "wgs": [
-      {
-        "label": "Web Performance Working Group", 
-        "url": "http://www.w3.org/2010/webperf/"
       }
     ]
   }, 
@@ -627,7 +617,7 @@
   }, 
   "manifestjson": {
     "maturity": "WD", 
-    "title": "Manifest for web apps and bookmarks", 
+    "title": "Manifest for a web application", 
     "wgs": [
       {
         "label": "Web Applications Working Group", 
@@ -724,8 +714,7 @@
     "title": "Web NFC API", 
     "wgs": [
       {
-        "label": "Near Field Communications Working Group", 
-        "url": "http://www.w3.org/2012/nfc/"
+        "url": "http://www.w3.org/2012/09/nfc-wg-charter.html"
       }
     ]
   }, 
@@ -794,7 +783,7 @@
     ]
   }, 
   "pointer-events": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Pointer Events", 
     "wgs": [
       {
@@ -804,7 +793,7 @@
     ]
   }, 
   "postmessage": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "HTML5 Web Messaging", 
     "wgs": [
       {
@@ -988,7 +977,7 @@
     ]
   }, 
   "vibration": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Vibration API", 
     "wgs": [
       {
@@ -1024,6 +1013,16 @@
       {
         "label": "Web Performance Working Group", 
         "url": "http://www.w3.org/2010/webperf/"
+      }
+    ]
+  }, 
+  "wake-lock": {
+    "maturity": "WD", 
+    "title": "Wake Lock API", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
