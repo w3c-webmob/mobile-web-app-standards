@@ -1,0 +1,29 @@
+{
+   "wgs" : [
+      {
+         "url" : "https://www.w3.org/community/web-nfc/",
+         "label" : "Web NFC Community Group"
+      }
+   ],
+   "maturity" : "Not on standards track",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "webnfc"
+   },
+   "title" : "Web NFC API",
+   "TR" : "",
+   "editors" : {
+      "url" : "http://w3c.github.io/web-nfc/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
