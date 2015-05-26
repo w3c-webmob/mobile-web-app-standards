@@ -14,10 +14,10 @@
       "label" : "Well-deployed",
       "id" : "csp"
    },
-   "editors" : {
-      "label" : "N/A"
+    "editors" : {
+        "url": "https://w3c.github.io/webappsec/specs/CSP2/"
    },
-   "TR" : "http://www.w3.org/TR/CSP/",
+   "TR" : "http://www.w3.org/TR/CSP2/",
    "stability" : {
       "level" : "high",
       "label" : "Stable"
