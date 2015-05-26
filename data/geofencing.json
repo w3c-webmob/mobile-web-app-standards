@@ -20,7 +20,7 @@
    "TR" : "",
    "title": "Geofencing API",
    "editors" : {
-      "url" : "https://w3c.github.io/geolocation-api/geofencing-spec.html"
+      "url" : "https://w3c.github.io/geofencing-api/"
    },
    "stability" : {
       "level" : "low",
