@@ -8,7 +8,7 @@
       "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/workers/",
-      "label" : "Well started"
+      "label" : "Good coverage"
    },
    "impl" : {
       "level" : "high",

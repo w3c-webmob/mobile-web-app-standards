@@ -1,9 +1,9 @@
-{
+  {
    "tests" : {
       "level" : "medium",
       "repo" : "https://github.com/w3c/web-platform-tests/",
       "url" : "http://w3c-test.org/websockets/",
-      "label" : "Well started"
+      "label" : "Good coverage"
    },
    "wpd" : {
       "url" : "http://docs.webplatform.org/wiki/tutorials/websockets_basics",
