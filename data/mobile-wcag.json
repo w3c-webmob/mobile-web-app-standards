@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "N/A",
+      "id" : ""
+   },
+   "TR" : "http://www.w3.org/TR/mobile-accessibility-mapping/",
+   "editors" : {
+      "url" : "http://w3c.github.io/Mobile-A11y-TF-Note/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
