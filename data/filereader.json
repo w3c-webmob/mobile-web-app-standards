@@ -16,7 +16,7 @@
       "label" : "Mobile Web 2: Programming Web Applications on-line course"
    },
    "editors" : {
-      "url" : "http://dev.w3.org/2006/webapi/FileAPI/"
+      "url" : "https://w3c.github.io/FileAPI/"
    },
    "TR" : "http://www.w3.org/TR/FileAPI/",
    "stability" : {
