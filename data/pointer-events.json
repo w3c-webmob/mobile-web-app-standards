@@ -12,7 +12,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "Limited deployment and limited planned ones",
+      "label" : "Limited deployment",
       "id" : "pointer-events"
    },
    "editors" : {
