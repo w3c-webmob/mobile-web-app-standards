@@ -49,9 +49,9 @@
       }
     ]
   }, 
-  "audio-ouput": {
+  "audio-output": {
     "maturity": "WD", 
-    "title": "Media Capture and Streams", 
+    "title": "Audio Output Devices API", 
     "wgs": [
       {
         "label": "Device APIs Working Group", 
@@ -114,7 +114,7 @@
     ]
   }, 
   "canvas": {
-    "maturity": "CR", 
+    "maturity": "LastCall", 
     "title": "HTML Canvas 2D Context", 
     "wgs": [
       {
@@ -167,6 +167,16 @@
       }
     ]
   }, 
+  "credential-management": {
+    "maturity": "WD", 
+    "title": "Credential Management Level 1", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "crypto": {
     "maturity": "CR", 
     "title": "Web Cryptography API", 
@@ -184,6 +194,16 @@
       {
         "label": "Web Cryptography Working Group", 
         "url": "http://www.w3.org/2012/webcrypto/"
+      }
+    ]
+  }, 
+  "csp": {
+    "maturity": "CR", 
+    "title": "Content Security Policy Level 2", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
       }
     ]
   }, 
@@ -376,7 +396,7 @@
     ]
   }, 
   "filereader": {
-    "maturity": "LastCall", 
+    "maturity": "WD", 
     "title": "File API", 
     "wgs": [
       {
@@ -392,6 +412,16 @@
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
         "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "frame-timing": {
+    "maturity": "WD", 
+    "title": "Frame Timing", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "http://www.w3.org/2010/webperf/"
       }
     ]
   }, 
@@ -430,7 +460,7 @@
     ]
   }, 
   "getusermedia": {
-    "maturity": "WD", 
+    "maturity": "LastCall", 
     "title": "Media Capture and Streams", 
     "wgs": [
       {
@@ -444,7 +474,7 @@
     ]
   }, 
   "getusermedia-cap": {
-    "maturity": "WD", 
+    "maturity": "LastCall", 
     "title": "Media Capture and Streams", 
     "wgs": [
       {
@@ -595,16 +625,6 @@
       }
     ]
   }, 
-  "lazy": {
-    "maturity": "Retired", 
-    "title": "Resource Priorities", 
-    "wgs": [
-      {
-        "label": "Web Performance Working Group", 
-        "url": "http://www.w3.org/2010/webperf/"
-      }
-    ]
-  }, 
   "manifest": {
     "maturity": "REC", 
     "title": "HTML5", 
@@ -652,6 +672,20 @@
       {
         "label": "System Applications Working Group", 
         "url": "http://www.w3.org/2012/sysapps/"
+      }
+    ]
+  }, 
+  "mobile-wcag": {
+    "maturity": "WD", 
+    "title": "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile", 
+    "wgs": [
+      {
+        "label": "Web Content Accessibility Guidelines Working Group", 
+        "url": "http://www.w3.org/WAI/GL/"
+      }, 
+      {
+        "label": "User Agent Accessibility Guidelines Working Group", 
+        "url": "http://www.w3.org/WAI/UA/"
       }
     ]
   }, 
@@ -709,17 +743,8 @@
       }
     ]
   }, 
-  "nfc": {
-    "maturity": "WD", 
-    "title": "Web NFC API", 
-    "wgs": [
-      {
-        "url": "http://www.w3.org/2012/09/nfc-wg-charter.html"
-      }
-    ]
-  }, 
   "notification": {
-    "maturity": "LastCall", 
+    "maturity": "CR", 
     "title": "Web Notifications", 
     "wgs": [
       {
@@ -772,6 +797,16 @@
       }
     ]
   }, 
+  "permissions": {
+    "maturity": "WD", 
+    "title": "The Permissions API", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "picture": {
     "maturity": "WD", 
     "title": "HTML 5.1", 
@@ -793,7 +828,7 @@
     ]
   }, 
   "postmessage": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "HTML5 Web Messaging", 
     "wgs": [
       {
@@ -883,6 +918,16 @@
       {
         "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
+  "secondscreen": {
+    "maturity": "WD", 
+    "title": "Presentation API", 
+    "wgs": [
+      {
+        "label": "Second Screen Presentation Working Group", 
+        "url": "http://www.w3.org/2014/secondscreen/"
       }
     ]
   }, 
