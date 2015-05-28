@@ -20,7 +20,7 @@
    "title" : "FileSystem API",
    "TR" : "",
    "editors" : {
-      "url" : "http://w3c.github.io/filesystem-api/Overview.html"
+      "url" : "http://w3c.github.io/filesystem-api/"
    },
    "stability" : {
       "level" : "low",
