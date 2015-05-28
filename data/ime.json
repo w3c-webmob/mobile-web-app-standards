@@ -16,6 +16,6 @@
    "TR" : "http://www.w3.org/TR/ime-api/",
    "stability" : {
       "level" : "low",
-      "label" : "Still changing"
+      "label" : "Uncertainty about future"
    }
 }
