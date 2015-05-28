@@ -7,7 +7,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "None",
+      "label" : "Limited",
       "id" : "push"
    },
    "editors" : {
