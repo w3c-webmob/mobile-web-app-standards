@@ -7,7 +7,7 @@
       "label" : "Good coverage"
    },
    "impl" : {
-      "level" : "good",
+      "level" : "high",
       "label" : "Well deployed",
       "id" : "xhr2"
    },
