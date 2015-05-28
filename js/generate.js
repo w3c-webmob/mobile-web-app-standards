@@ -134,7 +134,11 @@ function fillTables() {
 		    return function() {
                         counterRes++;
 			var obj, level, editorsactivity, maturityInfo;
-			var data = JSON.parse(x.responseText);
+                        try {
+			    var data = JSON.parse(x.responseText);
+                        } catch (e) {
+                            console.error("Failed to parse " + spec + ".json: " +e);
+                        }
 			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
 			for (var l = 0 ; l < links.length; l++) {
 			    var url = data.editors.url;
