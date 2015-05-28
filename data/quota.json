@@ -12,7 +12,7 @@
       "id" : "quota"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html"
+      "url" : "http://w3c.github.io/quota-api/"
    },
    "TR" : "http://www.w3.org/TR/quota-api/",
    "stability" : {
