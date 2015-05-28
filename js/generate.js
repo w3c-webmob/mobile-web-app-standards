@@ -137,7 +137,7 @@ function fillTables() {
                         try {
 			    var data = JSON.parse(x.responseText);
                         } catch (e) {
-                            console.error("Failed to parse " + spec + ".json: " +e);
+                            console.error("Failed to parse " + spec + ".json: " + x.responseText + "(" + e + ")");
                         }
 			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
 			for (var l = 0 ; l < links.length; l++) {
