@@ -24,7 +24,7 @@
       "label" : "HTML5 on-line course"
    },
    "stability" : {
-      "level" : "low",
+      "level" : "high",
       "label" : "Mostly stable"
    },
    "feature" : "Data and Time input element"
