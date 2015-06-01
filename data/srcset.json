@@ -12,10 +12,10 @@
       "id" : "srcset"
    },
    "editors" : {
-      "url" : "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-srcset"
+      "url" : "http://www.w3.org/html/wg/drafts/html/master/semantics.html#attr-img-srcset"
    },
    "feature": "srcset attribute",
-   "TR" : "http://www.w3.org/TR/html51/embedded-content.html#attr-img-srcset",
+   "TR" : "http://www.w3.org/TR/html51/semantics.html#attr-img-srcset",
    "stability" : {
       "level" : "medium",
       "label" : "Stabilizing"
