@@ -11,7 +11,7 @@
       "id" : "ime"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/ime-api/raw-file/default/Overview.html"
+      "url" : "https://w3c.github.io/ime-api/"
    },
    "TR" : "http://www.w3.org/TR/ime-api/",
    "stability" : {
