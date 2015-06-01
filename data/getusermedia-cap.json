@@ -11,9 +11,9 @@
       "id" : "getusermedia-cap"
    },
    "editors" : {
-      "url" : "http://w3c.github.io/mediacapture-main/"
+      "url" : "http://w3c.github.io/mediacapture-main/#the-model-sources-sinks-constraints-and-settings"
    },
-   "TR" : "http://www.w3.org/TR/mediacapture-streams/#source-capabilities",
+   "TR" : "http://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings",
    "feature": "Source capabilities",
    "stability" : {
       "level" : "medium",
