@@ -10,15 +10,7 @@
       "label" : "None",
       "id" : "geofencing"
    },
-   "wgs" : [
-      {
-         "url" : "http://www.w3.org/2008/geolocation/",
-         "label" : "Geolocation Working Group"
-      }
-   ],
-   "maturity" : "ed",
-   "TR" : "",
-   "title": "Geofencing API",
+   "TR" : "http://www.w3.org/TR/geofencing/",
    "editors" : {
       "url" : "https://w3c.github.io/geofencing-api/"
    },
