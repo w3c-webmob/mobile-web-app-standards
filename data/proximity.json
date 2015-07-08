@@ -11,7 +11,7 @@
       "id" : "proximity"
    },
    "editors" : {
-      "url" : "https://dvcs.w3.org/hg/dap/raw-file/tip/proximity/Overview.html"
+      "url" : "https://w3c.github.io/proximity/"
    },
    "TR" : "http://www.w3.org/TR/proximity/",
    "stability" : {
