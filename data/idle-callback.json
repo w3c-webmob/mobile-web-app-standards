@@ -1,0 +1,29 @@
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2010/webperf/",
+         "label" : "Web Performance Working Group"
+      }
+   ],
+   "maturity" : "ed",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "Experimental",
+      "id" : "idle-callback"
+   },
+   "title" : "Cooperative Scheduling of Background Tasks",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://w3c.github.io/requestidlecallback/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
