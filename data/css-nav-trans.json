@@ -1,0 +1,26 @@
+{
+  "wgs": [
+  {"url":"http://dev.w3.org/Style/CSS/members", "label":"CSS Working Group"}
+  ],
+   "maturity" : "Not on standards track yet",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "css-nav-trans"
+   },
+   "title" : "Web Navigation Transitions",
+   "TR" : "",
+   "editors" : {
+      "url" : "http://cwiiis.github.io/gaia-navigator/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early proposal"
+   }
+}
