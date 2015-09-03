@@ -16,7 +16,7 @@
    },
    "TR" : "http://www.w3.org/TR/XMLHttpRequest/",
    "stability" : {
-      "level" : "medium",
-      "label" : "stabilizing"
+      "level" : "low",
+      "label" : "Likely to be abandoned in favor of WHATWG specification"
    }
 }
