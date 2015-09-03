@@ -1,0 +1,25 @@
+{
+  "wgs": [
+  ],
+   "maturity" : "Not on standards track yet",
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/RByers/InputDevice/tree/gh-pages/tests",
+      "url" : "http://rbyers.github.io/InputDevice/tests/",
+      "label" : "Started"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "inputdevice"
+   },
+   "title" : "InputDeviceCapabilities",
+   "TR" : "",
+   "editors" : {
+      "url" : "http://rbyers.github.io/InputDevice/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early proposal"
+   }
+}
