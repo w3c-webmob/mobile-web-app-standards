@@ -17,6 +17,6 @@
    "impl" : {
       "level" : "low",
       "id" : "css-snappoints",
-      "label" : "Experimental"
+      "label" : "Limited"
    }
 }
