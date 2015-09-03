@@ -1,0 +1,28 @@
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/2009/dap/",
+         "label" : "Device APIs Working Group"
+      }
+   ],
+   "maturity" : "ed",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "",
+      "label" : "N/A"
+   },
+   "title" : "Generic Sensor API",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://w3c.github.io/sensors/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
