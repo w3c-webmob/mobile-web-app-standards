@@ -3,7 +3,7 @@
       "level" : "low",
       "repo" : "https://github.com/w3c/web-platform-tests/tree/master/webrtc",
       "url" : "http://w3c-test.org/webrtc/",
-      "label" : "Very early start"
+      "label" : "Early start"
    },
    "wpd" : {
       "url" : "http://docs.webplatform.org/wiki/concepts/internet_and_web/webrtc",
