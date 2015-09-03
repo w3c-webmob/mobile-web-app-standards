@@ -50,6 +50,8 @@ for filename in sys.argv[1:]:
             labels = closed_wgs.xpath("/rdf:RDF/*[c:homePage/@rdf:resource='%s']/o:name/text()" % url, namespaces=ns)
             if len(labels) > 0:
                 wg["label"] = labels[0]
+            elif url == "http://www.w3.org/2012/sysapps/":
+                wg["label"] = "System Applications Working Group"
             else:
                 sys.stderr.write("No group with home page %s found in public-groups.rdf nor closed-groups.rdf\n" % (url))
         data[id]["wgs"].append(wg)
