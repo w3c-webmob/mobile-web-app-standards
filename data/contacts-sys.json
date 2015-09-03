@@ -16,6 +16,6 @@
    "TR" : "http://www.w3.org/TR/contacts-manager-api/",
    "stability" : {
       "level" : "low",
-      "label" : "Early draft"
+      "label" : "Abandonned"
    }
 }

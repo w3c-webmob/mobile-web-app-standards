@@ -7,8 +7,8 @@
       "label" : "Started"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "picture"
    },
    "editors" : {

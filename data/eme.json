@@ -6,8 +6,8 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "medium",
-      "label" : "Growing deployment",
+      "level" : "low",
+      "label" : "Limited",
       "id" : "drm"
    },
    "editors" : {

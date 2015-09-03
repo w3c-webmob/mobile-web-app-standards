@@ -8,7 +8,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "None",
+      "label" : "Limited",
       "id" : "serviceworker"
    },
    "TR" : "http://www.w3.org/TR/service-workers/",

@@ -7,7 +7,7 @@
    },
    "impl" : {
       "level" : "low",
-      "label" : "None",
+      "label" : "Limited",
       "id" : "permissions"
    },
    "TR" : "http://www.w3.org/TR/permissions/",

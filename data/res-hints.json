@@ -6,8 +6,8 @@
       "label" : "None"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "None?",
+      "level" : "medium",
+      "label" : "Growing deployment",
       "id" : "res-hints"
    },
    "editors" : {

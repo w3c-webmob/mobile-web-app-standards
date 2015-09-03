@@ -11,8 +11,8 @@
       "label" : "Just started"
    },
    "impl" : {
-      "level" : "medium",
-      "label" : "Growing",
+      "level" : "high",
+      "label" : "Well deployed",
       "id" : "inputdate"
    },
    "TR" : "http://www.w3.org/TR/html5/forms.html#date-state-(type=date)",
@@ -25,7 +25,7 @@
    },
    "stability" : {
       "level" : "high",
-      "label" : "Mostly stable"
+      "label" : "Stable"
    },
    "feature" : "Data and Time input element"
 }

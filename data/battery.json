@@ -6,8 +6,8 @@
       "label" : "Good coverage"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited, but growing",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "battery"
    },
    "editors" : {

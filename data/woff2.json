@@ -6,8 +6,8 @@
       "label" : "N/A"
    },
    "impl" : {
-      "level" : "low",
-      "label" : "Limited",
+      "level" : "medium",
+      "label" : "Growing",
       "id" : "woff2"
    },
    "editors" : {
