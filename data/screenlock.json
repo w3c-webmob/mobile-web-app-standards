@@ -1,10 +1,10 @@
 {
    "coremob" : "partial",
    "tests" : {
-      "level" : "low",
-      "repo" : "",
-      "url" : "",
-      "label" : "None"
+      "level" : "medium",
+      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/screen-orientation",
+      "url" : "http://w3c-test.org/screen-orientation/",
+      "label" : "Well started"
    },
    "impl" : {
       "level" : "medium",
