@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None?",
+      "id" : "preload"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/preload/"
+   },
+   "TR" : "http://www.w3.org/TR/preload/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}
