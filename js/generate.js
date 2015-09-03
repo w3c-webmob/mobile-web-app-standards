@@ -83,6 +83,19 @@ specXhr.onload = function() {
 };
 specXhr.send();
 
+function ghLink(url, title, width) {
+  var gh_link = document.createElement("a");
+  var gh_logo = document.createElement("img");
+  gh_logo.setAttribute("src", "github.svg");
+  if (width) {
+    gh_logo.setAttribute("width", width);
+  }
+  gh_link.setAttribute("href", url);
+  gh_link.setAttribute("title", title);
+  gh_link.appendChild(gh_logo);
+ return gh_link;
+}
+
 function fillTables() {
     var counterReq = 0 ,counterRes = 0;
     for (var i = 0; i < sections.length; i++) {
@@ -174,6 +187,11 @@ function fillTables() {
 			    editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/#.*/,'').replace(/[^a-z0-9]/g,'');
 			    el5.appendChild(document.createElement("br"));
 			    importSVG("editors-activity/" + editorsactivity + ".svg", el5, updateEditorsActivity);
+          if (data.editors.url.match(/https?:\/\/[^\.\/]*\.github\.io\//)) {
+            var ghUser = data.editors.url.split(".")[0].split("/")[2];
+            var ghRepo = data.editors.url.split("/")[3];
+            el5.appendChild(ghLink("https://github.com/" + ghUser + "/" + ghRepo + "/", "Contribute to " + data.title + " on GitHub", 20));
+          }
 			}
 			fillCell(el6, data.impl);
 			el6.appendChild(document.createElement("br"));
@@ -188,13 +206,7 @@ function fillTables() {
 			    fillCell(el7, data.wdc, {src:"http://www.w3.org/Mobile/mobile-web-app-state/w3devcampus.png", alt: "W3DevCampus", width:115, height:43});
 			}
 			if (data.tests.repo) {
-			    var gh_link = document.createElement("a");
-			    var gh_logo = document.createElement("img");
-                            gh_logo.setAttribute("src", "github.svg");
-                            gh_link.setAttribute("href", data.tests.repo);
-                            gh_link.setAttribute("title", "Fork the test suite for " + specData[s].title + " on GitHub");
-                            gh_link.appendChild(gh_logo);
-			    el8.appendChild(gh_link);
+			    el8.appendChild(ghLink(data.tests.repo, "Fork the test suite for " + specData[s].title + " on GitHub"));
 			}
 			fillCell(el8, data.tests);
 			el8.classList.add("tests");
