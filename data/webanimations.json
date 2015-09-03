@@ -13,7 +13,7 @@
    "editors" : {
       "url" : "http://w3c.github.io/web-animations/"
    },
-   "TR" : "http://www.w3.org/TR/web-animations/",
+   "TR" : "http://www.w3.org/TR/web-animations-1/",
    "stability" : {
       "level" : "low",
       "label" : "Early draft"
