@@ -14,7 +14,7 @@
       "url" : "http://dev.w3.org/csswg/css-values/#viewport-relative-lengths"
    },
    "feature": "viewport relative units",
-   "TR" : "http://www.w3.org/TR/css3-values/#viewport-relative-lengths",
+   "TR" : "http://www.w3.org/TR/css-values/#viewport-relative-lengths",
    "stability" : {
       "level" : "high",
       "label" : "Mostly finished"
