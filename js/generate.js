@@ -182,15 +182,19 @@ function fillTables() {
                         maturityInfo = maturityData(specData[s]);
 			fillCell(el3, maturityInfo.maturity, maturityInfo.maturityIcon);
 			fillCell(el4, data.stability);
-			fillCell(el5, data.editors);
 			if (data.editors.url) {
-			    editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/#.*/,'').replace(/[^a-z0-9]/g,'');
-			    el5.appendChild(document.createElement("br"));
-			    importSVG("editors-activity/" + editorsactivity + ".svg", el5, updateEditorsActivity);
-          if (data.editors.url.match(/https?:\/\/[^\.\/]*\.github\.io\//)) {
-            var ghUser = data.editors.url.split(".")[0].split("/")[2];
-            var ghRepo = data.editors.url.split("/")[3];
-            el5.appendChild(ghLink("https://github.com/" + ghUser + "/" + ghRepo + "/", "Contribute to " + data.title + " on GitHub", 20));
+          if (specData[s].maturity === "REC") {
+            el5.appendChild(document.createTextNode("Finished"));
+          } else {
+			      fillCell(el5, data.editors);
+			      editorsactivity = data.editors.url.replace(/^https?:\/\//, '').replace(/#.*/,'').replace(/[^a-z0-9]/g,'');
+			      el5.appendChild(document.createElement("br"));
+			      importSVG("editors-activity/" + editorsactivity + ".svg", el5, updateEditorsActivity);
+            if (data.editors.url.match(/https?:\/\/[^\.\/]*\.github\.io\//)) {
+              var ghUser = data.editors.url.split(".")[0].split("/")[2];
+              var ghRepo = data.editors.url.split("/")[3];
+              el5.appendChild(ghLink("https://github.com/" + ghUser + "/" + ghRepo + "/", "Contribute to " + data.title + " on GitHub", 20));
+            }
           }
 			}
 			fillCell(el6, data.impl);
@@ -279,6 +283,13 @@ function updateEditorsActivity(el) {
     var descEl = el.querySelector("desc");
     if (descEl) {
 	el.querySelector("a").textContent = descEl.textContent;
+  var t = descEl.getAttribute("title");
+  if (t) {
+    var commitsCount  = parseInt(t.split(" ")[0], 10);
+    if (commitsCount === 0) {
+      el.querySelector('svg').outerHTML = '';
+    }
+  }
     }
 }
 
