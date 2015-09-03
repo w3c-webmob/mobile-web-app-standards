@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "epr"
+   },
+   "editors" : {
+      "url" : "https://w3c.github.io/webappsec/specs/epr/"
+   },
+   "TR" : "http://www.w3.org/TR/epr/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Just started"
+   }
+}
