@@ -2,8 +2,8 @@
    "coremob" : "fulfills",
    "tests" : {
       "level" : "medium",
-      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/animation-timing",
-      "url" : "http://w3c-test.org/animation-timing/",
+      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/html/webappapis/animation-frames/",
+      "url" : "http://w3c-test.org/html/webappapis/animation-frames/",
       "label" : "Well started"
    },
    "impl" : {

@@ -7,7 +7,7 @@
    "tests" : {
       "level" : "low",
       "repo" : "https://github.com/w3c/web-platform-tests/",
-      "url" : "http://w3c-test.org/html/semantics/forms/the-input-element",
+      "url" : "http://w3c-test.org/html/semantics/forms/the-input-element/",
       "label" : "Just started"
    },
    "impl" : {
