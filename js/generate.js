@@ -1,7 +1,7 @@
 var sections = document.querySelectorAll("section.featureset");
 var template = document.getElementById("template").textContent;
 
-var maturityLevels = {"ed":"low","LastCall":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
+var maturityLevels = {"ed":"low","Last Call":"medium","Working Draft":"low","Candidate Recommendation":"high","Proposed Recommendation":"high","Recommendation":"high"};
 
 function fillCell(el, data, image) {
     if (data.level) {
@@ -38,23 +38,24 @@ function fillCell(el, data, image) {
 }
 
 function importSVG(svgurl, el, postHook) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET",svgurl);
-    xhr.responseType = "document";
-    xhr.onload = function (e) {
-	if (e.target.status == "200" || e.target.status == "304") {
-	    var svg = e.target.response.documentElement;
-	    svg.querySelector("style").remove();
-	    el.appendChild(svg);
-	    if (postHook) {
-		postHook(el);
-	    }
-	}
-    };
-    xhr.send();
+    fetch(svgurl, {mode:'cors'}).then(response => response.text())
+        .then(function(svg) {
+            if (svg) {
+                var d = document.createElement("p");
+                d.innerHTML = svg;
+                d.querySelector("style").remove();
+                el.appendChild(d);
+                if (postHook) {
+                    postHook(el);
+                }
+            }
+        }).catch(function(e) {
+            console.error(e);
+        });
 }
 
 function maturityData(spec) {
+    var maturityMapping = { 'Working Draft': 'WD', 'Last Call': 'lcwd', 'Candidate Recommendation': 'CR', 'Proposed Recommendation': 'PR', 'Recommendation': 'REC', 'Note': 'NOTE'};
     var maturity ;
     var maturityIcon ;
     if (!maturityLevels[spec.maturity]) {
@@ -66,22 +67,38 @@ function maturityData(spec) {
 	maturity = {label: spec.maturity, level:level};
     } else {
 	maturity = {label:spec.maturity, level: maturityLevels[spec.maturity]};
-	maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + spec.maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:spec.maturity, width:50, height:50};
-	if (spec.maturity == "REC" || spec.maturity == "LastCall") {
+	maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + maturityMapping[spec.maturity].toLowerCase() + '.svg', alt:spec.maturity, width:50, height:50};
+	if (spec.maturity == "Recommendation" || spec.maturity == "Last Call") {
 	    maturityIcon.height = 53;
 	}
     }
     return {maturity: maturity, maturityIcon: maturityIcon};
 }
 
-var specData;
-var specXhr = new XMLHttpRequest();
-specXhr.open("GET", "specs/tr.json");
-specXhr.onload = function() {
-    specData = JSON.parse(this.responseText);
-    fillTables();
-};
-specXhr.send();
+var specData = {};
+fillTables();
+var w3cApiAuth = "?apikey=rvl38z1hpvkw0g804gk48o0s8408w88";
+var w3cApiFetchConfig = { method:'GET', mode:'cors'};
+
+
+function fetchSpecData(d) {
+    if (!d.TR) {
+        return new Promise((res,rej) => { res({maturity:d.maturity, wgs: d.wgs, title: d.title});});
+    }
+    var shortName = d.TR.split('#')[0].split('/')[4];
+    var ret = {};
+    return fetch("https://api.w3.org/specifications/" + shortName + "/versions" + w3cApiAuth + "&embed=1", w3cApiFetchConfig)
+        .then(response =>  response.json())
+        .then(function(data) {
+            var latest = data._embedded['version-history'][0];
+            ret = { maturity: latest.status, title: latest.title};
+            return fetch(latest._links["deliverers"].href  + w3cApiAuth + "&embed=1", w3cApiFetchConfig).then(response => response.json());
+        })
+        .then(function(data) {
+            ret["wgs"] = data._embedded.deliverers.map(g => ({label: g.name, url: g._links["homepage"].href}));
+            return ret;
+        });
+}
 
 function ghLink(url, title, width) {
   var gh_link = document.createElement("a");
@@ -125,6 +142,7 @@ function fillTables() {
 		th.setAttribute("rowspan", specs.length);
 	    }
 	    tr.appendChild(th);
+            var promises = [];
 	    for (var k = 0; k < specs.length; k++) {
 		var spec = specs[k];
 		if (k > 0) {
@@ -140,18 +158,10 @@ function fillTables() {
 		var implTd = document.createElement("td");
 		var docTd = document.createElement("td");
 		var tsTd = document.createElement("td");
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "data/" + spec + ".json");
-                counterReq++;
-		xhr.onload = function(x, s, el1, el2, el3, el4, el5, el6, el7, el8) {
-		    return function() {
-                        counterRes++;
+                
+		function trClosure(s, el1, el2, el3, el4, el5, el6, el7, el8) {
+		    return function(data) {
 			var obj, level, editorsactivity, maturityInfo;
-                        try {
-			    var data = JSON.parse(x.responseText);
-                        } catch (e) {
-                            console.error("Failed to parse " + spec + ".json: " + x.responseText + "(" + e + ")");
-                        }
 			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
 			for (var l = 0 ; l < links.length; l++) {
 			    var url = data.editors.url;
@@ -160,12 +170,9 @@ function fillTables() {
 			    }
 			    links[l].setAttribute("href",url);
 			}
-			if (data.TR !== "") {
+                        fetchSpecData(data).then(function(d) {
+                            specData[s] = d;
 			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + specData[s].title, url: data.TR});
-			} else {
-			    fillCell(el1, {label: data.title});
-			    specData[s] = { maturity: data.maturity, wgs:data.wgs};
-			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
 			    wg = specData[s].wgs[w];
 			    wg.label = wg.label.replace(/ Working Group/,'').replace(/Cascading Style Sheets \(CSS\)/,'CSS').replace(/Technical Architecture Group/,'TAG');
@@ -214,13 +221,19 @@ function fillTables() {
 			}
 			fillCell(el8, data.tests);
 			el8.classList.add("tests");
-                        if (counterReq == counterRes) {
+		        });
+                    };
+                }
+                var p = fetch("data/" + spec + ".json").then(
+                    response => response.json())
+                    .then(trClosure(spec, specTd, wgTd, maturityTd, stabilityTd, editorsTd, implTd, docTd, tsTd))
+                    .catch(console.error.bind(console));
+
+/*                         if (counterReq == counterRes) {
                             mergeWGCells();
                             markDupLinks();
                         }
-		    };
-		}(xhr, spec, specTd, wgTd, maturityTd, stabilityTd, editorsTd, implTd, docTd, tsTd);
-		xhr.send();
+*/
 		tr.appendChild(specTd);
 		tr.appendChild(wgTd);
 		tr.appendChild(maturityTd);
