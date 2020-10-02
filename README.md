@@ -49,8 +49,8 @@ Note that the data about maturity and Working Groups is automatically obtained f
 
 ### Adding new spec
 To add a new spec to the document:
-* create a JSON file in the data directory with the required information
-* add the document to the relevant section of index.html as in the example given in “Feature description”
+* create a JSON file in the data directory with the required information(important)
+* add the document to the relevant section of index.html as in the example given in “Feature description”(must)
 
 ## Building
 Building the document remains a somewhat convoluted process:
